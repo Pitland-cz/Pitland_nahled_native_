@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitland — náhledy nativních inzerátů (styl Seznam)</title>
+<style>
+  :root{--bg:#faf9f5;--card:#fff;--surface:#eceae3;--text:#2c2c2a;--muted:#6b6a66;--hint:#9b9a95;--border:#e2e0d8;--seznam:#d52b1e;--red:#d4242a;--name:#1a1a18;--link:#185fa5}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 20px 56px}
+  h1{font-size:24px;font-weight:600;margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:22px}
+  .cell{display:flex;flex-direction:column;gap:9px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:15px 17px}
+  .head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .fav{width:26px;height:26px;border-radius:5px;flex:none;overflow:hidden}
+  .fav img{display:block;width:100%;height:100%}
+  .name{font-size:16px;font-weight:600;color:var(--name)}
+  .rek{margin-left:auto;font-size:13px;color:var(--hint)}
+  .bodyrow{display:flex;gap:15px}
+  .imgbox{flex:none;width:200px;height:150px;border-radius:9px;overflow:hidden;position:relative;background:var(--surface)}
+  .imgbox svg,.imgbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .tit{font-size:17px;font-weight:700;line-height:1.34;color:var(--red);margin:0 0 8px}
+  .txt{font-size:14px;color:var(--muted);line-height:1.45;margin:0}
+  .foot{display:flex;gap:24px;margin-top:14px;color:var(--hint);font-size:14px}
+  .foot span{display:inline-flex;align-items:center;gap:7px}
+  .lnk{font:12px ui-monospace,Menlo,monospace;color:var(--link);text-decoration:none;word-break:break-all;padding:0 3px;line-height:1.5}
+  .lnk:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pitland — náhledy nativních inzerátů na Seznam.cz</h1>
+  <div class="grid" id="grid"></div>
+</div>
+
+<script>
+const FAVB64='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';
+const FAV='<img src="data:image/png;base64,'+FAVB64+'" width="26" height="26" alt="Pitland" style="display:block">';
+const HEART='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.1a5.4 5.4 0 0 0-7.7 0L12 6.2l-1.1-1.1a5.4 5.4 0 1 0-7.7 7.7l1.1 1.1L12 21l7.7-7.1 1.1-1.1a5.4 5.4 0 0 0 0-7.7z"/></svg>';
+const CHAT='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>';
+function bike(tx,ty,s,body,rider){return `<g transform="translate(${tx},${ty}) scale(${s})">
+  <circle cx="50" cy="120" r="25" fill="none" stroke="#2c2c2a" stroke-width="8"/><circle cx="50" cy="120" r="6" fill="#2c2c2a"/>
+  <circle cx="168" cy="120" r="25" fill="none" stroke="#2c2c2a" stroke-width="8"/><circle cx="168" cy="120" r="6" fill="#2c2c2a"/>
+  <path d="M50 120 L98 120 L116 98 L150 110 L168 120" fill="none" stroke="${body}" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M82 102 Q102 88 124 94 L118 104 L92 108 Z" fill="${body}"/>
+  <rect x="66" y="94" width="34" height="8" rx="4" fill="${body}"/>
+  <line x1="150" y1="110" x2="159" y2="84" stroke="${body}" stroke-width="6" stroke-linecap="round"/>
+  <path d="M84 96 L100 74 L140 82 L150 92 L126 96 L102 98 Z" fill="${rider}"/>
+  <line x1="138" y1="82" x2="154" y2="94" stroke="${rider}" stroke-width="7" stroke-linecap="round"/>
+  <path d="M98 118 L106 97 L118 99 L112 118 Z" fill="${rider}"/>
+  <circle cx="151" cy="76" r="12" fill="${rider}"/>
+  <path d="M159 73 a12 12 0 0 1 -3 11 L149 79 Z" fill="rgba(255,255,255,.30)"/>
+</g>`}
+function scene(wall,floor,bikes){return `<svg viewBox="0 0 488 275" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <rect width="488" height="275" fill="${wall}"/><rect y="205" width="488" height="70" fill="${floor}"/>
+  <polygon points="310,205 470,205 488,232 488,205" fill="rgba(0,0,0,.05)"/>
+  <polygon points="42,205 34,223 50,223" fill="#E2611F"/>${bikes}</svg>`}
+const SC_TEAL=()=>scene("#E1F5EE","#9FE1CB", bike(96,70,1.2,"#1D9E75","#2c2c2a")+bike(330,122,0.72,"#378ADD","#2c2c2a"));
+const SC_BLUE=()=>scene("#E6F1FB","#B5D4F4", bike(120,76,1.34,"#185FA5","#2c2c2a"));
+const SC_PURP=()=>scene("#EEEDFE","#CECBF6", bike(120,76,1.34,"#534AB7","#2c2c2a"));
+const SC_AMBR=()=>scene("#F1EFE8","#D3D1C7", bike(120,76,1.3,"#C24A12","#2c2c2a"));
+const U='https://pitland.cz/?utm_source=seznam&utm_medium=native&utm_campaign=leto2026_juniori&utm_content=';
+const ADS=[
+ {src:"Pitland.cz",img:"Varianta%201.png",url:U+'01-spolu-fotoV1',
+  tit:"Jezdíte na motorce? Vezměte juniora s sebou",
+  txt:"Společné ježdění na elektromotorkách v kryté hale v Praze. Pro juniory od deseti let.",svg:SC_TEAL()},
+ {src:"Pitland.cz",img:"Varianta%202.png",url:U+'02-prvnijizda-fotoV2',
+  tit:"První jízda na motorce už od deseti let",
+  txt:"V bezpečné kryté hale na Zličíně, na elektromotorkách, celoročně a pod dohledem.",svg:SC_BLUE()},
+ {src:"Pitland.cz",img:"Varianta%203.png",url:U+'03-senomoto-fotoV3',
+  tit:"Váš junior sní o motorkách? Řešení je v Praze",
+  txt:"V kryté hale na Zličíně jezdí junioři na elektromotorkách bezpečně a za každého počasí.",svg:SC_PURP()},
+ {src:"Pitland.cz",img:"Varianta%201.png",url:U+'04-loni-spolu10-fotoV1',
+  tit:"Začněte spolu jezdit už od 10ti let",
+  txt:"Sdílejte svoji vášeň s dětmi. V hale, s instruktorem a bez rizika.",svg:SC_TEAL()},
+ {src:"Pitland.cz",img:"Varianta%202.png",url:U+'05-loni-jakoty-fotoV2',
+  tit:"Chce být jako ty? Ukaž mu bezpečnou cestu",
+  txt:"V bezpečné hale v Praze se učí jezdit na elektrické motorce děti už od 150 cm.",svg:SC_BLUE()},
+ {src:"Pitland.cz",img:"Varianta%203.png",url:U+'06-loni-chcemoto-fotoV3',
+  tit:"Chce na motorku? Ať se to naučí v bezpečí haly.",
+  txt:"Dřív, než bude pozdě. Nabídněte mu bezpečný způsob, jak se to naučit správně.",svg:SC_PURP()},
+ {src:"Pitland.cz",img:"Varianta%204.png",url:U+'07-loni-nejmensi-fotoV4',
+  tit:"Bezpečný start pro nejmenší motorkáře",
+  txt:"Bezpečný kroužek v hale, kde děti od 6 let objevují svět jedné stopy.",svg:SC_AMBR()},
+];
+document.getElementById('grid').innerHTML=ADS.map(a=>`
+<div class="cell">
+  <div class="card">
+    <div class="head"><span class="fav">${FAV}</span><span class="name">${a.src}</span><span class="rek">Reklama</span></div>
+    <div class="bodyrow">
+      <div class="imgbox">${a.svg}<img class="photo" src="${a.img}" alt="" onerror="this.remove()"></div>
+      <div><p class="tit">${a.tit}</p><p class="txt">${a.txt}</p></div>
+    </div>
+    <div class="foot"><span>${HEART} Líbí se</span><span>${CHAT} Komentáře</span></div>
+  </div>
+  <a class="lnk" href="${a.url}" target="_blank" rel="noopener">${a.url}</a>
+</div>`).join('');
+</script>
+</body>
+</html>
