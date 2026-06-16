@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitland × Seznam — dashboard kampaně Barter Pitland</title>
+<style>
+  :root{--bg:#faf9f5;--card:#fff;--ink:#1f1f1d;--mut:#6b6a66;--hint:#9b9a95;--bd:#e4e2da;--blue:#185fa5;--blue-bg:#e8f1fb;--green:#1d9e75;--amber:#b97e12;--red:#c0392b;--bar:#cfe0f3}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:1000px;margin:0 auto;padding:28px 20px 56px}
+  h1{font-size:23px;font-weight:600;margin:0 0 4px}
+  .meta{color:var(--mut);font-size:14px;margin:0 0 4px}
+  .stamp{display:inline-block;font-size:13px;color:var(--blue);background:var(--blue-bg);padding:3px 10px;border-radius:8px;margin:6px 0 20px}
+  h2{font-size:16px;font-weight:600;margin:26px 0 12px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:13px 15px}
+  .c .l{font-size:12px;color:var(--mut);margin:0 0 4px}
+  .c .v{font-size:23px;font-weight:600;margin:0}
+  .c .s{font-size:12px;color:var(--hint);margin:3px 0 0}
+  .pace{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-top:12px}
+  .track{height:12px;background:#eceae3;border-radius:6px;overflow:hidden;margin:8px 0 4px}
+  .fill{height:100%;background:var(--blue);border-radius:6px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;font-size:14px;border-bottom:1px solid #efeee8}
+  th{font-size:12px;color:var(--mut);font-weight:600;background:#f4f2ec}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  .badge{font-size:11px;padding:2px 8px;border-radius:7px;white-space:nowrap}
+  .b-new{background:#e8f1fb;color:#185fa5}
+  .b-old{background:#f1efe8;color:#6b6a66}
+  .ctrbar{position:relative;height:18px;background:#f1efe8;border-radius:4px;min-width:120px}
+  .ctrbar i{position:absolute;left:0;top:0;height:100%;background:var(--green);border-radius:4px;opacity:.85}
+  .ctrbar b{position:absolute;left:0;top:0;width:2px;height:100%;background:var(--red)}
+  .ctrval{font-weight:600;font-variant-numeric:tabular-nums}
+  .win{color:var(--green)}
+  .zero{color:var(--red);font-weight:600}
+  .note{font-size:13px;color:var(--mut);line-height:1.6;margin:14px 0 0}
+  .foot{font-size:12px;color:var(--hint);margin-top:24px}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Barter Pitland — letní kampaň na Seznam.cz</h1>
+  <p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120469226 · termín 11.–28. 6. 2026 · stav <b>Běžící</b> · vlastník Radek Krechler</p>
+  <span class="stamp" id="stamp">Data k: 16. 6. 2026, 22:07 — zdroj: SOS export</span>
+
+  <h2>Souhrn kampaně</h2>
+  <div class="cards" id="cards"></div>
+
+  <div class="pace">
+    <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--mut)"><span>Dočerpání garance (475 000 zobrazení)</span><span id="pacepct"></span></div>
+    <div class="track"><div class="fill" id="pacefill"></div></div>
+    <div style="font-size:12px;color:var(--hint)" id="pacenote"></div>
+  </div>
+
+  <h2>Souboj kreativ (CTR)</h2>
+  <table>
+    <thead><tr><th>#</th><th>Kreativa</th><th></th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th style="width:34%">CTR vs benchmark 0,337 %</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="note" id="insight"></p>
+
+  <p class="foot">Per‑kreativa a souhrn pochází ze SOS exportu kampaně. Konverze zatím nesledujeme (nový web nemá nasazené GA4) — měříme jen doručení a prokliky. Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>.</p>
+</div>
+
+<script>
+const SUM={imp:26923,clk:77,unik:24045,freq:1.034,garant:475000,bench:0.337,start:"2026-06-11",end:"2026-06-28",dataDay:"2026-06-16"};
+const ADS=[
+ {n:"Chce na motorku? Ať se to naučí v bezpečí haly.",typ:"loni",imp:4455,clk:19},
+ {n:"Bezpečný start pro nejmenší motorkáře",typ:"loni",imp:4506,clk:18},
+ {n:"Chce být jako ty? Ukaž mu bezpečnou cestu",typ:"loni",imp:4406,clk:13},
+ {n:"První jízda na motorce už od deseti let",typ:"letošní",imp:4516,clk:10},
+ {n:"Začněte spolu jezdit už od 10ti let",typ:"loni",imp:4533,clk:9},
+ {n:"Váš junior sní o motorkách? Řešení je v Praze",typ:"letošní",imp:4507,clk:8},
+ {n:"Jezdíte na motorce? Vezměte juniora s sebou",typ:"letošní",imp:0,clk:0},
+];
+const fmt=n=>n.toLocaleString('cs-CZ');
+const ctr=a=>a.imp>0?(a.clk/a.imp*100):0;
+const sumCtr=(SUM.clk/SUM.imp*100);
+document.getElementById('cards').innerHTML=[
+ ['Zobrazení',fmt(SUM.imp),'z '+fmt(SUM.garant)+' garant.'],
+ ['Prokliky',fmt(SUM.clk),''],
+ ['CTR',sumCtr.toFixed(3)+' %','benchmark 0,337 %'],
+ ['Unikátní zásah',fmt(SUM.unik),''],
+ ['Frekvence',SUM.freq.toFixed(2)+'×','ideál 25–30 později'],
+].map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+
+const pct=SUM.imp/SUM.garant*100;
+const days=(new Date(SUM.end)-new Date(SUM.start))/864e5;
+const elapsed=(new Date(SUM.dataDay)-new Date(SUM.start))/864e5;
+const timePct=elapsed/days*100;
+document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';
+document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';
+document.getElementById('pacenote').textContent='Uplynulo '+Math.round(timePct)+' % času kampaně ('+Math.round(elapsed)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';
+
+const maxCtr=Math.max(...ADS.map(ctr),SUM.bench)*1.1;
+document.getElementById('rows').innerHTML=ADS.map((a,i)=>{
+ const c=ctr(a);
+ const w=maxCtr>0?(c/maxCtr*100):0;
+ const bw=SUM.bench/maxCtr*100;
+ const served=a.imp>0;
+ return `<tr>
+  <td>${i+1}</td>
+  <td>${a.n}</td>
+  <td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td>
+  <td class="num">${served?fmt(a.imp):'<span class="zero">0</span>'}</td>
+  <td class="num">${served?a.clk:'<span class="zero">0</span>'}</td>
+  <td class="num ctrval ${i===0&&served?'win':''}">${served?c.toFixed(3)+' %':'—'}</td>
+  <td>${served?`<div class="ctrbar"><i style="width:${w}%"></i><b style="left:${bw}%"></b></div>`:'<span class="zero">nezobrazeno</span>'}</td>
+ </tr>`;
+}).join('');
+
+document.getElementById('insight').innerHTML='Červená čára = loňský benchmark 0,337 %. Zatím vedou loňské varianty; letošní junior texty jsou pod průměrem, ale vzorky jsou malé (8–19 prokliků) — není to verdikt. Varianta „Jezdíte na motorce? Vezměte juniora s sebou" se zatím vůbec nenasadila (0 zobrazení) — ověřit u Radka.';
+</script>
+</body>
+</html>
