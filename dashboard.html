@@ -3,16 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pitland × Seznam — dashboard kampaně Barter Pitland</title>
+<title>Pitland — marketingový dashboard</title>
 <style>
-  :root{--bg:#faf9f5;--card:#fff;--ink:#1f1f1d;--mut:#6b6a66;--hint:#9b9a95;--bd:#e4e2da;--blue:#185fa5;--blue-bg:#e8f1fb;--green:#1d9e75;--amber:#b97e12;--red:#c0392b;--bar:#cfe0f3}
+  :root{--bg:#faf9f5;--card:#fff;--ink:#1f1f1d;--mut:#6b6a66;--hint:#9b9a95;--bd:#e4e2da;--blue:#185fa5;--blue-bg:#e8f1fb;--green:#1d9e75;--red:#c0392b}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
   .wrap{max-width:1000px;margin:0 auto;padding:28px 20px 56px}
   h1{font-size:23px;font-weight:600;margin:0 0 4px}
   .meta{color:var(--mut);font-size:14px;margin:0 0 4px}
-  .stamp{display:inline-block;font-size:13px;color:var(--blue);background:var(--blue-bg);padding:3px 10px;border-radius:8px;margin:6px 0 20px}
-  h2{font-size:16px;font-weight:600;margin:26px 0 12px}
+  .stamp{display:inline-block;font-size:13px;color:var(--blue);background:var(--blue-bg);padding:3px 10px;border-radius:8px;margin:6px 0 18px}
+  h2{font-size:16px;font-weight:600;margin:24px 0 12px}
+  .tabs{display:flex;gap:4px;margin:14px 0 18px;border-bottom:2px solid var(--bd)}
+  .tabs button{font:inherit;font-size:15px;font-weight:600;border:none;background:none;padding:9px 16px;cursor:pointer;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+  .tabs button.on{color:var(--blue);border-bottom-color:var(--blue)}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px}
+  .seg button{font:inherit;font-size:13px;border:1px solid var(--bd);background:var(--card);padding:7px 14px;cursor:pointer;color:var(--ink)}
+  .seg button:first-child{border-radius:8px 0 0 8px}
+  .seg button:last-child{border-radius:0 8px 8px 0;border-left:none}
+  .seg button:not(:first-child):not(:last-child){border-left:none}
+  .seg button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .range{display:none;gap:8px;align-items:center;font-size:13px;color:var(--mut)}
+  .range.show{display:flex}
+  .range input{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--bd);border-radius:7px}
+  .range button{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:7px;cursor:pointer}
+  .rangelbl{font-size:13px;color:var(--mut);margin:0 0 12px}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
   .c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:13px 15px}
   .c .l{font-size:12px;color:var(--mut);margin:0 0 4px}
@@ -26,14 +40,15 @@
   th{font-size:12px;color:var(--mut);font-weight:600;background:#f4f2ec}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   tr:last-child td{border-bottom:none}
+  tr.total td{background:#eef3f8;font-weight:600;border-bottom:2px solid #d3e0ef}
   .badge{font-size:11px;padding:2px 8px;border-radius:7px;white-space:nowrap}
-  .b-new{background:#e8f1fb;color:#185fa5}
-  .b-old{background:#f1efe8;color:#6b6a66}
-  .ctrbar{position:relative;height:18px;background:#f1efe8;border-radius:4px;min-width:120px}
+  .b-new{background:#e8f1fb;color:#185fa5}.b-old{background:#f1efe8;color:#6b6a66}
+  .b-green{background:#e6f5ee;color:#1d9e75}
+  .ctrbar{position:relative;height:18px;background:#f1efe8;border-radius:4px;min-width:110px}
   .ctrbar i{position:absolute;left:0;top:0;height:100%;background:var(--green);border-radius:4px;opacity:.85}
+  .ctrbar.tot i{background:var(--blue)}
   .ctrbar b{position:absolute;left:0;top:0;width:2px;height:100%;background:var(--red)}
   .ctrval{font-weight:600;font-variant-numeric:tabular-nums}
-  .win{color:var(--green)}
   .zero{color:var(--red);font-weight:600}
   .note{font-size:13px;color:var(--mut);line-height:1.6;margin:14px 0 0}
   .foot{font-size:12px;color:var(--hint);margin-top:24px}
@@ -42,77 +57,175 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Barter Pitland — letní kampaň na Seznam.cz</h1>
+  <h1>Pitland — marketingový dashboard</h1>
+
+  <div class="tabs" id="tabs">
+    <button data-t="sos" class="on">Nativní — Seznam</button>
+    <button data-t="sklik">Sklik — PPC</button>
+  </div>
+
+  <!-- ============ VIEW: NATIVNÍ (SOS) ============ -->
+  <div id="view-sos">
   <p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120469226 · termín 11.–28. 6. 2026 · stav <b>Běžící</b> · vlastník Radek Krechler</p>
-  <span class="stamp" id="stamp">Data k: 18. 6. 2026, 19:25 — zdroj: SOS export</span>
+  <span class="stamp" id="stamp">Data k: …</span>
 
-  <h2>Souhrn kampaně</h2>
+  <div class="controls">
+    <div class="seg" id="seg">
+      <button data-m="all" class="on">Celé období</button>
+      <button data-m="days">Po dnech</button>
+      <button data-m="range">Vlastní rozmezí</button>
+    </div>
+    <div class="range" id="rangebox">
+      <span>od</span><input type="date" id="od"><span>do</span><input type="date" id="do"><button id="apply">Zobrazit</button>
+    </div>
+  </div>
+  <p class="rangelbl" id="rangelbl"></p>
+
   <div class="cards" id="cards"></div>
-
-  <div class="pace">
+  <div class="pace" id="pacebox">
     <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--mut)"><span>Dočerpání garance (475 000 zobrazení)</span><span id="pacepct"></span></div>
     <div class="track"><div class="fill" id="pacefill"></div></div>
     <div style="font-size:12px;color:var(--hint)" id="pacenote"></div>
   </div>
 
-  <h2>Souboj kreativ (CTR)</h2>
+  <div id="dailywrap" style="display:none">
+    <h2>Po dnech (celá kampaň)</h2>
+    <table><thead><tr><th>Datum</th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th class="num">Unik.</th><th class="num">Frekv.</th></tr></thead><tbody id="dailyrows"></tbody></table>
+  </div>
+
+  <h2 id="creH">Souboj kreativ (CTR)</h2>
   <table>
-    <thead><tr><th>#</th><th>Kreativa</th><th></th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th style="width:34%">CTR vs benchmark 0,337 %</th></tr></thead>
+    <thead><tr><th>#</th><th>Kreativa</th><th></th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th style="width:32%">CTR vs benchmark 0,337 %</th></tr></thead>
     <tbody id="rows"></tbody>
   </table>
   <p class="note" id="insight"></p>
+  <p class="foot">Zdroj: SOS export, obnovováno 4×/den. Konverze zatím nesledujeme (nový web nemá nasazené GA4). Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>. Per‑kreativa za vlastní období se dopočítává z denních snímků — přesnost roste s časem.</p>
+  </div>
 
-  <p class="foot">Per‑kreativa a souhrn pochází ze SOS exportu kampaně. Konverze zatím nesledujeme (nový web nemá nasazené GA4) — měříme jen doručení a prokliky. Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>.</p>
+  <!-- ============ VIEW: SKLIK (PPC) ============ -->
+  <div id="view-sklik" style="display:none">
+  <p class="meta">PPC kampaně ve Skliku (vyhledávání, retargeting, obsahová síť) · účet jnoteplice@gmail.com</p>
+  <span class="stamp" id="sk-stamp">Sklik data k: …</span>
+
+  <div class="cards" id="sk-cards"></div>
+
+  <h2>Po kampaních</h2>
+  <table>
+    <thead><tr><th>Kampaň</th><th></th><th class="num">Prokliky</th><th class="num">Zobrazení</th><th class="num">CTR</th><th class="num">CPC Ø</th><th class="num">Cena</th><th class="num">Objednávky</th><th class="num">Hodnota obj.</th><th class="num">Leady</th><th class="num">PNO</th></tr></thead>
+    <tbody id="sk-rows"></tbody>
+  </table>
+  <p class="note" id="sk-insight"></p>
+  <p class="foot">Zdroj: Sklik. <b>MVP</b> — zatím seed data za období <span id="sk-period"></span>; automatický tah přes Sklik API doplníme (4×/den jako SOS). PNO a Hodnota konverze se zobrazí jen u kampaní, které posílají hodnotu objednávky.</p>
+  </div>
 </div>
 
 <script>
-const SUM={imp:102077,clk:275,unik:89596,freq:1.14,garant:475000,bench:0.337,start:"2026-06-11",end:"2026-06-28",dataDay:"2026-06-18"};
-const ADS=[
- {n:"Chce na motorku? Ať se to naučí v bezpečí haly.",typ:"loni",imp:15315,clk:53},
- {n:"Bezpečný start pro nejmenší motorkáře",typ:"loni",imp:15051,clk:49},
- {n:"Jezdíte na motorce? Vezměte juniora s sebou",typ:"letošní",imp:10634,clk:29},
- {n:"Váš junior sní o motorkách? Řešení je v Praze",typ:"letošní",imp:15273,clk:40},
- {n:"Začněte spolu jezdit už od 10ti let",typ:"loni",imp:15238,clk:38},
- {n:"První jízda na motorce už od deseti let",typ:"letošní",imp:15354,clk:34},
- {n:"Chce být jako ty? Ukaž mu bezpečnou cestu",typ:"loni",imp:15212,clk:32},
-];
-const fmt=n=>n.toLocaleString('cs-CZ');
-const ctr=a=>a.imp>0?(a.clk/a.imp*100):0;
-const sumCtr=(SUM.clk/SUM.imp*100);
-document.getElementById('cards').innerHTML=[
- ['Zobrazení',fmt(SUM.imp),'z '+fmt(SUM.garant)+' garant.'],
- ['Prokliky',fmt(SUM.clk),''],
- ['CTR',sumCtr.toFixed(3)+' %','benchmark 0,337 %'],
- ['Unikátní zásah',fmt(SUM.unik),''],
- ['Frekvence',SUM.freq.toFixed(2)+'×','ideál 25–30 později'],
-].map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+/* ============ NATIVNÍ (SOS) ============ */
+const DEFAULT={"updated":"18. 6. 2026, 08:25","campaign":{"id":"8120469226","name":"Barter Pitland","start":"2026-06-11","end":"2026-06-28","garant":475000,"bench":0.337},"daily":[{"d":"2026-06-16","imp":28260,"clk":83,"unik":25237,"freq":1.034},{"d":"2026-06-17","imp":42252,"clk":123,"unik":36803,"freq":1.047}],"snaps":[{"d":"2026-06-16","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":0,"clk":0},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":4516,"clk":10},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":4507,"clk":8},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":4533,"clk":9},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":4406,"clk":13},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":4455,"clk":19},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":4506,"clk":18}]},{"d":"2026-06-18","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":6119,"clk":19},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":10847,"clk":29},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":10656,"clk":32},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":10810,"clk":29},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":10700,"clk":27},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":10684,"clk":37},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":10696,"clk":33}]}]};
+let D=DEFAULT, mode="all";
+const fmt=n=>Math.round(n).toLocaleString('cs-CZ');
+const cz=d=>{const[y,m,da]=d.split('-');return da*1+'. '+m*1+'.';};
+function latest(){return D.snaps[D.snaps.length-1];}
+function snapBefore(date){let s=null;for(const x of D.snaps){if(x.d<=date)s=x;}return s;}
+function rangeCampaign(od,doo){let imp=0,clk=0,unik=null,freq=null;for(const r of D.daily){if(r.d>=od&&r.d<=doo){imp+=r.imp;clk+=r.clk;unik=r.unik;freq=r.freq;}}return{imp,clk,unik,freq};}
+function creRange(od,doo,whole){
+  const end=snapBefore(doo)||latest();
+  const base=whole?null:snapBefore(prevDay(od));
+  return end.cre.map(c=>{const b=base?base.cre.find(x=>x.n===c.n):null;return{n:c.n,typ:c.typ,imp:c.imp-(b?b.imp:0),clk:c.clk-(b?b.clk:0)};});
+}
+function prevDay(d){const t=new Date(d);t.setDate(t.getDate()-1);return t.toISOString().slice(0,10);}
+const ctr=a=>a.imp>0?a.clk/a.imp*100:0;
 
-const pct=SUM.imp/SUM.garant*100;
-const days=(new Date(SUM.end)-new Date(SUM.start))/864e5;
-const elapsed=(new Date(SUM.dataDay)-new Date(SUM.start))/864e5;
-const timePct=elapsed/days*100;
-document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';
-document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';
-document.getElementById('pacenote').textContent='Uplynulo '+Math.round(timePct)+' % času kampaně ('+Math.round(elapsed)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';
+function render(){
+  const C=D.campaign;
+  document.getElementById('stamp').textContent='Data k: '+D.updated+' — zdroj: SOS export';
+  const lastDay=D.daily.length?D.daily[D.daily.length-1].d:C.start;
+  const endDate=D.snaps.length?D.snaps[D.snaps.length-1].d:lastDay;
+  let od,doo,whole=false,lbl='';
+  if(mode==='all'||mode==='days'){od=C.start;doo=endDate;whole=true;lbl='Celé období 11. 6. – '+cz(endDate)+' (kumulativně od startu)';}
+  else{od=document.getElementById('od').value||C.start;doo=document.getElementById('do').value||lastDay;lbl='Období '+cz(od)+' – '+cz(doo);}
+  document.getElementById('rangelbl').textContent=lbl;
 
-const maxCtr=Math.max(...ADS.map(ctr),SUM.bench)*1.1;
-document.getElementById('rows').innerHTML=ADS.map((a,i)=>{
- const c=ctr(a);
- const w=maxCtr>0?(c/maxCtr*100):0;
- const bw=SUM.bench/maxCtr*100;
- const served=a.imp>0;
- return `<tr>
-  <td>${i+1}</td>
-  <td>${a.n}</td>
-  <td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td>
-  <td class="num">${served?fmt(a.imp):'<span class="zero">0</span>'}</td>
-  <td class="num">${served?a.clk:'<span class="zero">0</span>'}</td>
-  <td class="num ctrval ${i===0&&served?'win':''}">${served?c.toFixed(3)+' %':'—'}</td>
-  <td>${served?`<div class="ctrbar"><i style="width:${w}%"></i><b style="left:${bw}%"></b></div>`:'<span class="zero">nezobrazeno</span>'}</td>
- </tr>`;
-}).join('');
+  let sum;
+  if(whole){const L=latest();sum={imp:L.cre.reduce((a,c)=>a+c.imp,0),clk:L.cre.reduce((a,c)=>a+c.clk,0)};const ld=D.daily[D.daily.length-1]||{};sum.freq=ld.freq;sum.unik=ld.freq?Math.round(sum.imp/ld.freq):ld.unik;}
+  else{sum=rangeCampaign(od,doo);}
+  const sctr=sum.imp>0?sum.clk/sum.imp*100:0;
+  const cards=[['Zobrazení',fmt(sum.imp),whole?'z '+fmt(C.garant)+' garant.':''],['Prokliky',fmt(sum.clk),''],['CTR',sctr.toFixed(3)+' %','benchmark 0,337 %']];
+  if(sum.unik)cards.push(['Unikátní zásah','≈ '+fmt(sum.unik),'']);
+  if(sum.freq)cards.push(['Frekvence',sum.freq.toFixed(2)+'×','']);
+  document.getElementById('cards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
 
-document.getElementById('insight').innerHTML='Červená čára = loňský benchmark 0,337 %. Zatím vedou loňské varianty; letošní junior texty jsou pod průměrem, ale vzorky jsou malé (8–19 prokliků) — není to verdikt. Varianta „Jezdíte na motorce? Vezměte juniora s sebou" se zatím vůbec nenasadila (0 zobrazení) — ověřit u Radka.';
+  const pb=document.getElementById('pacebox');
+  if(whole){pb.style.display='block';const pct=sum.imp/C.garant*100;const days=(new Date(C.end)-new Date(C.start))/864e5;const el=(new Date(endDate)-new Date(C.start))/864e5;document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';document.getElementById('pacenote').textContent='Uplynulo '+Math.round(el/days*100)+' % času ('+Math.round(el)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';}
+  else pb.style.display='none';
+
+  const dw=document.getElementById('dailywrap');
+  if(mode==='days'){dw.style.display='block';document.getElementById('dailyrows').innerHTML=D.daily.map(r=>`<tr><td>${cz(r.d)}</td><td class="num">${fmt(r.imp)}</td><td class="num">${r.clk}</td><td class="num">${(r.clk/r.imp*100).toFixed(3)} %</td><td class="num">${fmt(r.unik)}</td><td class="num">${r.freq.toFixed(2)}×</td></tr>`).join('');}
+  else dw.style.display='none';
+
+  const cre=creRange(od,doo,whole).slice().sort((a,b)=>ctr(b)-ctr(a));
+  const maxC=Math.max(...cre.map(ctr),C.bench)*1.1||1;const bw=C.bench/maxC*100;
+  let html=`<tr class="total"><td>Σ</td><td>CELKEM — všechny kreativy</td><td></td><td class="num">${fmt(sum.imp)}</td><td class="num">${sum.clk}</td><td class="num">${sctr.toFixed(3)} %</td><td><div class="ctrbar tot"><i style="width:${sctr/maxC*100}%"></i><b style="left:${bw}%"></b></div></td></tr>`;
+  html+=cre.map((a,i)=>{const c=ctr(a);const served=a.imp>0;return `<tr><td>${i+1}</td><td>${a.n}</td><td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td><td class="num">${served?fmt(a.imp):'<span class=zero>0</span>'}</td><td class="num">${served?a.clk:'<span class=zero>0</span>'}</td><td class="num ctrval">${served?c.toFixed(3)+' %':'—'}</td><td>${served?`<div class="ctrbar"><i style="width:${c/maxC*100}%"></i><b style="left:${bw}%"></b></div>`:'<span class=zero>nezobrazeno</span>'}</td></tr>`;}).join('');
+  document.getElementById('rows').innerHTML=html;
+  document.getElementById('insight').innerHTML='Modrý řádek = celá kampaň (průměrné CTR). Červená čára = loňský benchmark 0,337 %.';
+}
+function setMode(m){mode=m;document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));document.getElementById('rangebox').classList.toggle('show',m==='range');render();}
+document.querySelectorAll('#seg button').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.m)));
+document.getElementById('apply').addEventListener('click',render);
+function boot(){const C=D.campaign;document.getElementById('od').value=C.start;document.getElementById('do').value=D.daily.length?D.daily[D.daily.length-1].d:C.end;render();}
+fetch('data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.snaps)D=j;boot();}).catch(()=>boot());
+boot();
+
+/* ============ SKLIK (PPC) ============ */
+const SKLIK_DEFAULT={"updated":"18. 6. 2026, 07:30","account":{"name":"Pitland (jnoteplice@gmail.com)","credit":8059,"period":"16.–17. 6. 2026"},"summary":{"imp":4805,"clk":49,"cost":189.17,"orders":0,"orderVal":0,"leads":1},"campaigns":[{"n":"RTG | Bannery","typ":"retargeting","imp":4500,"clk":43,"cost":173.87,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Brand","typ":"brand","imp":4,"clk":4,"cost":8.30,"orders":0,"orderVal":0,"leads":1},{"n":"VS | Moto","typ":"nebrand","imp":74,"clk":2,"cost":7.00,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Motorky/jízdy","typ":"nebrand","imp":0,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0},{"n":"RTG | KR","typ":"retargeting","imp":1,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0}]};
+let SK=SKLIK_DEFAULT;
+const TYP={brand:['Brand','b-green'],retargeting:['Retargeting','b-new'],nebrand:['Nebrand','b-old']};
+function skRender(){
+  const s=SK.summary;
+  const sctr=s.imp>0?s.clk/s.imp*100:0;
+  const scpc=s.clk>0?s.cost/s.clk:0;
+  const spno=s.orderVal>0?s.cost/s.orderVal*100:null;
+  document.getElementById('sk-stamp').textContent='Sklik data k: '+SK.updated+' — období '+SK.account.period;
+  document.getElementById('sk-period').textContent=SK.account.period;
+  const cards=[
+    ['Prokliky',fmt(s.clk),''],
+    ['Zobrazení',fmt(s.imp),''],
+    ['CTR',sctr.toFixed(2)+' %',''],
+    ['CPC Ø',scpc.toFixed(2)+' Kč',''],
+    ['Cena',fmt(s.cost)+' Kč',''],
+    ['Objednávky',s.orders,s.orderVal>0?'hodnota '+fmt(s.orderVal)+' Kč'+(spno!=null?' · PNO '+spno.toFixed(1)+' %':''):'—'],
+    ['Leady (formuláře)',s.leads,''],
+    ['Zůstatek kreditu',fmt(SK.account.credit)+' Kč','']
+  ];
+  document.getElementById('sk-cards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+  const cs=SK.campaigns.slice().sort((a,b)=>b.cost-a.cost);
+  document.getElementById('sk-rows').innerHTML=cs.map(c=>{
+    const cctr=c.imp>0?c.clk/c.imp*100:0;
+    const ccpc=c.clk>0?c.cost/c.clk:0;
+    const cpno=c.orderVal>0?c.cost/c.orderVal*100:null;
+    const conv=(c.orders||0)+(c.leads||0);
+    const warn=(c.cost>=50&&conv===0);
+    const t=TYP[c.typ]||[c.typ,'b-old'];
+    return `<tr><td>${c.n}</td><td><span class="badge ${t[1]}">${t[0]}</span></td><td class="num">${c.clk}</td><td class="num">${fmt(c.imp)}</td><td class="num">${c.imp>0?cctr.toFixed(2)+' %':'—'}</td><td class="num">${c.clk>0?ccpc.toFixed(2)+' Kč':'—'}</td><td class="num ${warn?'zero':''}">${fmt(c.cost)} Kč</td><td class="num">${c.orders||0}</td><td class="num">${c.orderVal>0?fmt(c.orderVal)+' Kč':'—'}</td><td class="num">${c.leads||0}</td><td class="num">${cpno!=null?cpno.toFixed(1)+' %':'—'}</td></tr>`;
+  }).join('');
+  const watch=cs.filter(c=>c.cost>=50&&((c.orders||0)+(c.leads||0))===0).map(c=>c.n);
+  document.getElementById('sk-insight').innerHTML = (watch.length
+    ? '⚠️ Utrácí bez konverze (sleduj / případně přiškrť): <b>'+watch.join(', ')+'</b>. '
+    : '')
+    + 'Objednávky = typ „Purchase" (posílají hodnotu). Leady = odeslané formuláře (bez hodnoty). PNO počítáme jen z hodnoty objednávek.';
+}
+function skBoot(){skRender();}
+fetch('sklik-data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.summary)SK=j;skBoot();}).catch(()=>skBoot());
+skBoot();
+
+/* ============ PŘEPÍNAČ ZÁLOŽEK ============ */
+function setTab(t){
+  document.getElementById('view-sos').style.display=t==='sos'?'block':'none';
+  document.getElementById('view-sklik').style.display=t==='sklik'?'block':'none';
+  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));
+}
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.t)));
 </script>
 </body>
 </html>
