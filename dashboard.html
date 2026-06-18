@@ -124,6 +124,15 @@
     <tbody id="sk-rows"></tbody>
   </table>
   <p class="note" id="sk-insight"></p>
+
+  <h2 id="sk-gaH">Web po prokliku — co lidé dělají na webu (GA4)</h2>
+  <div class="cards" id="sk-gacards"></div>
+  <table id="sk-gatable">
+    <thead><tr><th>#</th><th>Kampaň</th><th class="num">Relace</th><th class="num">Míra zapojení</th><th style="width:30%">Zapojení vs průměr cpc</th><th class="num">Konverze</th><th class="num">Tržba</th></tr></thead>
+    <tbody id="sk-garows"></tbody>
+  </table>
+  <p class="note" id="sk-gainsight"></p>
+
   <p class="foot">Zdroj: Sklik. <b>MVP</b> — zatím seed data za období <span id="sk-period"></span>; automatický tah přes Sklik API doplníme (4×/den jako SOS). PNO a Hodnota konverze se zobrazí jen u kampaní, které posílají hodnotu objednávky.</p>
   </div>
 </div>
@@ -208,7 +217,7 @@ fetch('data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.s
 boot();
 
 /* ============ SKLIK (PPC) ============ */
-const SKLIK_DEFAULT={"updated":"18. 6. 2026, 07:30","account":{"name":"Pitland (jnoteplice@gmail.com)","credit":8059,"period":"16.–17. 6. 2026"},"summary":{"imp":4805,"clk":49,"cost":189.17,"orders":0,"orderVal":0,"leads":1},"campaigns":[{"n":"RTG | Bannery","typ":"retargeting","imp":4500,"clk":43,"cost":173.87,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Brand","typ":"brand","imp":4,"clk":4,"cost":8.30,"orders":0,"orderVal":0,"leads":1},{"n":"VS | Moto","typ":"nebrand","imp":74,"clk":2,"cost":7.00,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Motorky/jízdy","typ":"nebrand","imp":0,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0},{"n":"RTG | KR","typ":"retargeting","imp":1,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0}]};
+const SKLIK_DEFAULT={"updated":"18. 6. 2026, 07:30","account":{"name":"Pitland (jnoteplice@gmail.com)","credit":8059,"period":"16.–17. 6. 2026"},"summary":{"imp":4805,"clk":49,"cost":189.17,"orders":0,"orderVal":0,"leads":1},"campaigns":[{"n":"RTG | Bannery","typ":"retargeting","imp":4500,"clk":43,"cost":173.87,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Brand","typ":"brand","imp":4,"clk":4,"cost":8.30,"orders":0,"orderVal":0,"leads":1},{"n":"VS | Moto","typ":"nebrand","imp":74,"clk":2,"cost":7.00,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Motorky/jízdy","typ":"nebrand","imp":0,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0},{"n":"RTG | KR","typ":"retargeting","imp":1,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0}],"ga":{"date":"2026-06-18","window":"od startu kampaně (11. 6.)","site":{"sess":6071,"engRate":41.1,"conv":73,"rev":176150},"campaign":{"sess":355,"engRate":42.5,"conv":0,"rev":0},"cre":[{"n":"RTG | Bannery","sess":192,"engRate":34.4,"conv":0,"rev":0},{"n":"OS | bannery (bez RTG 30)","sess":127,"engRate":45.7,"conv":0,"rev":0},{"n":"VS | Brand","sess":27,"engRate":66.7,"conv":0,"rev":0},{"n":"VS | Motorky/jízdy","sess":7,"engRate":100.0,"conv":0,"rev":0},{"n":"VS | Moto","sess":3,"engRate":66.7,"conv":0,"rev":0}]}};
 let SK=SKLIK_DEFAULT;
 const TYP={brand:['Brand','b-green'],retargeting:['Retargeting','b-new'],nebrand:['Nebrand','b-old']};
 function skRender(){
@@ -244,6 +253,24 @@ function skRender(){
     ? '⚠️ Utrácí bez konverze (sleduj / případně přiškrť): <b>'+watch.join(', ')+'</b>. '
     : '')
     + 'Objednávky = typ „Purchase" (posílají hodnotu). Leady = odeslané formuláře (bez hodnoty). PNO počítáme jen z hodnoty objednávek.';
+  renderSkGA();
+}
+function renderSkGA(){
+  const g=SK.ga;
+  if(!g){['sk-gaH','sk-gatable','sk-gainsight'].forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='none';});var c=document.getElementById('sk-gacards');if(c)c.innerHTML='';return;}
+  const cm=g.campaign;
+  const cards=[
+    ['Relace ze Skliku',fmt(cm.sess),'GA4, '+g.window],
+    ['Míra zapojení',pc1(cm.engRate)+' %','zapojené návštěvy'],
+    ['Konverze (GA4)',cm.conv,cm.conv===0?'zatím žádná':''],
+    ['Tržba (GA4)',fmt(cm.rev)+' Kč','']
+  ];
+  document.getElementById('sk-gacards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+  const cre=g.cre.slice().sort((a,b)=>b.engRate-a.engRate);
+  const maxE=Math.max(...cre.map(c=>c.engRate),cm.engRate)*1.1||1;const aw=cm.engRate/maxE*100;
+  document.getElementById('sk-garows').innerHTML=cre.map((c,i)=>`<tr><td>${i+1}</td><td>${c.n}</td><td class="num">${c.sess}</td><td class="num ctrval">${pc1(c.engRate)} %</td><td><div class="ctrbar"><i style="width:${c.engRate/maxE*100}%"></i><b style="left:${aw}%"></b></div></td><td class="num">${c.conv?c.conv:'<span class=zero>0</span>'}</td><td class="num">${c.rev?fmt(c.rev)+' Kč':'—'}</td></tr>`).join('');
+  let n='Data k '+cz(g.date)+' ('+g.window+'). Sklik provoz v GA4 = zdroj/médium <i>seznam / cpc</i>. „Míra zapojení" = podíl návštěv, kdy člověk na webu zůstal a něco dělal. Červená čára = průměr Skliku ('+pc1(cm.engRate)+' %). Konverze = klíčová událost <i>purchase</i> přiřazená Sklik prokliku'+(cm.conv?'.':'; zatím 0 — placené kanály přivádějí, prodej zavírá hlavně brand/organic.');
+  document.getElementById('sk-gainsight').innerHTML=n;
 }
 function skBoot(){skRender();}
 fetch('sklik-data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.summary)SK=j;skBoot();}).catch(()=>skBoot());
