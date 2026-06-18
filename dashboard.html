@@ -110,13 +110,14 @@ function render(){
   const C=D.campaign;
   document.getElementById('stamp').textContent='Data k: '+D.updated+' — zdroj: SOS export';
   const lastDay=D.daily.length?D.daily[D.daily.length-1].d:C.start;
+  const endDate=D.snaps.length?D.snaps[D.snaps.length-1].d:lastDay;
   let od,doo,whole=false,lbl='';
-  if(mode==='all'||mode==='days'){od=C.start;doo=lastDay;whole=true;lbl='Celé období 11. 6. – '+cz(lastDay)+' (kumulativně od startu)';}
+  if(mode==='all'||mode==='days'){od=C.start;doo=endDate;whole=true;lbl='Celé období 11. 6. – '+cz(endDate)+' (kumulativně od startu)';}
   else{od=document.getElementById('od').value||C.start;doo=document.getElementById('do').value||lastDay;lbl='Období '+cz(od)+' – '+cz(doo);}
   document.getElementById('rangelbl').textContent=lbl;
 
   let sum;
-  if(whole){const L=latest();sum={imp:L.cre.reduce((a,c)=>a+c.imp,0),clk:L.cre.reduce((a,c)=>a+c.clk,0)};const ld=D.daily[D.daily.length-1]||{};sum.unik=ld.unik;sum.freq=ld.freq;}
+  if(whole){const L=latest();sum={imp:L.cre.reduce((a,c)=>a+c.imp,0),clk:L.cre.reduce((a,c)=>a+c.clk,0)};const ld=D.daily[D.daily.length-1]||{};sum.freq=ld.freq;sum.unik=ld.freq?Math.round(sum.imp/ld.freq):ld.unik;}
   else{sum=rangeCampaign(od,doo);}
   const sctr=sum.imp>0?sum.clk/sum.imp*100:0;
   const cards=[['Zobrazení',fmt(sum.imp),whole?'z '+fmt(C.garant)+' garant.':''],['Prokliky',fmt(sum.clk),''],['CTR',sctr.toFixed(3)+' %','benchmark 0,337 %']];
@@ -125,7 +126,7 @@ function render(){
   document.getElementById('cards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
 
   const pb=document.getElementById('pacebox');
-  if(whole){pb.style.display='block';const pct=sum.imp/C.garant*100;const days=(new Date(C.end)-new Date(C.start))/864e5;const el=(new Date(lastDay)-new Date(C.start))/864e5;document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';document.getElementById('pacenote').textContent='Uplynulo '+Math.round(el/days*100)+' % času ('+Math.round(el)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';}
+  if(whole){pb.style.display='block';const pct=sum.imp/C.garant*100;const days=(new Date(C.end)-new Date(C.start))/864e5;const el=(new Date(endDate)-new Date(C.start))/864e5;document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';document.getElementById('pacenote').textContent='Uplynulo '+Math.round(el/days*100)+' % času ('+Math.round(el)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';}
   else pb.style.display='none';
 
   const dw=document.getElementById('dailywrap');
