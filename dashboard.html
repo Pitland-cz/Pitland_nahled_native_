@@ -198,8 +198,7 @@ function renderGA(){
     ['Relace ze Seznamu',fmt(cm.sess),'GA4, '+g.window],
     ['Míra zapojení',pc1(cm.engRate)+' %','zapojené návštěvy'],
     ['Konverze z kampaně',cm.conv,cm.conv===0?'zatím žádná':''],
-    ['Tržba z kampaně',fmt(cm.rev)+' Kč',''],
-    ['Konverze celý web',g.site.conv+' / '+fmt(g.site.rev)+' Kč','pro kontext, všechny kanály']
+    ['Tržba z kampaně',fmt(cm.rev)+' Kč','']
   ];
   document.getElementById('gacards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
   const cre=g.cre.slice().sort((a,b)=>b.engRate-a.engRate);
