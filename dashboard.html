@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pitland × Seznam — dashboard kampaně Barter Pitland</title>
 <style>
-  :root{--bg:#faf9f5;--card:#fff;--ink:#1f1f1d;--mut:#6b6a66;--hint:#9b9a95;--bd:#e4e2da;--blue:#185fa5;--blue-bg:#e8f1fb;--green:#1d9e75;--amber:#b97e12;--red:#c0392b;--bar:#cfe0f3}
+  :root{--bg:#faf9f5;--card:#fff;--ink:#1f1f1d;--mut:#6b6a66;--hint:#9b9a95;--bd:#e4e2da;--blue:#185fa5;--blue-bg:#e8f1fb;--green:#1d9e75;--amber:#b97e12;--red:#c0392b}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
   .wrap{max-width:1000px;margin:0 auto;padding:28px 20px 56px}
@@ -26,11 +26,13 @@
   th{font-size:12px;color:var(--mut);font-weight:600;background:#f4f2ec}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   tr:last-child td{border-bottom:none}
+  tr.total td{background:#eef3f8;font-weight:600;border-bottom:2px solid #d3e0ef}
   .badge{font-size:11px;padding:2px 8px;border-radius:7px;white-space:nowrap}
   .b-new{background:#e8f1fb;color:#185fa5}
   .b-old{background:#f1efe8;color:#6b6a66}
   .ctrbar{position:relative;height:18px;background:#f1efe8;border-radius:4px;min-width:120px}
   .ctrbar i{position:absolute;left:0;top:0;height:100%;background:var(--green);border-radius:4px;opacity:.85}
+  .ctrbar.tot i{background:var(--blue)}
   .ctrbar b{position:absolute;left:0;top:0;width:2px;height:100%;background:var(--red)}
   .ctrval{font-weight:600;font-variant-numeric:tabular-nums}
   .win{color:var(--green)}
@@ -44,7 +46,7 @@
 <div class="wrap">
   <h1>Barter Pitland — letní kampaň na Seznam.cz</h1>
   <p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120469226 · termín 11.–28. 6. 2026 · stav <b>Běžící</b> · vlastník Radek Krechler</p>
-  <span class="stamp" id="stamp">Data k: 18. 6. 2026, 00:01 — zdroj: SOS export</span>
+  <span class="stamp" id="stamp">Data k: 18. 6. 2026, 08:25 — zdroj: SOS export</span>
 
   <h2>Souhrn kampaně</h2>
   <div class="cards" id="cards"></div>
@@ -66,24 +68,24 @@
 </div>
 
 <script>
-const SUM={imp:68532,clk:196,unik:60296,freq:2.0803,garant:475000,bench:0.337,start:"2026-06-11",end:"2026-06-28",dataDay:"2026-06-18"};
+const SUM={imp:70512,clk:206,unik:67800,freq:1.04,garant:475000,bench:0.337,start:"2026-06-11",end:"2026-06-28",dataDay:"2026-06-18"};
 const ADS=[
- {n:"Chce na motorku? Ať se to naučí v bezpečí haly.",typ:"loni",imp:10408,clk:37},
- {n:"Bezpečný start pro nejmenší motorkáře",typ:"loni",imp:10435,clk:33},
- {n:"Váš junior sní o motorkách? Řešení je v Praze",typ:"letošní",imp:10341,clk:31},
- {n:"Jezdíte na motorce? Vezměte juniora s sebou",typ:"letošní",imp:5827,clk:17},
- {n:"První jízda na motorce už od deseti let",typ:"letošní",imp:10570,clk:27},
- {n:"Začněte spolu jezdit už od 10ti let",typ:"loni",imp:10539,clk:26},
- {n:"Chce být jako ty? Ukaž mu bezpečnou cestu",typ:"loni",imp:10412,clk:25},
+ {n:"Chce na motorku? Ať se to naučí v bezpečí haly.",typ:"loni",imp:10684,clk:37},
+ {n:"Jezdíte na motorce? Vezměte juniora s sebou",typ:"letošní",imp:6119,clk:19},
+ {n:"Bezpečný start pro nejmenší motorkáře",typ:"loni",imp:10696,clk:33},
+ {n:"Váš junior sní o motorkách? Řešení je v Praze",typ:"letošní",imp:10656,clk:32},
+ {n:"Začněte spolu jezdit už od 10ti let",typ:"loni",imp:10810,clk:29},
+ {n:"První jízda na motorce už od deseti let",typ:"letošní",imp:10847,clk:29},
+ {n:"Chce být jako ty? Ukaž mu bezpečnou cestu",typ:"loni",imp:10700,clk:27},
 ];
-const fmt=n=>n.toLocaleString('cs-CZ');
+const fmt=n=>Math.round(n).toLocaleString('cs-CZ');
 const ctr=a=>a.imp>0?(a.clk/a.imp*100):0;
 const sumCtr=(SUM.clk/SUM.imp*100);
 document.getElementById('cards').innerHTML=[
  ['Zobrazení',fmt(SUM.imp),'z '+fmt(SUM.garant)+' garant.'],
  ['Prokliky',fmt(SUM.clk),''],
  ['CTR',sumCtr.toFixed(3)+' %','benchmark 0,337 %'],
- ['Unikátní zásah',fmt(SUM.unik),''],
+ ['Unikátní zásah','≈ '+fmt(SUM.unik),''],
  ['Frekvence',SUM.freq.toFixed(2)+'×','ideál 25–30 později'],
 ].map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
 
@@ -96,14 +98,17 @@ document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';
 document.getElementById('pacenote').textContent='Uplynulo '+Math.round(timePct)+' % času kampaně ('+Math.round(elapsed)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';
 
 const maxCtr=Math.max(...ADS.map(ctr),SUM.bench)*1.1;
-document.getElementById('rows').innerHTML=ADS.map((a,i)=>{
- const c=ctr(a);
- const w=maxCtr>0?(c/maxCtr*100):0;
- const bw=SUM.bench/maxCtr*100;
- const served=a.imp>0;
+const bw=SUM.bench/maxCtr*100;
+let html=`<tr class="total">
+  <td>Σ</td><td>CELKEM — všechny kreativy</td><td></td>
+  <td class="num">${fmt(SUM.imp)}</td><td class="num">${SUM.clk}</td>
+  <td class="num">${sumCtr.toFixed(3)} %</td>
+  <td><div class="ctrbar tot"><i style="width:${sumCtr/maxCtr*100}%"></i><b style="left:${bw}%"></b></div></td>
+</tr>`;
+html+=ADS.map((a,i)=>{
+ const c=ctr(a);const w=maxCtr>0?(c/maxCtr*100):0;const served=a.imp>0;
  return `<tr>
-  <td>${i+1}</td>
-  <td>${a.n}</td>
+  <td>${i+1}</td><td>${a.n}</td>
   <td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td>
   <td class="num">${served?fmt(a.imp):'<span class="zero">0</span>'}</td>
   <td class="num">${served?a.clk:'<span class="zero">0</span>'}</td>
@@ -111,8 +116,9 @@ document.getElementById('rows').innerHTML=ADS.map((a,i)=>{
   <td>${served?`<div class="ctrbar"><i style="width:${w}%"></i><b style="left:${bw}%"></b></div>`:'<span class="zero">nezobrazeno</span>'}</td>
  </tr>`;
 }).join('');
+document.getElementById('rows').innerHTML=html;
 
-document.getElementById('insight').innerHTML='Červená čára = loňský benchmark 0,337 %. Zatím vedou loňské varianty; letošní junior texty jsou pod průměrem, ale vzorky jsou malé (8–19 prokliků) — není to verdikt. Varianta „Jezdíte na motorce? Vezměte juniora s sebou" se zatím vůbec nenasadila (0 zobrazení) — ověřit u Radka.';
+document.getElementById('insight').innerHTML='Modrý řádek = celá kampaň (průměrné CTR přes všechny kreativy). Červená čára = loňský benchmark 0,337 %. Pole se srovnalo do pásma 0,25–0,35 %; vede „Chce na motorku" (loni), druhá je letošní „Vezměte juniora s sebou", která se rozjela později. Rotace je rovnoměrná — Seznam zatím nepřeklopil objem na vítěze.';
 </script>
 </body>
 </html>
