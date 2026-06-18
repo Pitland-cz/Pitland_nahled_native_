@@ -24,5 +24,21 @@
       {"n": "Chce na motorku? Ať se to naučí v bezpečí haly.", "typ": "loni", "imp": 10684, "clk": 37},
       {"n": "Bezpečný start pro nejmenší motorkáře", "typ": "loni", "imp": 10696, "clk": 33}
     ]}
-  ]
+  ],
+  "ga": {
+    "date": "2026-06-17",
+    "window": "28denní okno",
+    "site": {"conv": 148, "rev": 391688},
+    "campaign": {"sess": 197, "engRate": 32.99, "conv": 0, "rev": 0},
+    "notset": {"sess": 97, "engRate": 65.98},
+    "cre": [
+      {"n": "Chce na motorku? Ať se to naučí v bezpečí haly.", "sess": 32, "engRate": 43.75, "conv": 0, "rev": 0},
+      {"n": "Bezpečný start pro nejmenší motorkáře", "sess": 28, "engRate": 32.14, "conv": 0, "rev": 0},
+      {"n": "Chce být jako ty? Ukaž mu bezpečnou cestu", "sess": 17, "engRate": 23.53, "conv": 0, "rev": 0},
+      {"n": "Začněte spolu jezdit už od 10ti let", "sess": 22, "engRate": 22.73, "conv": 0, "rev": 0},
+      {"n": "První jízda na motorce už od deseti let", "sess": 22, "engRate": 22.73, "conv": 0, "rev": 0},
+      {"n": "Jezdíte na motorce? Vezměte juniora s sebou", "sess": 22, "engRate": 22.73, "conv": 0, "rev": 0},
+      {"n": "Váš junior sní o motorkách? Řešení je v Praze", "sess": 27, "engRate": 14.81, "conv": 0, "rev": 0}
+    ]
+  }
 }

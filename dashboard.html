@@ -87,11 +87,20 @@
     <tbody id="rows"></tbody>
   </table>
   <p class="note" id="insight"></p>
-  <p class="foot">Zdroj: SOS export, obnovováno 4×/den. Konverze zatím nesledujeme (nový web nemá nasazené GA4). Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>. Per‑kreativa za vlastní období se dopočítává z denních snímků — přesnost roste s časem.</p>
+
+  <h2 id="gaH">Web po prokliku — co lidé dělají na webu (GA4)</h2>
+  <div class="cards" id="gacards"></div>
+  <table id="gatable">
+    <thead><tr><th>#</th><th>Kreativa</th><th class="num">Relace</th><th class="num">Míra zapojení</th><th style="width:30%">Zapojení vs průměr kampaně</th><th class="num">Konverze</th><th class="num">Tržba</th></tr></thead>
+    <tbody id="garows"></tbody>
+  </table>
+  <p class="note" id="gainsight"></p>
+
+  <p class="foot">Zdroj: SOS export (zobrazení, prokliky, CTR) + GA4 (relace, zapojení, konverze). Obnovováno 4×/den. Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>. Per‑kreativa za vlastní období (SOS) se dopočítává z denních snímků — přesnost roste s časem.</p>
 </div>
 
 <script>
-const DEFAULT={"updated":"18. 6. 2026, 08:25","campaign":{"id":"8120469226","name":"Barter Pitland","start":"2026-06-11","end":"2026-06-28","garant":475000,"bench":0.337},"daily":[{"d":"2026-06-16","imp":28260,"clk":83,"unik":25237,"freq":1.034},{"d":"2026-06-17","imp":42252,"clk":123,"unik":36803,"freq":1.047}],"snaps":[{"d":"2026-06-16","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":0,"clk":0},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":4516,"clk":10},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":4507,"clk":8},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":4533,"clk":9},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":4406,"clk":13},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":4455,"clk":19},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":4506,"clk":18}]},{"d":"2026-06-18","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":6119,"clk":19},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":10847,"clk":29},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":10656,"clk":32},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":10810,"clk":29},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":10700,"clk":27},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":10684,"clk":37},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":10696,"clk":33}]}]};
+const DEFAULT={"updated":"18. 6. 2026, 08:25","campaign":{"id":"8120469226","name":"Barter Pitland","start":"2026-06-11","end":"2026-06-28","garant":475000,"bench":0.337},"daily":[{"d":"2026-06-16","imp":28260,"clk":83,"unik":25237,"freq":1.034},{"d":"2026-06-17","imp":42252,"clk":123,"unik":36803,"freq":1.047}],"snaps":[{"d":"2026-06-16","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":0,"clk":0},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":4516,"clk":10},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":4507,"clk":8},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":4533,"clk":9},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":4406,"clk":13},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":4455,"clk":19},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":4506,"clk":18}]},{"d":"2026-06-18","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":6119,"clk":19},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":10847,"clk":29},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":10656,"clk":32},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":10810,"clk":29},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":10700,"clk":27},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":10684,"clk":37},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":10696,"clk":33}]}],"ga":{"date":"2026-06-17","window":"28denní okno","site":{"conv":148,"rev":391688},"campaign":{"sess":197,"engRate":32.99,"conv":0,"rev":0},"notset":{"sess":97,"engRate":65.98},"cre":[{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","sess":32,"engRate":43.75,"conv":0,"rev":0},{"n":"Bezpečný start pro nejmenší motorkáře","sess":28,"engRate":32.14,"conv":0,"rev":0},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","sess":17,"engRate":23.53,"conv":0,"rev":0},{"n":"Začněte spolu jezdit už od 10ti let","sess":22,"engRate":22.73,"conv":0,"rev":0},{"n":"První jízda na motorce už od deseti let","sess":22,"engRate":22.73,"conv":0,"rev":0},{"n":"Jezdíte na motorce? Vezměte juniora s sebou","sess":22,"engRate":22.73,"conv":0,"rev":0},{"n":"Váš junior sní o motorkách? Řešení je v Praze","sess":27,"engRate":14.81,"conv":0,"rev":0}]}};
 let D=DEFAULT, mode="all";
 const fmt=n=>Math.round(n).toLocaleString('cs-CZ');
 const cz=d=>{const[y,m,da]=d.split('-');return da*1+'. '+m*1+'.';};
@@ -139,6 +148,25 @@ function render(){
   html+=cre.map((a,i)=>{const c=ctr(a);const served=a.imp>0;return `<tr><td>${i+1}</td><td>${a.n}</td><td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td><td class="num">${served?fmt(a.imp):'<span class=zero>0</span>'}</td><td class="num">${served?a.clk:'<span class=zero>0</span>'}</td><td class="num ctrval">${served?c.toFixed(3)+' %':'—'}</td><td>${served?`<div class="ctrbar"><i style="width:${c/maxC*100}%"></i><b style="left:${bw}%"></b></div>`:'<span class=zero>nezobrazeno</span>'}</td></tr>`;}).join('');
   document.getElementById('rows').innerHTML=html;
   document.getElementById('insight').innerHTML='Modrý řádek = celá kampaň (průměrné CTR). Červená čára = loňský benchmark 0,337 %.';
+  renderGA();
+}
+const pc1=n=>n.toFixed(1).replace('.',',');
+function renderGA(){
+  const g=D.ga;
+  if(!g){['gaH','gatable','gainsight'].forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='none';});document.getElementById('gacards').innerHTML='';return;}
+  const cm=g.campaign;
+  const cards=[
+    ['Relace ze Seznamu',fmt(cm.sess),'GA4, '+g.window],
+    ['Míra zapojení',pc1(cm.engRate)+' %','zapojené návštěvy'],
+    ['Konverze z kampaně',cm.conv,cm.conv===0?'zatím žádná':''],
+    ['Tržba z kampaně',fmt(cm.rev)+' Kč',''],
+    ['Konverze celý web',g.site.conv+' / '+fmt(g.site.rev)+' Kč','pro kontext, všechny kanály']
+  ];
+  document.getElementById('gacards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+  const cre=g.cre.slice().sort((a,b)=>b.engRate-a.engRate);
+  const maxE=Math.max(...cre.map(c=>c.engRate),cm.engRate)*1.1||1;const aw=cm.engRate/maxE*100;
+  document.getElementById('garows').innerHTML=cre.map((c,i)=>`<tr><td>${i+1}</td><td>${c.n}</td><td class="num">${c.sess}</td><td class="num ctrval">${pc1(c.engRate)} %</td><td><div class="ctrbar"><i style="width:${c.engRate/maxE*100}%"></i><b style="left:${aw}%"></b></div></td><td class="num">${c.conv?c.conv:'<span class=zero>0</span>'}</td><td class="num">${c.rev?fmt(c.rev)+' Kč':'—'}</td></tr>`).join('');
+  document.getElementById('gainsight').innerHTML='Data k '+cz(g.date)+' ('+g.window+'). „Míra zapojení" = podíl návštěv, kdy člověk na webu zůstal a něco dělal — ukazuje kvalitu prokliku. Červená čára = průměr kampaně ('+pc1(cm.engRate)+' %). Konverze = klíčová událost <i>purchase</i> přiřazená kampani; zatím 0 — nativ je horní trychtýř, prodeje dopadají později jinými kanály. Pozn.: '+g.notset.sess+' relací kampaně má neoznačený obsah (utm_content), u nich rozpad po kreativě chybí.';
 }
 function setMode(m){mode=m;document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));document.getElementById('rangebox').classList.toggle('show',m==='range');render();}
 document.querySelectorAll('#seg button').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.m)));
