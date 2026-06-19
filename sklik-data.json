@@ -66,25 +66,25 @@
     }
   ],
   "ga": {
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 6071,
-      "engRate": 41.1,
+      "sess": 6287,
+      "engRate": 39.8,
       "conv": 73,
       "rev": 176150
     },
     "campaign": {
-      "sess": 355,
-      "engRate": 42.5,
+      "sess": 359,
+      "engRate": 42.3,
       "conv": 0,
       "rev": 0
     },
     "cre": [
       {
         "n": "RTG | Bannery",
-        "sess": 192,
-        "engRate": 34.4,
+        "sess": 196,
+        "engRate": 34.2,
         "conv": 0,
         "rev": 0
       },
