@@ -185,10 +185,10 @@
     "date": "2026-06-19",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 6526,
-      "engRate": 46.1,
-      "conv": 80,
-      "rev": 195095
+      "sess": 6541,
+      "engRate": 46.0,
+      "conv": 82,
+      "rev": 197090
     },
     "campaign": {
       "sess": 296,
