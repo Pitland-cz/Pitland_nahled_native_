@@ -1,5 +1,5 @@
 {
-  "updated": "19. 6. 2026, 22:58",
+  "updated": "19. 6. 2026, 21:30",
   "campaign": {
     "id": "8120469226",
     "name": "Barter Pitland",
@@ -32,10 +32,10 @@
     },
     {
       "d": "2026-06-19",
-      "imp": 40410,
-      "clk": 105,
-      "unik": 35116,
-      "freq": 1.047
+      "imp": 36209,
+      "clk": 95,
+      "unik": 31466,
+      "freq": 1.044
     }
   ],
   "snaps": [
@@ -138,45 +138,45 @@
       "cre": [
         {
           "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-          "imp": 18050,
-          "clk": 45,
-          "typ": "letošní"
+          "typ": "letošní",
+          "imp": 17410,
+          "clk": 41
         },
         {
           "n": "První jízda na motorce už od deseti let",
-          "imp": 22737,
-          "clk": 45,
-          "typ": "letošní"
+          "typ": "letošní",
+          "imp": 22119,
+          "clk": 45
         },
         {
           "n": "Váš junior sní o motorkách? Řešení je v Praze",
-          "imp": 22558,
-          "clk": 57,
-          "typ": "letošní"
+          "typ": "letošní",
+          "imp": 21958,
+          "clk": 57
         },
         {
           "n": "Začněte spolu jezdit už od 10ti let",
-          "imp": 22560,
-          "clk": 68,
-          "typ": "loni"
+          "typ": "loni",
+          "imp": 21988,
+          "clk": 65
         },
         {
           "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-          "imp": 22341,
-          "clk": 48,
-          "typ": "loni"
+          "typ": "loni",
+          "imp": 21754,
+          "clk": 47
         },
         {
           "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-          "imp": 22522,
-          "clk": 73,
-          "typ": "loni"
+          "typ": "loni",
+          "imp": 21964,
+          "clk": 72
         },
         {
           "n": "Bezpečný start pro nejmenší motorkáře",
-          "imp": 22399,
-          "clk": 59,
-          "typ": "loni"
+          "typ": "loni",
+          "imp": 21773,
+          "clk": 58
         }
       ]
     }
@@ -185,14 +185,14 @@
     "date": "2026-06-19",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 6482,
-      "engRate": 46.4,
-      "conv": 79,
-      "rev": 193730
+      "sess": 6526,
+      "engRate": 46.1,
+      "conv": 80,
+      "rev": 195095
     },
     "campaign": {
-      "sess": 294,
-      "engRate": 52.0,
+      "sess": 296,
+      "engRate": 51.7,
       "conv": 0,
       "rev": 0
     },
@@ -203,8 +203,8 @@
     "cre": [
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 57,
-        "engRate": 71.9,
+        "sess": 58,
+        "engRate": 70.7,
         "conv": 0,
         "rev": 0
       },
@@ -245,8 +245,8 @@
       },
       {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 25,
-        "engRate": 20.0,
+        "sess": 26,
+        "engRate": 19.2,
         "conv": 0,
         "rev": 0
       }
