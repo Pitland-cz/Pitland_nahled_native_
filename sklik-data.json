@@ -1,111 +1,12 @@
 {
-  "updated": "19. 6. 2026, 12:10",
-  "account": {
-    "name": "Pitland (jnoteplice@gmail.com)",
-    "credit": 7691.43,
-    "period": "16. 6. – 19. 6. 2026"
-  },
-  "summary": {
-    "imp": 10804,
-    "clk": 114,
-    "cost": 446.78,
-    "orders": 2,
-    "orderVal": 2700,
-    "leads": 0
-  },
+  "updated": "19. 6. 2026, 17:23",
+  "account": {"name": "Pitland (jnoteplice@gmail.com)", "credit": 7679.73, "period": "16. 6. – 19. 6. 2026"},
+  "summary": {"imp": 10863, "clk": 121, "cost": 466.96, "orders": 2, "orderVal": 2700, "leads": 0},
   "campaigns": [
-    {
-      "n": "RTG | Bannery",
-      "typ": "retargeting",
-      "imp": 10243,
-      "clk": 97,
-      "cost": 412.69,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "VS | Brand",
-      "typ": "brand",
-      "imp": 13,
-      "clk": 11,
-      "cost": 16.3,
-      "orders": 2,
-      "orderVal": 2700,
-      "leads": 0
-    },
-    {
-      "n": "VS | Moto",
-      "typ": "nebrand",
-      "imp": 171,
-      "clk": 4,
-      "cost": 11.2,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "RTG | KR",
-      "typ": "retargeting",
-      "imp": 362,
-      "clk": 2,
-      "cost": 6.59,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    }
-  ],
-  "ga": {
-    "date": "2026-06-19",
-    "window": "od startu kampaně (11. 6.)",
-    "site": {
-      "sess": 6447,
-      "engRate": 38.9,
-      "conv": 77,
-      "rev": 189080
-    },
-    "campaign": {
-      "sess": 363,
-      "engRate": 41.9,
-      "conv": 0,
-      "rev": 0
-    },
-    "cre": [
-      {
-        "n": "RTG | Bannery",
-        "sess": 199,
-        "engRate": 33.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "OS | bannery (bez RTG 30)",
-        "sess": 127,
-        "engRate": 45.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Brand",
-        "sess": 27,
-        "engRate": 66.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Motorky/jízdy",
-        "sess": 7,
-        "engRate": 100.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Moto",
-        "sess": 3,
-        "engRate": 66.7,
-        "conv": 0,
-        "rev": 0
-      }
-    ]
-  }
+    {"n": "RTG | Bannery", "typ": "retargeting", "imp": 10243, "clk": 97, "cost": 412.69, "orders": 0, "orderVal": 0, "leads": 0},
+    {"n": "VS | Brand", "typ": "brand", "imp": 14, "clk": 12, "cost": 17.50, "orders": 2, "orderVal": 2700, "leads": 0},
+    {"n": "VS | Moto", "typ": "nebrand", "imp": 197, "clk": 7, "cost": 19.98, "orders": 0, "orderVal": 0, "leads": 0},
+    {"n": "RTG | KR", "typ": "retargeting", "imp": 391, "clk": 3, "cost": 9.99, "orders": 0, "orderVal": 0, "leads": 0},
+    {"n": "VS | Motorky/jízdy", "typ": "nebrand", "imp": 18, "clk": 2, "cost": 6.80, "orders": 0, "orderVal": 0, "leads": 0}
+  ]
 }
