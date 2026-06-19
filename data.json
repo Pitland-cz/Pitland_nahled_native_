@@ -131,14 +131,14 @@
     "date": "2026-06-19",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 6287,
-      "engRate": 39.8,
-      "conv": 73,
-      "rev": 176150
+      "sess": 6447,
+      "engRate": 38.9,
+      "conv": 77,
+      "rev": 189080
     },
     "campaign": {
-      "sess": 274,
-      "engRate": 42.7,
+      "sess": 286,
+      "engRate": 40.9,
       "conv": 0,
       "rev": 0
     },
@@ -156,22 +156,22 @@
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 36,
-        "engRate": 50.0,
+        "sess": 39,
+        "engRate": 46.2,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 47,
-        "engRate": 48.9,
+        "sess": 52,
+        "engRate": 44.2,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 34,
-        "engRate": 38.2,
+        "sess": 36,
+        "engRate": 36.1,
         "conv": 0,
         "rev": 0
       },
@@ -184,8 +184,8 @@
       },
       {
         "n": "První jízda na motorce už od deseti let",
-        "sess": 31,
-        "engRate": 29.0,
+        "sess": 33,
+        "engRate": 27.3,
         "conv": 0,
         "rev": 0
       },
