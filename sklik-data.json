@@ -1,11 +1,11 @@
 {
-  "updated": "19. 6. 2026, 08:04",
-  "account": {"name": "Pitland (jnoteplice@gmail.com)", "credit": 7721.95, "period": "16. 6. – 19. 6. 2026"},
-  "summary": {"imp": 10270, "clk": 108, "cost": 416.26, "orders": 2, "orderVal": 2700, "leads": 0},
+  "updated": "19. 6. 2026, 12:10",
+  "account": {"name": "Pitland (jnoteplice@gmail.com)", "credit": 7691.43, "period": "16. 6. – 19. 6. 2026"},
+  "summary": {"imp": 10804, "clk": 114, "cost": 446.78, "orders": 2, "orderVal": 2700, "leads": 0},
   "campaigns": [
-    {"n": "RTG | Bannery", "typ": "retargeting", "imp": 9718, "clk": 91, "cost": 382.17, "orders": 0, "orderVal": 0, "leads": 0},
+    {"n": "RTG | Bannery", "typ": "retargeting", "imp": 10243, "clk": 97, "cost": 412.69, "orders": 0, "orderVal": 0, "leads": 0},
     {"n": "VS | Brand", "typ": "brand", "imp": 13, "clk": 11, "cost": 16.30, "orders": 2, "orderVal": 2700, "leads": 0},
-    {"n": "VS | Moto", "typ": "nebrand", "imp": 164, "clk": 4, "cost": 11.20, "orders": 0, "orderVal": 0, "leads": 0},
-    {"n": "RTG | KR", "typ": "retargeting", "imp": 361, "clk": 2, "cost": 6.59, "orders": 0, "orderVal": 0, "leads": 0}
+    {"n": "VS | Moto", "typ": "nebrand", "imp": 171, "clk": 4, "cost": 11.20, "orders": 0, "orderVal": 0, "leads": 0},
+    {"n": "RTG | KR", "typ": "retargeting", "imp": 362, "clk": 2, "cost": 6.59, "orders": 0, "orderVal": 0, "leads": 0}
   ]
 }
