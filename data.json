@@ -1,309 +1,309 @@
 {
- "updated": "20. 6. 2026, 11:37",
- "campaign": {
-  "id": "8120469226",
-  "name": "Barter Pitland",
-  "start": "2026-06-11",
-  "end": "2026-06-28",
-  "garant": 475000,
-  "bench": 0.337
- },
- "daily": [
-  {
-   "d": "2026-06-16",
-   "imp": 28260,
-   "clk": 83,
-   "unik": 25237,
-   "freq": 1.034
-  },
-  {
-   "d": "2026-06-17",
-   "imp": 42252,
-   "clk": 123,
-   "unik": 36803,
-   "freq": 1.047
-  },
-  {
-   "d": "2026-06-18",
-   "imp": 42245,
-   "clk": 84,
-   "unik": 36944,
-   "freq": 1.045
-  },
-  {
-   "d": "2026-06-19",
-   "imp": 42251,
-   "clk": 117,
-   "unik": 36708,
-   "freq": 1.048
-  },
-  {
-   "d": "2026-06-20",
-   "imp": 9128,
-   "clk": 29,
-   "unik": 8185,
-   "freq": 1.021
-  }
- ],
- "snaps": [
-  {
-   "d": "2026-06-16",
-   "cre": [
-    {
-     "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-     "typ": "letošní",
-     "imp": 0,
-     "clk": 0
-    },
-    {
-     "n": "První jízda na motorce už od deseti let",
-     "typ": "letošní",
-     "imp": 4516,
-     "clk": 10
-    },
-    {
-     "n": "Váš junior sní o motorkách? Řešení je v Praze",
-     "typ": "letošní",
-     "imp": 4507,
-     "clk": 8
-    },
-    {
-     "n": "Začněte spolu jezdit už od 10ti let",
-     "typ": "loni",
-     "imp": 4533,
-     "clk": 9
-    },
-    {
-     "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-     "typ": "loni",
-     "imp": 4406,
-     "clk": 13
-    },
-    {
-     "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-     "typ": "loni",
-     "imp": 4455,
-     "clk": 19
-    },
-    {
-     "n": "Bezpečný start pro nejmenší motorkáře",
-     "typ": "loni",
-     "imp": 4506,
-     "clk": 18
-    }
-   ]
-  },
-  {
-   "d": "2026-06-18",
-   "cre": [
-    {
-     "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-     "typ": "letošní",
-     "imp": 11271,
-     "clk": 29
-    },
-    {
-     "n": "První jízda na motorce už od deseti let",
-     "typ": "letošní",
-     "imp": 15975,
-     "clk": 34
-    },
-    {
-     "n": "Váš junior sní o motorkách? Řešení je v Praze",
-     "typ": "letošní",
-     "imp": 15895,
-     "clk": 40
-    },
-    {
-     "n": "Začněte spolu jezdit už od 10ti let",
-     "typ": "loni",
-     "imp": 15837,
-     "clk": 38
-    },
-    {
-     "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-     "typ": "loni",
-     "imp": 15812,
-     "clk": 34
-    },
-    {
-     "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-     "typ": "loni",
-     "imp": 15945,
-     "clk": 54
-    },
-    {
-     "n": "Bezpečný start pro nejmenší motorkáře",
-     "typ": "loni",
-     "imp": 15644,
-     "clk": 49
-    }
-   ]
-  },
-  {
-   "d": "2026-06-19",
-   "cre": [
-    {
-     "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-     "typ": "letošní",
-     "imp": 18050,
-     "clk": 45
-    },
-    {
-     "n": "První jízda na motorce už od deseti let",
-     "typ": "letošní",
-     "imp": 22737,
-     "clk": 45
-    },
-    {
-     "n": "Váš junior sní o motorkách? Řešení je v Praze",
-     "typ": "letošní",
-     "imp": 22558,
-     "clk": 57
-    },
-    {
-     "n": "Začněte spolu jezdit už od 10ti let",
-     "typ": "loni",
-     "imp": 22560,
-     "clk": 68
-    },
-    {
-     "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-     "typ": "loni",
-     "imp": 22341,
-     "clk": 48
-    },
-    {
-     "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-     "typ": "loni",
-     "imp": 22522,
-     "clk": 73
-    },
-    {
-     "n": "Bezpečný start pro nejmenší motorkáře",
-     "typ": "loni",
-     "imp": 22399,
-     "clk": 59
-    }
-   ]
-  },
-  {
-   "d": "2026-06-20",
-   "cre": [
-    {
-     "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-     "typ": "letošní",
-     "imp": 19553,
-     "clk": 49
-    },
-    {
-     "n": "První jízda na motorce už od deseti let",
-     "typ": "letošní",
-     "imp": 24297,
-     "clk": 51
-    },
-    {
-     "n": "Váš junior sní o motorkách? Řešení je v Praze",
-     "typ": "letošní",
-     "imp": 24142,
-     "clk": 63
-    },
-    {
-     "n": "Začněte spolu jezdit už od 10ti let",
-     "typ": "loni",
-     "imp": 24134,
-     "clk": 77
-    },
-    {
-     "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-     "typ": "loni",
-     "imp": 23879,
-     "clk": 52
-    },
-    {
-     "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-     "typ": "loni",
-     "imp": 24132,
-     "clk": 79
-    },
-    {
-     "n": "Bezpečný start pro nejmenší motorkáře",
-     "typ": "loni",
-     "imp": 23999,
-     "clk": 65
-    }
-   ]
-  }
- ],
- "ga": {
-  "date": "2026-06-19",
-  "window": "od startu kampaně (11. 6.)",
-  "site": {
-   "sess": 6541,
-   "engRate": 46.0,
-   "conv": 82,
-   "rev": 197090
-  },
+  "updated": "20. 6. 2026, 11:37",
   "campaign": {
-   "sess": 296,
-   "engRate": 51.7,
-   "conv": 0,
-   "rev": 0
+    "id": "8120469226",
+    "name": "Barter Pitland",
+    "start": "2026-06-11",
+    "end": "2026-06-28",
+    "garant": 475000,
+    "bench": 0.337
   },
-  "notset": {
-   "sess": 0,
-   "engRate": 0
-  },
-  "cre": [
-   {
-    "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-    "sess": 58,
-    "engRate": 70.7,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-    "sess": 53,
-    "engRate": 58.5,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "Bezpečný start pro nejmenší motorkáře",
-    "sess": 46,
-    "engRate": 54.3,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "Váš junior sní o motorkách? Řešení je v Praze",
-    "sess": 40,
-    "engRate": 52.5,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "Začněte spolu jezdit už od 10ti let",
-    "sess": 39,
-    "engRate": 48.7,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "První jízda na motorce už od deseti let",
-    "sess": 34,
-    "engRate": 32.4,
-    "conv": 0,
-    "rev": 0
-   },
-   {
-    "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-    "sess": 26,
-    "engRate": 19.2,
-    "conv": 0,
-    "rev": 0
-   }
-  ]
- }
+  "daily": [
+    {
+      "d": "2026-06-16",
+      "imp": 28260,
+      "clk": 83,
+      "unik": 25237,
+      "freq": 1.034
+    },
+    {
+      "d": "2026-06-17",
+      "imp": 42252,
+      "clk": 123,
+      "unik": 36803,
+      "freq": 1.047
+    },
+    {
+      "d": "2026-06-18",
+      "imp": 42245,
+      "clk": 84,
+      "unik": 36944,
+      "freq": 1.045
+    },
+    {
+      "d": "2026-06-19",
+      "imp": 42251,
+      "clk": 117,
+      "unik": 36708,
+      "freq": 1.048
+    },
+    {
+      "d": "2026-06-20",
+      "imp": 9128,
+      "clk": 29,
+      "unik": 8185,
+      "freq": 1.021
+    }
+  ],
+  "snaps": [
+    {
+      "d": "2026-06-16",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 0,
+          "clk": 0
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 4516,
+          "clk": 10
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 4507,
+          "clk": 8
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 4533,
+          "clk": 9
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 4406,
+          "clk": 13
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 4455,
+          "clk": 19
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 4506,
+          "clk": 18
+        }
+      ]
+    },
+    {
+      "d": "2026-06-18",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 11271,
+          "clk": 29
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 15975,
+          "clk": 34
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 15895,
+          "clk": 40
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 15837,
+          "clk": 38
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 15812,
+          "clk": 34
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 15945,
+          "clk": 54
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 15644,
+          "clk": 49
+        }
+      ]
+    },
+    {
+      "d": "2026-06-19",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 18050,
+          "clk": 45
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 22737,
+          "clk": 45
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 22558,
+          "clk": 57
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 22560,
+          "clk": 68
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 22341,
+          "clk": 48
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 22522,
+          "clk": 73
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 22399,
+          "clk": 59
+        }
+      ]
+    },
+    {
+      "d": "2026-06-20",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 19553,
+          "clk": 49
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 24297,
+          "clk": 51
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 24142,
+          "clk": 63
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 24134,
+          "clk": 77
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 23879,
+          "clk": 52
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 24132,
+          "clk": 79
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 23999,
+          "clk": 65
+        }
+      ]
+    }
+  ],
+  "ga": {
+    "date": "2026-06-20",
+    "window": "od startu kampaně (11. 6.)",
+    "site": {
+      "sess": 7282,
+      "engRate": 42.0,
+      "conv": 90,
+      "rev": 215670
+    },
+    "campaign": {
+      "sess": 356,
+      "engRate": 43.5,
+      "conv": 0,
+      "rev": 0
+    },
+    "notset": {
+      "sess": 0,
+      "engRate": 0
+    },
+    "cre": [
+      {
+        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+        "sess": 68,
+        "engRate": 60.3,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 50,
+        "engRate": 52.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+        "sess": 63,
+        "engRate": 49.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Váš junior sní o motorkách? Řešení je v Praze",
+        "sess": 52,
+        "engRate": 40.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Začněte spolu jezdit už od 10ti let",
+        "sess": 52,
+        "engRate": 38.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "První jízda na motorce už od deseti let",
+        "sess": 39,
+        "engRate": 28.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+        "sess": 32,
+        "engRate": 15.6,
+        "conv": 0,
+        "rev": 0
+      }
+    ]
+  }
 }
