@@ -69,14 +69,14 @@
     "date": "2026-06-20",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 7282,
-      "engRate": 42.0,
-      "conv": 90,
-      "rev": 215670
+      "sess": 7603,
+      "engRate": 40.5,
+      "conv": 97,
+      "rev": 230280
     },
     "campaign": {
-      "sess": 386,
-      "engRate": 44.3,
+      "sess": 391,
+      "engRate": 43.7,
       "conv": 1,
       "rev": 2700
     },
@@ -97,29 +97,29 @@
       },
       {
         "n": "VS | Brand",
-        "sess": 32,
-        "engRate": 71.9,
+        "sess": 33,
+        "engRate": 69.7,
         "conv": 1,
         "rev": 2700
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 10,
-        "engRate": 70.0,
+        "sess": 11,
+        "engRate": 63.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Moto",
-        "sess": 8,
-        "engRate": 50.0,
+        "sess": 10,
+        "engRate": 40.0,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "RTG | KR",
-        "sess": 2,
-        "engRate": 50.0,
+        "sess": 3,
+        "engRate": 33.3,
         "conv": 0,
         "rev": 0
       }
