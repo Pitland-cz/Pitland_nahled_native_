@@ -9,9 +9,9 @@
     "imp": 11068,
     "clk": 133,
     "cost": 506.92,
-    "orders": 2,
+    "orders": 1,
     "orderVal": 2700,
-    "leads": 0
+    "leads": 1
   },
   "campaigns": [
     {
@@ -40,9 +40,9 @@
       "imp": 15,
       "clk": 13,
       "cost": 19.2,
-      "orders": 2,
+      "orders": 1,
       "orderVal": 2700,
-      "leads": 0
+      "leads": 1
     },
     {
       "n": "RTG | KR",
@@ -69,10 +69,10 @@
     "date": "2026-06-21",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 7877,
-      "engRate": 44.0,
-      "conv": 96,
-      "rev": 239895
+      "sess": 7891,
+      "engRate": 43.9,
+      "conv": 97,
+      "rev": 241845
     },
     "campaign": {
       "sess": 395,

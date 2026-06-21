@@ -293,14 +293,14 @@
     "date": "2026-06-21",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 7877,
-      "engRate": 44.0,
-      "conv": 96,
-      "rev": 239895
+      "sess": 7891,
+      "engRate": 43.9,
+      "conv": 97,
+      "rev": 241845
     },
     "campaign": {
-      "sess": 433,
-      "engRate": 46.7,
+      "sess": 437,
+      "engRate": 46.2,
       "conv": 0,
       "rev": 0
     },
@@ -311,15 +311,15 @@
     "cre": [
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 76,
-        "engRate": 65.8,
+        "sess": 78,
+        "engRate": 64.1,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 78,
-        "engRate": 52.6,
+        "sess": 79,
+        "engRate": 51.9,
         "conv": 0,
         "rev": 0
       },
@@ -332,8 +332,8 @@
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 68,
-        "engRate": 45.6,
+        "sess": 69,
+        "engRate": 44.9,
         "conv": 0,
         "rev": 0
       },
