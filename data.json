@@ -290,17 +290,17 @@
     }
   ],
   "ga": {
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 7606,
-      "engRate": 40.5,
-      "conv": 97,
-      "rev": 230280
+      "sess": 7877,
+      "engRate": 44.0,
+      "conv": 96,
+      "rev": 239895
     },
     "campaign": {
-      "sess": 395,
-      "engRate": 39.2,
+      "sess": 433,
+      "engRate": 46.7,
       "conv": 0,
       "rev": 0
     },
@@ -311,50 +311,50 @@
     "cre": [
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 72,
-        "engRate": 56.9,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 55,
-        "engRate": 47.3,
+        "sess": 76,
+        "engRate": 65.8,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 70,
-        "engRate": 44.3,
+        "sess": 78,
+        "engRate": 52.6,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 59,
+        "engRate": 47.5,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 60,
-        "engRate": 35.0,
+        "sess": 68,
+        "engRate": 45.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 61,
-        "engRate": 32.8,
+        "sess": 68,
+        "engRate": 42.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "První jízda na motorce už od deseti let",
-        "sess": 42,
-        "engRate": 26.2,
+        "sess": 44,
+        "engRate": 36.4,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 34,
-        "engRate": 14.7,
+        "sess": 39,
+        "engRate": 17.9,
         "conv": 0,
         "rev": 0
       }
