@@ -1,17 +1,17 @@
 {
-  "updated": "20. 6. 2026, 23:29",
+  "updated": "21. 6. 2026, 10:40",
   "account": {
     "name": "Pitland (jnoteplice@gmail.com)",
-    "credit": 7586.41,
-    "period": "16. 6. – 20. 6. 2026"
+    "credit": 7531.71,
+    "period": "16. 6. – 21. 6. 2026"
   },
   "summary": {
-    "imp": 11027,
-    "clk": 132,
-    "cost": 503.5,
-    "orders": 1,
+    "imp": 11068,
+    "clk": 133,
+    "cost": 506.92,
+    "orders": 2,
     "orderVal": 2700,
-    "leads": 1
+    "leads": 0
   },
   "campaigns": [
     {
@@ -27,9 +27,9 @@
     {
       "n": "VS | Moto",
       "typ": "nebrand",
-      "imp": 289,
-      "clk": 15,
-      "cost": 43.42,
+      "imp": 317,
+      "clk": 16,
+      "cost": 46.84,
       "orders": 0,
       "orderVal": 0,
       "leads": 0
@@ -40,14 +40,14 @@
       "imp": 15,
       "clk": 13,
       "cost": 19.2,
-      "orders": 1,
+      "orders": 2,
       "orderVal": 2700,
-      "leads": 1
+      "leads": 0
     },
     {
       "n": "RTG | KR",
       "typ": "retargeting",
-      "imp": 452,
+      "imp": 461,
       "clk": 4,
       "cost": 12.99,
       "orders": 0,
@@ -57,7 +57,7 @@
     {
       "n": "VS | Motorky/jízdy",
       "typ": "nebrand",
-      "imp": 28,
+      "imp": 32,
       "clk": 3,
       "cost": 15.2,
       "orders": 0,
