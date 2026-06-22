@@ -66,25 +66,25 @@
     }
   ],
   "ga": {
-    "date": "2026-06-21",
+    "date": "2026-06-22",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 7969,
-      "engRate": 46.5,
-      "conv": 99,
-      "rev": 248400
+      "sess": 8305,
+      "engRate": 44.8,
+      "conv": 109,
+      "rev": 281660
     },
     "campaign": {
-      "sess": 402,
-      "engRate": 46.8,
+      "sess": 416,
+      "engRate": 45.2,
       "conv": 1,
       "rev": 2700
     },
     "cre": [
       {
         "n": "RTG | Bannery",
-        "sess": 209,
-        "engRate": 38.8,
+        "sess": 211,
+        "engRate": 38.4,
         "conv": 0,
         "rev": 0
       },
@@ -97,15 +97,15 @@
       },
       {
         "n": "VS | Brand",
-        "sess": 35,
-        "engRate": 80.0,
+        "sess": 38,
+        "engRate": 73.7,
         "conv": 1,
         "rev": 2700
       },
       {
         "n": "VS | Moto",
-        "sess": 15,
-        "engRate": 66.7,
+        "sess": 17,
+        "engRate": 58.8,
         "conv": 0,
         "rev": 0
       },
@@ -113,6 +113,13 @@
         "n": "VS | Motorky/jízdy",
         "sess": 11,
         "engRate": 90.9,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(organic)",
+        "sess": 7,
+        "engRate": 0.0,
         "conv": 0,
         "rev": 0
       },
