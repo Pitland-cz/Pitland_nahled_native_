@@ -401,14 +401,14 @@
     "date": "2026-06-23",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 8995,
+      "sess": 9002,
       "engRate": 46.3,
       "conv": 122,
       "rev": 326210
     },
     "campaign": {
-      "sess": 605,
-      "engRate": 51.9,
+      "sess": 606,
+      "engRate": 51.8,
       "conv": 1,
       "rev": 1950
     },
@@ -454,8 +454,8 @@
       },
       {
         "n": "První jízda na motorce už od deseti let",
-        "sess": 65,
-        "engRate": 36.9,
+        "sess": 66,
+        "engRate": 36.4,
         "conv": 0,
         "rev": 0
       },
