@@ -1,163 +1,68 @@
 {
-  "updated": "22. 6. 2026, 16:03",
-  "account": {
-    "name": "Pitland (jnoteplice@gmail.com)",
-    "credit": 7470.78,
-    "period": "16. 6. - 22. 6. 2026"
+ "updated": "23. 6. 2026, 17:57",
+ "account": {
+  "name": "Pitland (jnoteplice@gmail.com)",
+  "credit": 7396,
+  "period": "16. 6. – 23. 6. 2026"
+ },
+ "summary": {
+  "imp": 11287,
+  "clk": 150,
+  "cost": 538.72,
+  "orders": 2,
+  "orderVal": 2700.0,
+  "leads": 0
+ },
+ "campaigns": [
+  {
+   "n": "RTG | Bannery",
+   "typ": "retargeting",
+   "imp": 10243,
+   "clk": 97,
+   "cost": 412.69,
+   "orders": 0,
+   "orderVal": 0,
+   "leads": 0
   },
-  "summary": {
-    "imp": 11169,
-    "clk": 140,
-    "cost": 517.76,
-    "orders": 1,
-    "orderVal": 2700,
-    "leads": 1
+  {
+   "n": "VS | Moto",
+   "typ": "nebrand",
+   "imp": 421,
+   "clk": 23,
+   "cost": 64.44,
+   "orders": 0,
+   "orderVal": 0,
+   "leads": 0
   },
-  "campaigns": [
-    {
-      "n": "RTG | Bannery",
-      "typ": "retargeting",
-      "imp": 10243,
-      "clk": 97,
-      "cost": 412.69,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "VS | Moto",
-      "typ": "nebrand",
-      "imp": 363,
-      "clk": 19,
-      "cost": 51.48,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "VS | Brand",
-      "typ": "brand",
-      "imp": 20,
-      "clk": 17,
-      "cost": 25.4,
-      "orders": 1,
-      "orderVal": 2700,
-      "leads": 1
-    },
-    {
-      "n": "RTG | KR",
-      "typ": "retargeting",
-      "imp": 505,
-      "clk": 4,
-      "cost": 12.99,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "VS | Motorky/jizdy",
-      "typ": "nebrand",
-      "imp": 38,
-      "clk": 3,
-      "cost": 15.2,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    }
-  ],
-  "ga": {
-    "date": "2026-06-23",
-    "window": "od startu kampaně (11. 6.)",
-    "site": {
-      "sess": 8995,
-      "engRate": 46.3,
-      "conv": 122,
-      "rev": 326210
-    },
-    "campaign": {
-      "sess": 481,
-      "engRate": 49.7,
-      "conv": 3,
-      "rev": 8100
-    },
-    "cre": [
-      {
-        "n": "RTG | Bannery",
-        "sess": 211,
-        "engRate": 38.9,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "OS | bannery (bez RTG 30)",
-        "sess": 127,
-        "engRate": 45.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(organic)",
-        "sess": 52,
-        "engRate": 75.0,
-        "conv": 2,
-        "rev": 5400
-      },
-      {
-        "n": "VS | Brand",
-        "sess": 44,
-        "engRate": 75.0,
-        "conv": 1,
-        "rev": 2700
-      },
-      {
-        "n": "VS | Moto",
-        "sess": 22,
-        "engRate": 63.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Motorky/jízdy",
-        "sess": 12,
-        "engRate": 91.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "",
-        "sess": 5,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(not set)",
-        "sess": 4,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "RTG | KR",
-        "sess": 3,
-        "engRate": 33.3,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(referral)",
-        "sess": 2,
-        "engRate": 50.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(direct)",
-        "sess": 1,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      }
-    ]
+  {
+   "n": "VS | Brand",
+   "typ": "brand",
+   "imp": 26,
+   "clk": 22,
+   "cost": 31.7,
+   "orders": 2,
+   "orderVal": 2700,
+   "leads": 0
+  },
+  {
+   "n": "RTG | KR",
+   "typ": "retargeting",
+   "imp": 551,
+   "clk": 4,
+   "cost": 12.99,
+   "orders": 0,
+   "orderVal": 0,
+   "leads": 0
+  },
+  {
+   "n": "VS | Motorky/jízdy",
+   "typ": "nebrand",
+   "imp": 46,
+   "clk": 4,
+   "cost": 16.9,
+   "orders": 0,
+   "orderVal": 0,
+   "leads": 0
   }
+ ]
 }
