@@ -1,5 +1,5 @@
 {
-  "updated": "24. 6. 2026, 09:52",
+  "updated": "1. 7. 2026, 16:10",
   "campaign": {
     "id": "8120469226",
     "name": "Barter Pitland",
@@ -67,10 +67,38 @@
     },
     {
       "d": "2026-06-24",
-      "imp": 7689,
-      "clk": 20,
-      "unik": 6837,
-      "freq": 1.018
+      "imp": 42246,
+      "clk": 110,
+      "unik": 37223,
+      "freq": 1.045
+    },
+    {
+      "d": "2026-06-25",
+      "imp": 42251,
+      "clk": 97,
+      "unik": 37403,
+      "freq": 1.045
+    },
+    {
+      "d": "2026-06-26",
+      "imp": 42245,
+      "clk": 125,
+      "unik": 37211,
+      "freq": 1.048
+    },
+    {
+      "d": "2026-06-27",
+      "imp": 33126,
+      "clk": 95,
+      "unik": 29696,
+      "freq": 1.046
+    },
+    {
+      "d": "2026-06-28",
+      "imp": 33131,
+      "clk": 84,
+      "unik": 29898,
+      "freq": 1.042
     }
   ],
   "snaps": [
@@ -447,6 +475,53 @@
           "typ": "loni",
           "imp": 45383,
           "clk": 117
+        }
+      ]
+    },
+    {
+      "d": "2026-07-01",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 67258,
+          "clk": 178
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 71804,
+          "clk": 157
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 71981,
+          "clk": 175
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 72451,
+          "clk": 202
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 71623,
+          "clk": 153
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 71617,
+          "clk": 240
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 72023,
+          "clk": 182
         }
       ]
     }
