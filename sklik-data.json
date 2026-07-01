@@ -9,8 +9,8 @@
     "imp": 11287,
     "clk": 150,
     "cost": 538.72,
-    "orders": 1,
-    "orderVal": 2700,
+    "orders": 2,
+    "orderVal": 4650,
     "leads": 1
   },
   "campaigns": [
@@ -40,8 +40,8 @@
       "imp": 26,
       "clk": 22,
       "cost": 31.7,
-      "orders": 1,
-      "orderVal": 2700,
+      "orders": 2,
+      "orderVal": 4650,
       "leads": 1
     },
     {
@@ -66,25 +66,32 @@
     }
   ],
   "ga": {
-    "date": "2026-06-24",
+    "date": "2026-07-01",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 9443,
-      "engRate": 44.3,
-      "conv": 126,
-      "rev": 337070
+      "sess": 13920,
+      "engRate": 43.2,
+      "conv": 185,
+      "rev": 530715
     },
     "campaign": {
-      "sess": 503,
-      "engRate": 48.1,
-      "conv": 3,
-      "rev": 8100
+      "sess": 880,
+      "engRate": 56.7,
+      "conv": 16,
+      "rev": 65900
     },
     "cre": [
       {
+        "n": "(organic)",
+        "sess": 381,
+        "engRate": 66.7,
+        "conv": 14,
+        "rev": 61250
+      },
+      {
         "n": "RTG | Bannery",
-        "sess": 211,
-        "engRate": 38.9,
+        "sess": 213,
+        "engRate": 38.5,
         "conv": 0,
         "rev": 0
       },
@@ -96,64 +103,50 @@
         "rev": 0
       },
       {
-        "n": "(organic)",
-        "sess": 70,
-        "engRate": 58.6,
-        "conv": 2,
-        "rev": 5400
-      },
-      {
         "n": "VS | Brand",
-        "sess": 46,
-        "engRate": 71.7,
-        "conv": 1,
-        "rev": 2700
+        "sess": 60,
+        "engRate": 75.0,
+        "conv": 2,
+        "rev": 4650
       },
       {
         "n": "VS | Moto",
-        "sess": 22,
-        "engRate": 63.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Motorky/jízdy",
-        "sess": 13,
-        "engRate": 92.3,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "",
-        "sess": 6,
-        "engRate": 0.0,
+        "sess": 45,
+        "engRate": 73.3,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "(not set)",
-        "sess": 4,
-        "engRate": 0.0,
+        "sess": 25,
+        "engRate": 28.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 17,
+        "engRate": 88.2,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "RTG | KR",
+        "sess": 8,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(referral)",
         "sess": 3,
         "engRate": 33.3,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "(referral)",
+        "n": "",
         "sess": 2,
-        "engRate": 50.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(direct)",
-        "sess": 1,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0
