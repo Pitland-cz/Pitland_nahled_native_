@@ -530,10 +530,10 @@
     "date": "2026-07-01",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 13920,
-      "engRate": 43.2,
-      "conv": 185,
-      "rev": 530715
+      "sess": 14131,
+      "engRate": 42.7,
+      "conv": 187,
+      "rev": 537465
     },
     "campaign": {
       "sess": 1037,
