@@ -69,22 +69,22 @@
     "date": "2026-07-02",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 14437,
-      "engRate": 43.7,
-      "conv": 190,
-      "rev": 544515
+      "sess": 14550,
+      "engRate": 43.4,
+      "conv": 191,
+      "rev": 546465
     },
     "campaign": {
-      "sess": 951,
-      "engRate": 58.0,
+      "sess": 954,
+      "engRate": 57.9,
       "conv": 20,
       "rev": 80225
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 437,
-        "engRate": 68.2,
+        "sess": 440,
+        "engRate": 67.7,
         "conv": 18,
         "rev": 75575
       },
