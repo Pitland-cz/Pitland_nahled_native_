@@ -66,27 +66,27 @@
     }
   ],
   "ga": {
-    "date": "2026-07-01",
+    "date": "2026-07-02",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 14131,
-      "engRate": 42.7,
-      "conv": 187,
-      "rev": 537465
+      "sess": 14437,
+      "engRate": 43.7,
+      "conv": 190,
+      "rev": 544515
     },
     "campaign": {
-      "sess": 897,
-      "engRate": 55.9,
-      "conv": 16,
-      "rev": 65900
+      "sess": 951,
+      "engRate": 58.0,
+      "conv": 20,
+      "rev": 80225
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 395,
-        "engRate": 64.8,
-        "conv": 14,
-        "rev": 61250
+        "sess": 437,
+        "engRate": 68.2,
+        "conv": 18,
+        "rev": 75575
       },
       {
         "n": "RTG | Bannery",
@@ -104,49 +104,49 @@
       },
       {
         "n": "VS | Brand",
-        "sess": 62,
-        "engRate": 72.6,
+        "sess": 63,
+        "engRate": 76.2,
         "conv": 2,
         "rev": 4650
       },
       {
         "n": "VS | Moto",
-        "sess": 46,
-        "engRate": 71.7,
+        "sess": 53,
+        "engRate": 67.9,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "(not set)",
-        "sess": 25,
-        "engRate": 28.0,
+        "sess": 28,
+        "engRate": 25.0,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 17,
-        "engRate": 88.2,
+        "sess": 18,
+        "engRate": 94.4,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "RTG | KR",
-        "sess": 8,
-        "engRate": 50.0,
+        "sess": 9,
+        "engRate": 44.4,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "(referral)",
-        "sess": 3,
-        "engRate": 33.3,
+        "sess": 4,
+        "engRate": 50.0,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "",
-        "sess": 2,
+        "sess": 1,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0
