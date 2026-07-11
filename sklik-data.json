@@ -1,55 +1,55 @@
 {
-  "updated": "4. 7. 2026, 10:20",
+  "updated": "11. 7. 2026, 16:06",
   "account": {
     "name": "Pitland (jnoteplice@gmail.com)",
-    "credit": 6599.41,
-    "period": "16. 6. – 4. 7. 2026"
+    "credit": 6008.31,
+    "period": "16. 6. – 11. 7. 2026"
   },
   "summary": {
-    "imp": 13051,
-    "clk": 238,
-    "cost": 785.8,
-    "orders": 4,
-    "orderVal": 10400,
-    "leads": 1
+    "imp": 14419,
+    "clk": 340,
+    "cost": 1026.9,
+    "orders": 11,
+    "orderVal": 22400,
+    "leads": 0
   },
   "campaigns": [
+    {
+      "n": "VS | Moto",
+      "typ": "nebrand",
+      "imp": 1546,
+      "clk": 130,
+      "cost": 362.31,
+      "orders": 1,
+      "orderVal": 1950,
+      "leads": 0
+    },
     {
       "n": "RTG | Bannery",
       "typ": "retargeting",
       "imp": 10243,
       "clk": 97,
       "cost": 412.69,
-      "orders": 0,
-      "orderVal": 0,
-      "leads": 0
-    },
-    {
-      "n": "VS | Moto",
-      "typ": "nebrand",
-      "imp": 968,
-      "clk": 74,
-      "cost": 209.59,
-      "orders": 0,
-      "orderVal": 0,
+      "orders": 3,
+      "orderVal": 2700,
       "leads": 0
     },
     {
       "n": "VS | Brand",
       "typ": "brand",
-      "imp": 55,
-      "clk": 43,
-      "cost": 57.8,
-      "orders": 4,
-      "orderVal": 10400,
-      "leads": 1
+      "imp": 99,
+      "clk": 75,
+      "cost": 91.1,
+      "orders": 7,
+      "orderVal": 17750,
+      "leads": 0
     },
     {
       "n": "VS | Motorky/jízdy",
       "typ": "nebrand",
-      "imp": 130,
-      "clk": 14,
-      "cost": 76.17,
+      "imp": 213,
+      "clk": 26,
+      "cost": 125.57,
       "orders": 0,
       "orderVal": 0,
       "leads": 0
@@ -57,93 +57,12 @@
     {
       "n": "RTG | KR",
       "typ": "retargeting",
-      "imp": 1655,
-      "clk": 10,
-      "cost": 29.55,
+      "imp": 2318,
+      "clk": 12,
+      "cost": 35.23,
       "orders": 0,
       "orderVal": 0,
       "leads": 0
     }
-  ],
-  "ga": {
-    "date": "2026-07-07",
-    "window": "od startu kampaně (11. 6.)",
-    "site": {
-      "sess": 27085,
-      "engRate": 39.1,
-      "conv": 226,
-      "rev": 684955
-    },
-    "campaign": {
-      "sess": 1428,
-      "engRate": 63.1,
-      "conv": 31,
-      "rev": 117595
-    },
-    "cre": [
-      {
-        "n": "(organic)",
-        "sess": 821,
-        "engRate": 70.0,
-        "conv": 27,
-        "rev": 107195
-      },
-      {
-        "n": "RTG | Bannery",
-        "sess": 213,
-        "engRate": 38.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "OS | bannery (bez RTG 30)",
-        "sess": 127,
-        "engRate": 45.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Moto",
-        "sess": 96,
-        "engRate": 71.9,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Brand",
-        "sess": 93,
-        "engRate": 76.3,
-        "conv": 4,
-        "rev": 10400
-      },
-      {
-        "n": "(not set)",
-        "sess": 40,
-        "engRate": 32.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "VS | Motorky/jízdy",
-        "sess": 27,
-        "engRate": 92.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "RTG | KR",
-        "sess": 10,
-        "engRate": 50.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(referral)",
-        "sess": 4,
-        "engRate": 50.0,
-        "conv": 0,
-        "rev": 0
-      }
-    ]
-  }
+  ]
 }
