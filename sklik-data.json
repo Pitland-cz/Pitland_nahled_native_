@@ -9,9 +9,9 @@
     "imp": 14419,
     "clk": 340,
     "cost": 1026.9,
-    "orders": 11,
-    "orderVal": 22400,
-    "leads": 0
+    "orders": 6,
+    "orderVal": 15800,
+    "leads": 1
   },
   "campaigns": [
     {
@@ -30,8 +30,8 @@
       "imp": 10243,
       "clk": 97,
       "cost": 412.69,
-      "orders": 3,
-      "orderVal": 2700,
+      "orders": 0,
+      "orderVal": 0,
       "leads": 0
     },
     {
@@ -40,9 +40,9 @@
       "imp": 99,
       "clk": 75,
       "cost": 91.1,
-      "orders": 7,
-      "orderVal": 17750,
-      "leads": 0
+      "orders": 5,
+      "orderVal": 13850,
+      "leads": 1
     },
     {
       "n": "VS | Motorky/jízdy",
@@ -64,5 +64,86 @@
       "orderVal": 0,
       "leads": 0
     }
-  ]
+  ],
+  "ga": {
+    "date": "2026-07-11",
+    "window": "od startu kampaně (11. 6.)",
+    "site": {
+      "sess": 34161,
+      "engRate": 38.2,
+      "conv": 269,
+      "rev": 820825
+    },
+    "campaign": {
+      "sess": 1705,
+      "engRate": 64.9,
+      "conv": 41,
+      "rev": 149005
+    },
+    "cre": [
+      {
+        "n": "(organic)",
+        "sess": 1037,
+        "engRate": 71.2,
+        "conv": 35,
+        "rev": 133205
+      },
+      {
+        "n": "RTG | Bannery",
+        "sess": 213,
+        "engRate": 38.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "OS | bannery (bez RTG 30)",
+        "sess": 127,
+        "engRate": 45.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Moto",
+        "sess": 125,
+        "engRate": 68.8,
+        "conv": 1,
+        "rev": 1950
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 112,
+        "engRate": 77.7,
+        "conv": 5,
+        "rev": 13850
+      },
+      {
+        "n": "(not set)",
+        "sess": 47,
+        "engRate": 36.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 32,
+        "engRate": 93.8,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "RTG | KR",
+        "sess": 11,
+        "engRate": 54.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(referral)",
+        "sess": 4,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      }
+    ]
+  }
 }

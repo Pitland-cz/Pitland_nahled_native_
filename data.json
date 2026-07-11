@@ -668,17 +668,17 @@
     }
   ],
   "ga": {
-    "date": "2026-07-07",
+    "date": "2026-07-11",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 27085,
-      "engRate": 39.1,
-      "conv": 226,
-      "rev": 684955
+      "sess": 34161,
+      "engRate": 38.2,
+      "conv": 269,
+      "rev": 820825
     },
     "campaign": {
-      "sess": 1039,
-      "engRate": 51.8,
+      "sess": 1041,
+      "engRate": 51.7,
       "conv": 1,
       "rev": 1950
     },
@@ -696,8 +696,8 @@
       },
       {
         "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 152,
-        "engRate": 57.2,
+        "sess": 154,
+        "engRate": 56.5,
         "conv": 0,
         "rev": 0
       },
