@@ -66,27 +66,27 @@
     }
   ],
   "ga": {
-    "date": "2026-07-13",
+    "date": "2026-07-17",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 35996,
-      "engRate": 37.8,
-      "conv": 283,
-      "rev": 874425
+      "sess": 39132,
+      "engRate": 38.2,
+      "conv": 331,
+      "rev": 1028425
     },
     "campaign": {
-      "sess": 1802,
-      "engRate": 64.0,
-      "conv": 44,
-      "rev": 164755
+      "sess": 2091,
+      "engRate": 64.8,
+      "conv": 49,
+      "rev": 181005
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1112,
-        "engRate": 70.1,
-        "conv": 37,
-        "rev": 142055
+        "sess": 1352,
+        "engRate": 69.2,
+        "conv": 42,
+        "rev": 158305
       },
       {
         "n": "RTG | Bannery",
@@ -97,10 +97,17 @@
       },
       {
         "n": "VS | Moto",
-        "sess": 133,
-        "engRate": 66.9,
+        "sess": 151,
+        "engRate": 68.2,
         "conv": 1,
         "rev": 1950
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 140,
+        "engRate": 78.6,
+        "conv": 6,
+        "rev": 20750
       },
       {
         "n": "OS | bannery (bez RTG 30)",
@@ -110,51 +117,30 @@
         "rev": 0
       },
       {
-        "n": "VS | Brand",
-        "sess": 125,
-        "engRate": 72.0,
-        "conv": 6,
-        "rev": 20750
-      },
-      {
         "n": "(not set)",
-        "sess": 47,
-        "engRate": 36.2,
+        "sess": 55,
+        "engRate": 34.5,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 34,
-        "engRate": 88.2,
+        "sess": 43,
+        "engRate": 90.7,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "RTG | KR",
-        "sess": 11,
-        "engRate": 54.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(referral)",
-        "sess": 4,
+        "sess": 12,
         "engRate": 50.0,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "",
-        "sess": 1,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(direct)",
-        "sess": 1,
-        "engRate": 0.0,
+        "n": "(referral)",
+        "sess": 7,
+        "engRate": 42.9,
         "conv": 0,
         "rev": 0
       }

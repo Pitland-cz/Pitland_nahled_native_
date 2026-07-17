@@ -668,17 +668,17 @@
     }
   ],
   "ga": {
-    "date": "2026-07-13",
+    "date": "2026-07-17",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 35996,
-      "engRate": 37.8,
-      "conv": 283,
-      "rev": 874425
+      "sess": 39132,
+      "engRate": 38.2,
+      "conv": 331,
+      "rev": 1028425
     },
     "campaign": {
-      "sess": 1041,
-      "engRate": 51.7,
+      "sess": 1042,
+      "engRate": 51.6,
       "conv": 1,
       "rev": 1950
     },
@@ -710,8 +710,8 @@
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 145,
-        "engRate": 53.8,
+        "sess": 146,
+        "engRate": 53.4,
         "conv": 0,
         "rev": 0
       },
