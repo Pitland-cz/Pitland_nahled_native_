@@ -668,13 +668,13 @@
     }
   ],
   "ga": {
-    "date": "2026-07-17",
+    "date": "2026-07-22",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 39132,
-      "engRate": 38.2,
-      "conv": 331,
-      "rev": 1028425
+      "sess": 43175,
+      "engRate": 38.3,
+      "conv": 398,
+      "rev": 1238940
     },
     "campaign": {
       "sess": 1042,

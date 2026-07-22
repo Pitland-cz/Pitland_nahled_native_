@@ -9,9 +9,9 @@
     "imp": 14419,
     "clk": 340,
     "cost": 1026.9,
-    "orders": 7,
-    "orderVal": 22700,
-    "leads": 1
+    "orders": 10,
+    "orderVal": 33200,
+    "leads": 2
   },
   "campaigns": [
     {
@@ -40,9 +40,9 @@
       "imp": 99,
       "clk": 75,
       "cost": 91.1,
-      "orders": 6,
-      "orderVal": 20750,
-      "leads": 1
+      "orders": 9,
+      "orderVal": 31250,
+      "leads": 2
     },
     {
       "n": "VS | Motorky/jízdy",
@@ -66,27 +66,27 @@
     }
   ],
   "ga": {
-    "date": "2026-07-17",
+    "date": "2026-07-22",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 39132,
-      "engRate": 38.2,
-      "conv": 331,
-      "rev": 1028425
+      "sess": 43175,
+      "engRate": 38.3,
+      "conv": 398,
+      "rev": 1238940
     },
     "campaign": {
-      "sess": 2091,
-      "engRate": 64.8,
-      "conv": 49,
-      "rev": 181005
+      "sess": 2501,
+      "engRate": 66.1,
+      "conv": 59,
+      "rev": 215155
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1352,
-        "engRate": 69.2,
-        "conv": 42,
-        "rev": 158305
+        "sess": 1682,
+        "engRate": 70.1,
+        "conv": 49,
+        "rev": 181955
       },
       {
         "n": "RTG | Bannery",
@@ -97,17 +97,17 @@
       },
       {
         "n": "VS | Moto",
-        "sess": 151,
-        "engRate": 68.2,
+        "sess": 184,
+        "engRate": 66.8,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "VS | Brand",
-        "sess": 140,
-        "engRate": 78.6,
-        "conv": 6,
-        "rev": 20750
+        "sess": 171,
+        "engRate": 76.6,
+        "conv": 9,
+        "rev": 31250
       },
       {
         "n": "OS | bannery (bez RTG 30)",
@@ -118,15 +118,15 @@
       },
       {
         "n": "(not set)",
-        "sess": 55,
-        "engRate": 34.5,
+        "sess": 60,
+        "engRate": 38.3,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 43,
-        "engRate": 90.7,
+        "sess": 51,
+        "engRate": 96.1,
         "conv": 0,
         "rev": 0
       },
@@ -139,8 +139,22 @@
       },
       {
         "n": "(referral)",
-        "sess": 7,
-        "engRate": 42.9,
+        "sess": 8,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "",
+        "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "03/24 Děti - Konverze",
+        "sess": 1,
+        "engRate": 0.0,
         "conv": 0,
         "rev": 0
       }
