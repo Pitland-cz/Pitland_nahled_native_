@@ -66,27 +66,27 @@
     }
   ],
   "ga": {
-    "date": "2026-07-22",
+    "date": "2026-07-24",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 43175,
-      "engRate": 38.3,
-      "conv": 398,
-      "rev": 1238940
+      "sess": 45107,
+      "engRate": 38.0,
+      "conv": 425,
+      "rev": 1339710
     },
     "campaign": {
-      "sess": 2501,
-      "engRate": 66.1,
-      "conv": 59,
-      "rev": 215155
+      "sess": 2675,
+      "engRate": 66.2,
+      "conv": 63,
+      "rev": 226000
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1682,
-        "engRate": 70.1,
-        "conv": 49,
-        "rev": 181955
+        "sess": 1809,
+        "engRate": 70.0,
+        "conv": 53,
+        "rev": 192800
       },
       {
         "n": "RTG | Bannery",
@@ -97,15 +97,15 @@
       },
       {
         "n": "VS | Moto",
-        "sess": 184,
-        "engRate": 66.8,
+        "sess": 200,
+        "engRate": 66.5,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "VS | Brand",
-        "sess": 171,
-        "engRate": 76.6,
+        "sess": 184,
+        "engRate": 78.3,
         "conv": 9,
         "rev": 31250
       },
@@ -118,15 +118,15 @@
       },
       {
         "n": "(not set)",
-        "sess": 60,
-        "engRate": 38.3,
+        "sess": 65,
+        "engRate": 40.0,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 51,
-        "engRate": 96.1,
+        "sess": 60,
+        "engRate": 90.0,
         "conv": 0,
         "rev": 0
       },
@@ -139,20 +139,20 @@
       },
       {
         "n": "(referral)",
-        "sess": 8,
-        "engRate": 50.0,
+        "sess": 11,
+        "engRate": 36.4,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "",
+        "n": "03/24 Děti - Konverze",
         "sess": 2,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "03/24 Děti - Konverze",
+        "n": "",
         "sess": 1,
         "engRate": 0.0,
         "conv": 0,
