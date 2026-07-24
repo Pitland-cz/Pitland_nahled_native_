@@ -69,14 +69,14 @@
     "date": "2026-07-24",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 45107,
+      "sess": 45138,
       "engRate": 38.0,
       "conv": 425,
       "rev": 1339710
     },
     "campaign": {
-      "sess": 2675,
-      "engRate": 66.2,
+      "sess": 2676,
+      "engRate": 66.1,
       "conv": 63,
       "rev": 226000
     },
@@ -97,8 +97,8 @@
       },
       {
         "n": "VS | Moto",
-        "sess": 200,
-        "engRate": 66.5,
+        "sess": 201,
+        "engRate": 66.2,
         "conv": 1,
         "rev": 1950
       },
