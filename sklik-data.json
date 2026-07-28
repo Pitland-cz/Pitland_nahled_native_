@@ -9,8 +9,8 @@
     "imp": 14419,
     "clk": 340,
     "cost": 1026.9,
-    "orders": 10,
-    "orderVal": 33200,
+    "orders": 13,
+    "orderVal": 45350,
     "leads": 2
   },
   "campaigns": [
@@ -20,8 +20,8 @@
       "imp": 1546,
       "clk": 130,
       "cost": 362.31,
-      "orders": 1,
-      "orderVal": 1950,
+      "orders": 2,
+      "orderVal": 7800,
       "leads": 0
     },
     {
@@ -40,8 +40,8 @@
       "imp": 99,
       "clk": 75,
       "cost": 91.1,
-      "orders": 9,
-      "orderVal": 31250,
+      "orders": 11,
+      "orderVal": 37550,
       "leads": 2
     },
     {
@@ -66,27 +66,41 @@
     }
   ],
   "ga": {
-    "date": "2026-07-25",
+    "date": "2026-07-28",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 46257,
-      "engRate": 38.0,
-      "conv": 434,
-      "rev": 1366410
+      "sess": 47654,
+      "engRate": 39.3,
+      "conv": 464,
+      "rev": 1469935
     },
     "campaign": {
-      "sess": 2747,
-      "engRate": 66.5,
-      "conv": 66,
-      "rev": 232375
+      "sess": 2902,
+      "engRate": 65.1,
+      "conv": 71,
+      "rev": 250675
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1859,
-        "engRate": 70.2,
-        "conv": 56,
-        "rev": 199175
+        "sess": 1897,
+        "engRate": 69.3,
+        "conv": 58,
+        "rev": 205325
+      },
+      {
+        "n": "VS | Moto",
+        "sess": 236,
+        "engRate": 70.3,
+        "conv": 2,
+        "rev": 7800
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 216,
+        "engRate": 79.6,
+        "conv": 11,
+        "rev": 37550
       },
       {
         "n": "RTG | Bannery",
@@ -94,20 +108,6 @@
         "engRate": 38.5,
         "conv": 0,
         "rev": 0
-      },
-      {
-        "n": "VS | Moto",
-        "sess": 211,
-        "engRate": 65.9,
-        "conv": 1,
-        "rev": 1950
-      },
-      {
-        "n": "VS | Brand",
-        "sess": 188,
-        "engRate": 79.8,
-        "conv": 9,
-        "rev": 31250
       },
       {
         "n": "OS | bannery (bez RTG 30)",
@@ -118,15 +118,15 @@
       },
       {
         "n": "(not set)",
-        "sess": 69,
-        "engRate": 42.0,
+        "sess": 77,
+        "engRate": 39.0,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 60,
-        "engRate": 95.0,
+        "sess": 65,
+        "engRate": 92.3,
         "conv": 0,
         "rev": 0
       },
@@ -145,15 +145,22 @@
         "rev": 0
       },
       {
-        "n": "",
-        "sess": 4,
+        "n": "03/24 Děti - Konverze",
+        "sess": 2,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "03/24 Děti - Konverze",
-        "sess": 2,
+        "n": "",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(direct)",
+        "sess": 1,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0

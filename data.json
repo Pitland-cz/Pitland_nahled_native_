@@ -809,17 +809,17 @@
     }
   ],
   "ga": {
-    "date": "2026-07-25",
+    "date": "2026-07-28",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 46257,
-      "engRate": 38.0,
-      "conv": 434,
-      "rev": 1366410
+      "sess": 47654,
+      "engRate": 39.3,
+      "conv": 464,
+      "rev": 1469935
     },
     "campaign": {
-      "sess": 1043,
-      "engRate": 51.6,
+      "sess": 1292,
+      "engRate": 41.9,
       "conv": 1,
       "rev": 1950
     },
@@ -830,36 +830,15 @@
     "cre": [
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 185,
-        "engRate": 60.5,
+        "sess": 223,
+        "engRate": 50.7,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 154,
-        "engRate": 56.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 151,
-        "engRate": 54.3,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 146,
-        "engRate": 53.4,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 192,
-        "engRate": 50.5,
+        "sess": 182,
+        "engRate": 48.4,
         "conv": 0,
         "rev": 0
       },
@@ -871,9 +850,30 @@
         "rev": 0
       },
       {
+        "n": "Začněte spolu jezdit už od 10ti let",
+        "sess": 191,
+        "engRate": 43.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Váš junior sní o motorkách? Řešení je v Praze",
+        "sess": 184,
+        "engRate": 42.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+        "sess": 286,
+        "engRate": 33.9,
+        "conv": 0,
+        "rev": 0
+      },
+      {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 97,
-        "engRate": 32.0,
+        "sess": 108,
+        "engRate": 28.7,
         "conv": 0,
         "rev": 0
       }
