@@ -445,6 +445,9 @@ function setTab(t){
   document.getElementById('view-cerven').style.display = t === 'cerven' ? 'block' : 'none';
   document.getElementById('view-sklik').style.display = t === 'sklik' ? 'block' : 'none';
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.t === t));
+  // Scroll na začátek přepnutého tabu, ať uživatel vidí obsah od hlavičky
+  const tabsEl = document.getElementById('tabs');
+  if(tabsEl) tabsEl.scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 document.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => setTab(b.dataset.t)));
 </script>
