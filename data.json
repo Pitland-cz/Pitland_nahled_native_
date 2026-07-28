@@ -1,5 +1,5 @@
 {
-  "updated": "25. 7. 2026, 11:05",
+  "updated": "28. 7. 2026, 23:52",
   "campaign": {
     "id": "8120469226",
     "name": "Barter Pitland",
@@ -715,6 +715,53 @@
     },
     {
       "d": "2026-07-25",
+      "cre": [
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 67258,
+          "clk": 178
+        },
+        {
+          "n": "První jízda na motorce už od deseti let",
+          "typ": "letošní",
+          "imp": 71804,
+          "clk": 157
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 71981,
+          "clk": 175
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 72451,
+          "clk": 202
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 71623,
+          "clk": 153
+        },
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 71617,
+          "clk": 240
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 72023,
+          "clk": 182
+        }
+      ]
+    },
+    {
+      "d": "2026-07-28",
       "cre": [
         {
           "n": "Jezdíte na motorce? Vezměte juniora s sebou",
