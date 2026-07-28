@@ -13,7 +13,7 @@ h1{font-size:23px;font-weight:600;margin:0 0 4px}
 .meta{color:var(--mut);font-size:14px;margin:0 0 4px}
 .stamp{display:inline-block;font-size:13px;color:var(--blue);background:var(--blue-bg);padding:3px 10px;border-radius:8px;margin:6px 0 18px}
 h2{font-size:16px;font-weight:600;margin:24px 0 12px}
-.tabs{display:flex;gap:4px;margin:14px 0 18px;border-bottom:2px solid var(--bd)}
+.tabs{display:flex;gap:4px;margin:14px 0 18px;border-bottom:2px solid var(--bd);flex-wrap:wrap}
 .tabs button{font:inherit;font-size:15px;font-weight:600;border:none;background:none;padding:9px 16px;cursor:pointer;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
 .tabs button.on{color:var(--blue);border-bottom-color:var(--blue)}
 .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px}
@@ -60,13 +60,68 @@ a{color:var(--blue)}
 <h1>Pitland — marketingový dashboard</h1>
 
 <div class="tabs" id="tabs">
-<button data-t="sos" class="on">Nativní — Seznam</button>
+<button data-t="srpen" class="on">Nativní — srpen 2026</button>
+<button data-t="cerven">Nativní — červen 2026</button>
 <button data-t="sklik">Sklik — PPC</button>
 </div>
 
-<!-- ============ VIEW: NATIVNÍ (SOS) ============ -->
-<div id="view-sos">
-<p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120469226 · termín 11.–28. 6. 2026 · stav <b>Běžící</b> · vlastník Radek Krechler</p>
+<!-- ============ VIEW: NATIVNÍ SRPEN 2026 (Happy Garage) ============ -->
+<div id="view-srpen">
+<p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120876426 · termín 27. 7. – 30. 8. 2026 · stav <b>Běžící</b> · vlastník Radek Krechler</p>
+<span class="stamp" id="s2-stamp">Data k: …</span>
+
+<div class="controls">
+<div class="seg" id="s2-seg">
+<button data-m="all" class="on">Celé období</button>
+<button data-m="days">Po dnech</button>
+<button data-m="range">Vlastní rozmezí</button>
+</div>
+<div class="range" id="s2-rangebox">
+<span>od</span><input type="date" id="s2-od"><span>do</span><input type="date" id="s2-do"><button id="s2-apply">Zobrazit</button>
+</div>
+</div>
+<p class="rangelbl" id="s2-rangelbl"></p>
+
+<div class="cards" id="s2-cards"></div>
+<div class="pace" id="s2-pacebox">
+<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--mut)"><span id="s2-pacelbl">Dočerpání garance</span><span id="s2-pacepct"></span></div>
+<div class="track"><div class="fill" id="s2-pacefill"></div></div>
+<div style="font-size:12px;color:var(--hint)" id="s2-pacenote"></div>
+</div>
+
+<div id="s2-dailywrap" style="display:none">
+<h2>Po dnech (celá kampaň)</h2>
+<table><thead><tr><th>Datum</th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th class="num">Unik.</th><th class="num">Frekv.</th></tr></thead><tbody id="s2-dailyrows"></tbody></table>
+</div>
+
+<h2 id="s2-creH">Souboj kreativ (CTR)</h2>
+<table>
+<thead><tr><th>#</th><th>Kreativa</th><th></th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th style="width:32%">CTR vs benchmark 0,337 %</th></tr></thead>
+<tbody id="s2-rows"></tbody>
+</table>
+<p class="note" id="s2-insight"></p>
+
+<h2 id="s2-intH">Podle zájmové skupiny (SOS cílení)</h2>
+<table id="s2-inttable">
+<thead><tr><th>#</th><th>Zájmová skupina</th><th class="num">Zobrazení</th><th class="num">Prokliky</th><th class="num">CTR</th><th style="width:28%">Podíl objemu</th></tr></thead>
+<tbody id="s2-introws"></tbody>
+</table>
+<p class="note" id="s2-intinsight"></p>
+
+<h2 id="s2-gaH">Web po prokliku — co lidé dělají na webu (GA4)</h2>
+<div class="cards" id="s2-gacards"></div>
+<table id="s2-gatable">
+<thead><tr><th>#</th><th>Kreativa</th><th class="num">Relace</th><th class="num">Míra zapojení</th><th style="width:30%">Zapojení vs průměr kampaně</th><th class="num">Konverze</th><th class="num">Tržba</th></tr></thead>
+<tbody id="s2-garows"></tbody>
+</table>
+<p class="note" id="s2-gainsight"></p>
+
+<p class="foot">Zdroj: SOS export (zobrazení, prokliky, CTR) + GA4 (relace, zapojení, konverze) přes Data API. Obnovováno 4×/den. GA4 vrstva se aktivuje po nastavení <code>utm_campaign</code> pro srpnovou kampaň (napiš „GA4 srpen"). Per‑kreativa za vlastní období (SOS) se dopočítává z denních snímků — přesnost roste s časem.</p>
+</div>
+
+<!-- ============ VIEW: NATIVNÍ ČERVEN 2026 (Barter Pitland) ============ -->
+<div id="view-cerven" style="display:none">
+<p class="meta">Nativní inzerát na HP Seznam.cz · objednávka 8120469226 · termín 11.–28. 6. 2026 · stav <b>Ukončená</b> · vlastník Radek Krechler · <i>archiv (barter)</i></p>
 <span class="stamp" id="stamp">Data k: …</span>
 
 <div class="controls">
@@ -83,7 +138,7 @@ a{color:var(--blue)}
 
 <div class="cards" id="cards"></div>
 <div class="pace" id="pacebox">
-<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--mut)"><span>Dočerpání garance (475 000 zobrazení)</span><span id="pacepct"></span></div>
+<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--mut)"><span id="pacelbl">Dočerpání garance (475 000 zobrazení)</span><span id="pacepct"></span></div>
 <div class="track"><div class="fill" id="pacefill"></div></div>
 <div style="font-size:12px;color:var(--hint)" id="pacenote"></div>
 </div>
@@ -108,7 +163,7 @@ a{color:var(--blue)}
 </table>
 <p class="note" id="gainsight"></p>
 
-<p class="foot">Zdroj: SOS export (zobrazení, prokliky, CTR) + GA4 (relace, zapojení, konverze) přes Data API. Obnovováno 4×/den. Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>. Per‑kreativa za vlastní období (SOS) se dopočítává z denních snímků — přesnost roste s časem.</p>
+<p class="foot">Zdroj: SOS export (zobrazení, prokliky, CTR) + GA4 (relace, zapojení, konverze) přes Data API. Kampaň ukončená — čísla se dále nemění. Náhledy kreativ: <a href="https://pitland-cz.github.io/Pitland_nahled_native_/" target="_blank">přehled inzerátů</a>. Per‑kreativa za vlastní období (SOS) se dopočítává z denních snímků.</p>
 </div>
 
 <!-- ============ VIEW: SKLIK (PPC) ============ -->
@@ -138,85 +193,194 @@ a{color:var(--blue)}
 </div>
 
 <script>
-/* ============ NATIVNÍ (SOS) ============ */
-const DEFAULT={"updated":"18. 6. 2026, 08:25","campaign":{"id":"8120469226","name":"Barter Pitland","start":"2026-06-11","end":"2026-06-28","garant":475000,"bench":0.337},"daily":[{"d":"2026-06-16","imp":28260,"clk":83,"unik":25237,"freq":1.034},{"d":"2026-06-17","imp":42252,"clk":123,"unik":36803,"freq":1.047}],"snaps":[{"d":"2026-06-16","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":0,"clk":0},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":4516,"clk":10},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":4507,"clk":8},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":4533,"clk":9},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":4406,"clk":13},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":4455,"clk":19},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":4506,"clk":18}]},{"d":"2026-06-18","cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","typ":"letošní","imp":6119,"clk":19},{"n":"První jízda na motorce už od deseti let","typ":"letošní","imp":10847,"clk":29},{"n":"Váš junior sní o motorkách? Řešení je v Praze","typ":"letošní","imp":10656,"clk":32},{"n":"Začněte spolu jezdit už od 10ti let","typ":"loni","imp":10810,"clk":29},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","typ":"loni","imp":10700,"clk":27},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","typ":"loni","imp":10684,"clk":37},{"n":"Bezpečný start pro nejmenší motorkáře","typ":"loni","imp":10696,"clk":33}]}],"ga":{"date":"2026-06-18","window":"od startu kampaně (11. 6.)","site":{"conv":73,"rev":176150},"campaign":{"sess":260,"engRate":44.2,"conv":0,"rev":0},"notset":{"sess":0,"engRate":0},"cre":[{"n":"Jezdíte na motorce? Vezměte juniora s sebou","sess":54,"engRate":61.1,"conv":0,"rev":0},{"n":"Váš junior sní o motorkách? Řešení je v Praze","sess":35,"engRate":51.4,"conv":0,"rev":0},{"n":"Chce na motorku? Ať se to naučí v bezpečí haly.","sess":46,"engRate":50.0,"conv":0,"rev":0},{"n":"Začněte spolu jezdit už od 10ti let","sess":32,"engRate":40.6,"conv":0,"rev":0},{"n":"Bezpečný start pro nejmenší motorkáře","sess":41,"engRate":36.6,"conv":0,"rev":0},{"n":"První jízda na motorce už od deseti let","sess":28,"engRate":32.1,"conv":0,"rev":0},{"n":"Chce být jako ty? Ukaž mu bezpečnou cestu","sess":24,"engRate":16.7,"conv":0,"rev":0}]}};
-let D=DEFAULT, mode="all";
+/* ============ NATIVNÍ (SOS) - refaktoring pro N kampaní ============ */
 const fmt=n=>Math.round(n).toLocaleString('cs-CZ');
 const cz=d=>{const[y,m,da]=d.split('-');return da*1+'. '+m*1+'.';};
-function latest(){return D.snaps[D.snaps.length-1];}
-function snapBefore(date){let s=null;for(const x of D.snaps){if(x.d<=date)s=x;}return s;}
-function rangeCampaign(od,doo){let imp=0,clk=0,unik=null,freq=null;for(const r of D.daily){if(r.d>=od&&r.d<=doo){imp+=r.imp;clk+=r.clk;unik=r.unik;freq=r.freq;}}return{imp,clk,unik,freq};}
-function creRange(od,doo,whole){
-const end=snapBefore(doo)||latest();
-const base=whole?null:snapBefore(prevDay(od));
-return end.cre.map(c=>{const b=base?base.cre.find(x=>x.n===c.n):null;return{n:c.n,typ:c.typ,imp:c.imp-(b?b.imp:0),clk:c.clk-(b?b.clk:0)};});
-}
-function prevDay(d){const t=new Date(d);t.setDate(t.getDate()-1);return t.toISOString().slice(0,10);}
-const ctr=a=>a.imp>0?a.clk/a.imp*100:0;
-
-function render(){
-const C=D.campaign;
-document.getElementById('stamp').textContent='Data k: '+D.updated+' — zdroj: SOS export';
-const lastDay=D.daily.length?D.daily[D.daily.length-1].d:C.start;
-const endDate=D.snaps.length?D.snaps[D.snaps.length-1].d:lastDay;
-let od,doo,whole=false,lbl='';
-if(mode==='all'||mode==='days'){od=C.start;doo=endDate;whole=true;lbl='Celé období 11. 6. – '+cz(endDate)+' (kumulativně od startu)';}
-else{od=document.getElementById('od').value||C.start;doo=document.getElementById('do').value||lastDay;lbl='Období '+cz(od)+' – '+cz(doo);}
-document.getElementById('rangelbl').textContent=lbl;
-
-let sum;
-if(whole){const L=latest();sum={imp:L.cre.reduce((a,c)=>a+c.imp,0),clk:L.cre.reduce((a,c)=>a+c.clk,0)};const ld=D.daily[D.daily.length-1]||{};sum.freq=ld.freq;sum.unik=ld.freq?Math.round(sum.imp/ld.freq):ld.unik;}
-else{sum=rangeCampaign(od,doo);}
-const sctr=sum.imp>0?sum.clk/sum.imp*100:0;
-const cards=[['Zobrazení',fmt(sum.imp),whole?'z '+fmt(C.garant)+' garant.':''],['Prokliky',fmt(sum.clk),''],['CTR',sctr.toFixed(3)+' %','benchmark 0,337 %']];
-if(sum.unik)cards.push(['Unikátní zásah','≈ '+fmt(sum.unik),'']);
-if(sum.freq)cards.push(['Frekvence',sum.freq.toFixed(2)+'×','']);
-document.getElementById('cards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
-
-const pb=document.getElementById('pacebox');
-if(whole){pb.style.display='block';const pct=sum.imp/C.garant*100;const days=(new Date(C.end)-new Date(C.start))/864e5;const el=(new Date(endDate)-new Date(C.start))/864e5;document.getElementById('pacepct').textContent=pct.toFixed(1)+' %';document.getElementById('pacefill').style.width=Math.min(pct,100)+'%';document.getElementById('pacenote').textContent='Uplynulo '+Math.round(el/days*100)+' % času ('+Math.round(el)+' z '+Math.round(days)+' dní) — testovací fáze, hlavní objem přijde v červenci/srpnu.';}
-else pb.style.display='none';
-
-const dw=document.getElementById('dailywrap');
-if(mode==='days'){dw.style.display='block';document.getElementById('dailyrows').innerHTML=D.daily.map(r=>`<tr><td>${cz(r.d)}</td><td class="num">${fmt(r.imp)}</td><td class="num">${r.clk}</td><td class="num">${(r.clk/r.imp*100).toFixed(3)} %</td><td class="num">${fmt(r.unik)}</td><td class="num">${r.freq.toFixed(2)}×</td></tr>`).join('');}
-else dw.style.display='none';
-
-const cre=creRange(od,doo,whole).slice().sort((a,b)=>ctr(b)-ctr(a));
-const maxC=Math.max(...cre.map(ctr),C.bench)*1.1||1;const bw=C.bench/maxC*100;
-let html=`<tr class="total"><td>Σ</td><td>CELKEM — všechny kreativy</td><td></td><td class="num">${fmt(sum.imp)}</td><td class="num">${sum.clk}</td><td class="num">${sctr.toFixed(3)} %</td><td><div class="ctrbar tot"><i style="width:${sctr/maxC*100}%"></i><b style="left:${bw}%"></b></div></td></tr>`;
-html+=cre.map((a,i)=>{const c=ctr(a);const served=a.imp>0;return `<tr><td>${i+1}</td><td>${a.n}</td><td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td><td class="num">${served?fmt(a.imp):'<span class=zero>0</span>'}</td><td class="num">${served?a.clk:'<span class=zero>0</span>'}</td><td class="num ctrval">${served?c.toFixed(3)+' %':'—'}</td><td>${served?`<div class="ctrbar"><i style="width:${c/maxC*100}%"></i><b style="left:${bw}%"></b></div>`:'<span class=zero>nezobrazeno</span>'}</td></tr>`;}).join('');
-document.getElementById('rows').innerHTML=html;
-document.getElementById('insight').innerHTML='Modrý řádek = celá kampaň (průměrné CTR). Červená čára = loňský benchmark 0,337 %.';
-renderGA();
-}
 const pc1=n=>n.toFixed(1).replace('.',',');
-function renderGA(){
-const g=D.ga;
-if(!g){['gaH','gatable','gainsight'].forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='none';});var gc=document.getElementById('gacards');if(gc)gc.innerHTML='';return;}
-const cm=g.campaign;
-const cards=[
-['Relace ze Seznamu',fmt(cm.sess),'GA4, '+g.window],
-['Míra zapojení',pc1(cm.engRate)+' %','zapojené návštěvy'],
-['Konverze z kampaně',cm.conv,cm.conv===0?'zatím žádná':''],
-['Tržba z kampaně',fmt(cm.rev)+' Kč','']
-];
-document.getElementById('gacards').innerHTML=cards.map(c=>`<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
-const cre=g.cre.slice().sort((a,b)=>b.engRate-a.engRate);
-const maxE=Math.max(...cre.map(c=>c.engRate),cm.engRate)*1.1||1;const aw=cm.engRate/maxE*100;
-document.getElementById('garows').innerHTML=cre.map((c,i)=>`<tr><td>${i+1}</td><td>${c.n}</td><td class="num">${c.sess}</td><td class="num ctrval">${pc1(c.engRate)} %</td><td><div class="ctrbar"><i style="width:${c.engRate/maxE*100}%"></i><b style="left:${aw}%"></b></div></td><td class="num">${c.conv?c.conv:'<span class=zero>0</span>'}</td><td class="num">${c.rev?fmt(c.rev)+' Kč':'—'}</td></tr>`).join('');
-let gnote='Data k '+cz(g.date)+' ('+g.window+'). „Míra zapojení" = podíl návštěv, kdy člověk na webu zůstal a něco dělal — ukazuje kvalitu prokliku. Červená čára = průměr kampaně ('+pc1(cm.engRate)+' %). Konverze = klíčová událost <i>purchase</i> přiřazená kampani'+(cm.conv?'.':'; zatím 0 — nativ je horní trychtýř, prodeje dopadají později jinými kanály.');
-if(g.notset&&g.notset.sess>0)gnote+=' Pozn.: '+g.notset.sess+' relací kampaně má neoznačený obsah (utm_content), u nich rozpad po kreativě chybí.';
-document.getElementById('gainsight').innerHTML=gnote;
+
+function createSosView(cfg){
+  // cfg: {pfx, dataUrl, defaultData, sourceLabel, footPrefix}
+  const pfx = cfg.pfx || '';
+  const el = id => document.getElementById(pfx + id);
+  let D = cfg.defaultData, mode = 'all';
+
+  const latest = () => D.snaps[D.snaps.length-1];
+  const snapBefore = date => { let s=null; for(const x of D.snaps){ if(x.d<=date) s=x; } return s; };
+  const rangeCampaign = (od,doo) => { let imp=0,clk=0,unik=null,freq=null; for(const r of D.daily){ if(r.d>=od&&r.d<=doo){imp+=r.imp;clk+=r.clk;unik=r.unik;freq=r.freq;} } return{imp,clk,unik,freq}; };
+  const prevDay = d => { const t=new Date(d); t.setDate(t.getDate()-1); return t.toISOString().slice(0,10); };
+  const ctr = a => a.imp>0 ? a.clk/a.imp*100 : 0;
+  const creRange = (od,doo,whole) => {
+    const end = snapBefore(doo) || latest();
+    const base = whole ? null : snapBefore(prevDay(od));
+    return end.cre.map(c=>{ const b = base ? base.cre.find(x=>x.n===c.n) : null; return {n:c.n, typ:c.typ, imp:c.imp-(b?b.imp:0), clk:c.clk-(b?b.clk:0)}; });
+  };
+
+  function render(){
+    const C = D.campaign;
+    el('stamp').textContent = 'Data k: ' + D.updated + ' — zdroj: SOS export';
+    const lastDay = D.daily.length ? D.daily[D.daily.length-1].d : C.start;
+    const endDate = D.snaps.length ? D.snaps[D.snaps.length-1].d : lastDay;
+    let od,doo,whole=false,lbl='';
+    if(mode==='all'||mode==='days'){
+      od=C.start; doo=endDate; whole=true;
+      lbl='Celé období ' + cz(C.start) + ' – ' + cz(endDate) + ' (kumulativně od startu)';
+    } else {
+      od = el('od').value || C.start;
+      doo = el('do').value || lastDay;
+      lbl = 'Období ' + cz(od) + ' – ' + cz(doo);
+    }
+    el('rangelbl').textContent = lbl;
+
+    let sum;
+    if(whole){
+      const L = latest();
+      sum = { imp: L.cre.reduce((a,c)=>a+c.imp,0), clk: L.cre.reduce((a,c)=>a+c.clk,0) };
+      const ld = D.daily[D.daily.length-1] || {};
+      sum.freq = ld.freq;
+      sum.unik = ld.freq ? Math.round(sum.imp/ld.freq) : ld.unik;
+    } else {
+      sum = rangeCampaign(od, doo);
+    }
+    const sctr = sum.imp>0 ? sum.clk/sum.imp*100 : 0;
+    const cards = [
+      ['Zobrazení', fmt(sum.imp), whole ? 'z ' + fmt(C.garant) + ' garant.' : ''],
+      ['Prokliky', fmt(sum.clk), ''],
+      ['CTR', sctr.toFixed(3) + ' %', 'benchmark 0,337 %'],
+    ];
+    if(sum.unik) cards.push(['Unikátní zásah', '≈ ' + fmt(sum.unik), '']);
+    if(sum.freq) cards.push(['Frekvence', sum.freq.toFixed(2) + '×', '']);
+    el('cards').innerHTML = cards.map(c => `<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+
+    const pb = el('pacebox');
+    if(whole){
+      pb.style.display = 'block';
+      const pct = sum.imp / C.garant * 100;
+      const days = (new Date(C.end) - new Date(C.start)) / 864e5;
+      const elp = (new Date(endDate) - new Date(C.start)) / 864e5;
+      el('pacelbl').textContent = 'Dočerpání garance (' + fmt(C.garant) + ' zobrazení)';
+      el('pacepct').textContent = pct.toFixed(1) + ' %';
+      el('pacefill').style.width = Math.min(pct, 100) + '%';
+      el('pacenote').textContent = 'Uplynulo ' + Math.round(elp/days*100) + ' % času (' + Math.round(elp) + ' z ' + Math.round(days) + ' dní).';
+    } else {
+      pb.style.display = 'none';
+    }
+
+    const dw = el('dailywrap');
+    if(mode === 'days'){
+      dw.style.display = 'block';
+      el('dailyrows').innerHTML = D.daily.map(r => `<tr><td>${cz(r.d)}</td><td class="num">${fmt(r.imp)}</td><td class="num">${r.clk}</td><td class="num">${(r.clk/r.imp*100).toFixed(3)} %</td><td class="num">${fmt(r.unik)}</td><td class="num">${r.freq.toFixed(2)}×</td></tr>`).join('');
+    } else {
+      dw.style.display = 'none';
+    }
+
+    const cre = creRange(od, doo, whole).slice().sort((a,b) => ctr(b) - ctr(a));
+    const maxC = Math.max(...cre.map(ctr), C.bench) * 1.1 || 1;
+    const bw = C.bench / maxC * 100;
+    let html = `<tr class="total"><td>Σ</td><td>CELKEM — všechny kreativy</td><td></td><td class="num">${fmt(sum.imp)}</td><td class="num">${sum.clk}</td><td class="num">${sctr.toFixed(3)} %</td><td><div class="ctrbar tot"><i style="width:${sctr/maxC*100}%"></i><b style="left:${bw}%"></b></div></td></tr>`;
+    html += cre.map((a,i) => {
+      const c = ctr(a);
+      const served = a.imp > 0;
+      return `<tr><td>${i+1}</td><td>${a.n}</td><td><span class="badge ${a.typ==='letošní'?'b-new':'b-old'}">${a.typ}</span></td><td class="num">${served?fmt(a.imp):'<span class=zero>0</span>'}</td><td class="num">${served?a.clk:'<span class=zero>0</span>'}</td><td class="num ctrval">${served?c.toFixed(3)+' %':'—'}</td><td>${served?`<div class="ctrbar"><i style="width:${c/maxC*100}%"></i><b style="left:${bw}%"></b></div>`:'<span class=zero>nezobrazeno</span>'}</td></tr>`;
+    }).join('');
+    el('rows').innerHTML = html;
+    el('insight').innerHTML = 'Modrý řádek = celá kampaň (průměrné CTR). Červená čára = loňský benchmark 0,337 %.';
+    renderInterests();
+    renderGA();
+  }
+
+  function renderInterests(){
+    const intH = el('intH'), intTable = el('inttable'), intRows = el('introws'), intIns = el('intinsight');
+    if(!intH || !intTable) return; // this SOS view doesn't have the interests section
+    const list = D.interests || [];
+    if(!list.length){
+      intH.style.display = 'none';
+      intTable.style.display = 'none';
+      if(intIns) intIns.style.display = 'none';
+      return;
+    }
+    intH.style.display = ''; intTable.style.display = '';
+    if(intIns) intIns.style.display = '';
+    const total = list.reduce((a,it) => a + it.imp, 0) || 1;
+    const sorted = list.slice().sort((a,b) => b.imp - a.imp);
+    intRows.innerHTML = sorted.map((it,i) => {
+      const c = it.imp > 0 ? it.clk/it.imp*100 : 0;
+      const share = it.imp/total*100;
+      return `<tr><td>${i+1}</td><td>${it.n}</td><td class="num">${fmt(it.imp)}</td><td class="num">${it.clk}</td><td class="num ctrval">${c.toFixed(3)} %</td><td><div class="ctrbar"><i style="width:${share}%"></i></div><div style="font-size:11px;color:var(--hint);margin-top:2px">${share.toFixed(1)} %</div></td></tr>`;
+    }).join('');
+    if(intIns){
+      intIns.innerHTML = sorted.length === 1
+        ? 'Kampaň momentálně cílí pouze na jednu zájmovou skupinu (<b>' + sorted[0].n + '</b>). Až se přidají další cílení, začnou se tady rozpadat samy.'
+        : 'CTR rozpad po zájmové skupině ukazuje, kde se kreativa nejlíp trefuje. Podíl objemu = jaká část zobrazení šla do dané skupiny.';
+    }
+  }
+
+  function renderGA(){
+    const g = D.ga;
+    const gaH = el('gaH'), gatable = el('gatable'), gains = el('gainsight'), gacards = el('gacards');
+    if(!g){
+      if(gaH) gaH.style.display = 'none';
+      if(gatable) gatable.style.display = 'none';
+      if(gains){ gains.style.display = 'block'; gains.textContent = 'GA4 vrstva se doplní jakmile bude znám utm_campaign pro tuto kampaň.'; }
+      if(gacards) gacards.innerHTML = '';
+      return;
+    }
+    if(gaH) gaH.style.display = '';
+    if(gatable) gatable.style.display = '';
+    if(gains) gains.style.display = '';
+    const cm = g.campaign;
+    const cards = [
+      ['Relace ze Seznamu', fmt(cm.sess), 'GA4, ' + g.window],
+      ['Míra zapojení', pc1(cm.engRate) + ' %', 'zapojené návštěvy'],
+      ['Konverze z kampaně', cm.conv, cm.conv === 0 ? 'zatím žádná' : ''],
+      ['Tržba z kampaně', fmt(cm.rev) + ' Kč', ''],
+    ];
+    gacards.innerHTML = cards.map(c => `<div class="c"><p class="l">${c[0]}</p><p class="v">${c[1]}</p>${c[2]?`<p class="s">${c[2]}</p>`:''}</div>`).join('');
+    const cre = g.cre.slice().sort((a,b) => b.engRate - a.engRate);
+    const maxE = Math.max(...cre.map(c => c.engRate), cm.engRate) * 1.1 || 1;
+    const aw = cm.engRate / maxE * 100;
+    el('garows').innerHTML = cre.map((c,i) => `<tr><td>${i+1}</td><td>${c.n}</td><td class="num">${c.sess}</td><td class="num ctrval">${pc1(c.engRate)} %</td><td><div class="ctrbar"><i style="width:${c.engRate/maxE*100}%"></i><b style="left:${aw}%"></b></div></td><td class="num">${c.conv?c.conv:'<span class=zero>0</span>'}</td><td class="num">${c.rev?fmt(c.rev)+' Kč':'—'}</td></tr>`).join('');
+    let n = 'Data k ' + cz(g.date) + ' (' + g.window + '). „Míra zapojení" = podíl návštěv, kdy člověk na webu zůstal a něco dělal — ukazuje kvalitu prokliku. Červená čára = průměr kampaně (' + pc1(cm.engRate) + ' %). Konverze = klíčová událost <i>purchase</i> přiřazená kampani' + (cm.conv?'.':'; zatím 0 — nativ je horní trychtýř, prodeje dopadají později jinými kanály.');
+    if(g.notset && g.notset.sess > 0) n += ' Pozn.: ' + g.notset.sess + ' relací kampaně má neoznačený obsah (utm_content), u nich rozpad po kreativě chybí.';
+    el('gainsight').innerHTML = n;
+  }
+
+  function setMode(m){
+    mode = m;
+    document.querySelectorAll('#' + pfx + 'seg button').forEach(b => b.classList.toggle('on', b.dataset.m === m));
+    el('rangebox').classList.toggle('show', m === 'range');
+    render();
+  }
+  document.querySelectorAll('#' + pfx + 'seg button').forEach(b => b.addEventListener('click', () => setMode(b.dataset.m)));
+  el('apply').addEventListener('click', render);
+
+  function boot(){
+    const C = D.campaign;
+    el('od').value = C.start;
+    el('do').value = D.daily.length ? D.daily[D.daily.length-1].d : C.end;
+    render();
+  }
+
+  fetch(cfg.dataUrl + '?cb=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(j => { if(j && j.snaps) D = j; boot(); })
+    .catch(() => boot());
+  boot();
 }
-function setMode(m){mode=m;document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));document.getElementById('rangebox').classList.toggle('show',m==='range');render();}
-document.querySelectorAll('#seg button').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.m)));
-document.getElementById('apply').addEventListener('click',render);
-function boot(){const C=D.campaign;document.getElementById('od').value=C.start;document.getElementById('do').value=D.daily.length?D.daily[D.daily.length-1].d:C.end;render();}
-fetch('data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.snaps)D=j;boot();}).catch(()=>boot());
-boot();
+
+/* Instantiate: srpen (default view) + červen (archive) */
+createSosView({
+  pfx: 's2-',
+  dataUrl: 'data-srpen.json',
+  defaultData: {"updated":"…","campaign":{"id":"8120876426","name":"Happy Garage — srpen 2026","start":"2026-07-27","end":"2026-08-30","garant":470588,"bench":0.337},"daily":[],"snaps":[{"d":"2026-07-28","cre":[]}],"ga":null}
+});
+createSosView({
+  pfx: '',
+  dataUrl: 'data.json',
+  defaultData: {"updated":"…","campaign":{"id":"8120469226","name":"Barter Pitland","start":"2026-06-11","end":"2026-06-28","garant":475000,"bench":0.337},"daily":[],"snaps":[{"d":"2026-06-28","cre":[]}],"ga":null}
+});
 
 /* ============ SKLIK (PPC) ============ */
-const SKLIK_DEFAULT={"updated":"18. 6. 2026, 07:30","account":{"name":"Pitland (jnoteplice@gmail.com)","credit":8059,"period":"16.–17. 6. 2026"},"summary":{"imp":4805,"clk":49,"cost":189.17,"orders":0,"orderVal":0,"leads":1},"campaigns":[{"n":"RTG | Bannery","typ":"retargeting","imp":4500,"clk":43,"cost":173.87,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Brand","typ":"brand","imp":4,"clk":4,"cost":8.30,"orders":0,"orderVal":0,"leads":1},{"n":"VS | Moto","typ":"nebrand","imp":74,"clk":2,"cost":7.00,"orders":0,"orderVal":0,"leads":0},{"n":"VS | Motorky/jízdy","typ":"nebrand","imp":0,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0},{"n":"RTG | KR","typ":"retargeting","imp":1,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0}],"ga":{"date":"2026-06-18","window":"od startu kampaně (11. 6.)","site":{"sess":6071,"engRate":41.1,"conv":73,"rev":176150},"campaign":{"sess":355,"engRate":42.5,"conv":0,"rev":0},"cre":[{"n":"RTG | Bannery","sess":192,"engRate":34.4,"conv":0,"rev":0},{"n":"OS | bannery (bez RTG 30)","sess":127,"engRate":45.7,"conv":0,"rev":0},{"n":"VS | Brand","sess":27,"engRate":66.7,"conv":0,"rev":0},{"n":"VS | Motorky/jízdy","sess":7,"engRate":100.0,"conv":0,"rev":0},{"n":"VS | Moto","sess":3,"engRate":66.7,"conv":0,"rev":0}]}};
+const SKLIK_DEFAULT={"updated":"…","account":{"name":"Pitland (jnoteplice@gmail.com)","credit":0,"period":"…"},"summary":{"imp":0,"clk":0,"cost":0,"orders":0,"orderVal":0,"leads":0},"campaigns":[],"ga":null};
 let SK=SKLIK_DEFAULT;
 const TYP={brand:['Brand','b-green'],retargeting:['Retargeting','b-new'],nebrand:['Nebrand','b-old']};
 function skRender(){
@@ -275,13 +439,14 @@ function skBoot(){skRender();}
 fetch('sklik-data.json?cb='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.summary)SK=j;skBoot();}).catch(()=>skBoot());
 skBoot();
 
-/* ============ PŘEPÍNAČ ZÁLOŽEK ============ */
+/* ============ PŘEPÍNAČ ZÁLOŽEK (3 taby) ============ */
 function setTab(t){
-document.getElementById('view-sos').style.display=t==='sos'?'block':'none';
-document.getElementById('view-sklik').style.display=t==='sklik'?'block':'none';
-document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));
+  document.getElementById('view-srpen').style.display = t === 'srpen' ? 'block' : 'none';
+  document.getElementById('view-cerven').style.display = t === 'cerven' ? 'block' : 'none';
+  document.getElementById('view-sklik').style.display = t === 'sklik' ? 'block' : 'none';
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.t === t));
 }
-document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.t)));
+document.querySelectorAll('#tabs button').forEach(b => b.addEventListener('click', () => setTab(b.dataset.t)));
 </script>
 </body>
 </html>
