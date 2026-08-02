@@ -66,16 +66,16 @@
     }
   ],
   "ga": {
-    "date": "2026-07-29",
+    "date": "2026-08-02",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 49392,
-      "engRate": 37.9,
-      "conv": 475,
-      "rev": 1503585
+      "sess": 53878,
+      "engRate": 39.5,
+      "conv": 519,
+      "rev": 1654815
     },
     "campaign": {
-      "sess": 2908,
+      "sess": 2963,
       "engRate": 65.0,
       "conv": 71,
       "rev": 250675
@@ -83,22 +83,22 @@
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1898,
-        "engRate": 69.3,
+        "sess": 1917,
+        "engRate": 68.9,
         "conv": 58,
         "rev": 205325
       },
       {
         "n": "VS | Moto",
-        "sess": 237,
-        "engRate": 70.0,
+        "sess": 261,
+        "engRate": 69.7,
         "conv": 2,
         "rev": 7800
       },
       {
         "n": "VS | Brand",
-        "sess": 218,
-        "engRate": 78.9,
+        "sess": 230,
+        "engRate": 79.6,
         "conv": 11,
         "rev": 37550
       },
@@ -118,15 +118,15 @@
       },
       {
         "n": "(not set)",
-        "sess": 77,
-        "engRate": 39.0,
+        "sess": 79,
+        "engRate": 39.2,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 65,
-        "engRate": 92.3,
+        "sess": 68,
+        "engRate": 91.2,
         "conv": 0,
         "rev": 0
       },
@@ -141,20 +141,6 @@
         "n": "(referral)",
         "sess": 11,
         "engRate": 36.4,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "",
-        "sess": 2,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(direct)",
-        "sess": 2,
-        "engRate": 0.0,
         "conv": 0,
         "rev": 0
       },

@@ -856,17 +856,17 @@
     }
   ],
   "ga": {
-    "date": "2026-07-29",
+    "date": "2026-08-02",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 49392,
-      "engRate": 37.9,
-      "conv": 475,
-      "rev": 1503585
+      "sess": 53878,
+      "engRate": 39.5,
+      "conv": 519,
+      "rev": 1654815
     },
     "campaign": {
-      "sess": 1481,
-      "engRate": 36.7,
+      "sess": 3115,
+      "engRate": 52.9,
       "conv": 1,
       "rev": 1950
     },
@@ -876,6 +876,41 @@
     },
     "cre": [
       {
+        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+        "sess": 560,
+        "engRate": 57.7,
+        "conv": 1,
+        "rev": 1950
+      },
+      {
+        "n": "Začněte spolu jezdit už od 10ti let",
+        "sess": 424,
+        "engRate": 56.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 399,
+        "engRate": 53.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+        "sess": 1016,
+        "engRate": 52.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Váš junior sní o motorkách? Řešení je v Praze",
+        "sess": 425,
+        "engRate": 49.6,
+        "conv": 0,
+        "rev": 0
+      },
+      {
         "n": "První jízda na motorce už od deseti let",
         "sess": 116,
         "engRate": 44.0,
@@ -883,44 +918,9 @@
         "rev": 0
       },
       {
-        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 259,
-        "engRate": 43.6,
-        "conv": 1,
-        "rev": 1950
-      },
-      {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 202,
-        "engRate": 43.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 204,
-        "engRate": 38.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 219,
-        "engRate": 37.9,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 358,
-        "engRate": 27.4,
-        "conv": 0,
-        "rev": 0
-      },
-      {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 120,
-        "engRate": 25.8,
+        "sess": 185,
+        "engRate": 40.5,
         "conv": 0,
         "rev": 0
       }

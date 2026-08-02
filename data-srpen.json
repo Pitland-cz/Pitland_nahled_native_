@@ -69,17 +69,17 @@
     }
   ],
   "ga": {
-    "date": "2026-07-29",
+    "date": "2026-08-02",
     "window": "od startu srpnové kampaně (27. 7.)",
     "site": {
-      "sess": 49392,
-      "engRate": 37.9,
-      "conv": 475,
-      "rev": 1503585
+      "sess": 53878,
+      "engRate": 39.5,
+      "conv": 519,
+      "rev": 1654815
     },
     "campaign": {
-      "sess": 438,
-      "engRate": 1.1,
+      "sess": 2078,
+      "engRate": 53.3,
       "conv": 0,
       "rev": 0
     },
@@ -89,44 +89,44 @@
     },
     "cre": [
       {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 49,
-        "engRate": 2.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 58,
-        "engRate": 1.7,
-        "conv": 0,
-        "rev": 0
-      },
-      {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 68,
-        "engRate": 1.5,
+        "sess": 272,
+        "engRate": 57.7,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 74,
-        "engRate": 1.4,
+        "sess": 376,
+        "engRate": 56.1,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 165,
-        "engRate": 0.6,
+        "sess": 822,
+        "engRate": 52.9,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 244,
+        "engRate": 51.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 23,
-        "engRate": 0.0,
+        "sess": 88,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Váš junior sní o motorkách? Řešení je v Praze",
+        "sess": 279,
+        "engRate": 47.7,
         "conv": 0,
         "rev": 0
       }
