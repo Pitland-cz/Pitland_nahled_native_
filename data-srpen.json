@@ -78,8 +78,8 @@
       "rev": 1654815
     },
     "campaign": {
-      "sess": 2079,
-      "engRate": 53.2,
+      "sess": 2083,
+      "engRate": 53.1,
       "conv": 0,
       "rev": 0
     },
@@ -90,22 +90,22 @@
     "cre": [
       {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 272,
-        "engRate": 57.7,
+        "sess": 273,
+        "engRate": 57.5,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 376,
-        "engRate": 56.1,
+        "sess": 378,
+        "engRate": 55.8,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 823,
-        "engRate": 52.9,
+        "sess": 824,
+        "engRate": 52.8,
         "conv": 0,
         "rev": 0
       },

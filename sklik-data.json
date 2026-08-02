@@ -1,68 +1,156 @@
 {
- "updated": "2. 8. 2026, 09:05",
- "account": {
-  "name": "Pitland (jnoteplice@gmail.com)",
-  "credit": 4096.74,
-  "period": "16. 6. – 2. 8. 2026"
- },
- "summary": {
-  "imp": 18204,
-  "clk": 605,
-  "cost": 1838.47,
-  "orders": 18,
-  "orderVal": 46550,
-  "leads": 0
- },
- "campaigns": [
-  {
-   "n": "VS | Moto",
-   "typ": "nebrand",
-   "imp": 2775,
-   "clk": 270,
-   "cost": 794.85,
-   "orders": 3,
-   "orderVal": 11700,
-   "leads": 0
+  "updated": "2. 8. 2026, 09:05",
+  "account": {
+    "name": "Pitland (jnoteplice@gmail.com)",
+    "credit": 4096.74,
+    "period": "16. 6. – 2. 8. 2026"
   },
-  {
-   "n": "VS | Brand",
-   "typ": "brand",
-   "imp": 220,
-   "clk": 158,
-   "cost": 186.13,
-   "orders": 12,
-   "orderVal": 32150,
-   "leads": 0
+  "summary": {
+    "imp": 18204,
+    "clk": 605,
+    "cost": 1838.47,
+    "orders": 13,
+    "orderVal": 45350,
+    "leads": 2
   },
-  {
-   "n": "RTG | Bannery",
-   "typ": "retargeting",
-   "imp": 10243,
-   "clk": 97,
-   "cost": 412.69,
-   "orders": 3,
-   "orderVal": 2700,
-   "leads": 0
-  },
-  {
-   "n": "VS | Motorky/jízdy",
-   "typ": "nebrand",
-   "imp": 448,
-   "clk": 66,
-   "cost": 403.39,
-   "orders": 0,
-   "orderVal": 0,
-   "leads": 0
-  },
-  {
-   "n": "RTG | KR",
-   "typ": "retargeting",
-   "imp": 4518,
-   "clk": 14,
-   "cost": 41.41,
-   "orders": 0,
-   "orderVal": 0,
-   "leads": 0
+  "campaigns": [
+    {
+      "n": "VS | Moto",
+      "typ": "nebrand",
+      "imp": 2775,
+      "clk": 270,
+      "cost": 794.85,
+      "orders": 2,
+      "orderVal": 7800,
+      "leads": 0
+    },
+    {
+      "n": "VS | Brand",
+      "typ": "brand",
+      "imp": 220,
+      "clk": 158,
+      "cost": 186.13,
+      "orders": 11,
+      "orderVal": 37550,
+      "leads": 2
+    },
+    {
+      "n": "RTG | Bannery",
+      "typ": "retargeting",
+      "imp": 10243,
+      "clk": 97,
+      "cost": 412.69,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    },
+    {
+      "n": "VS | Motorky/jízdy",
+      "typ": "nebrand",
+      "imp": 448,
+      "clk": 66,
+      "cost": 403.39,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    },
+    {
+      "n": "RTG | KR",
+      "typ": "retargeting",
+      "imp": 4518,
+      "clk": 14,
+      "cost": 41.41,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    }
+  ],
+  "ga": {
+    "date": "2026-08-02",
+    "window": "od startu kampaně (11. 6.)",
+    "site": {
+      "sess": 53908,
+      "engRate": 39.5,
+      "conv": 519,
+      "rev": 1654815
+    },
+    "campaign": {
+      "sess": 2963,
+      "engRate": 65.0,
+      "conv": 71,
+      "rev": 250675
+    },
+    "cre": [
+      {
+        "n": "(organic)",
+        "sess": 1917,
+        "engRate": 68.9,
+        "conv": 58,
+        "rev": 205325
+      },
+      {
+        "n": "VS | Moto",
+        "sess": 261,
+        "engRate": 69.7,
+        "conv": 2,
+        "rev": 7800
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 231,
+        "engRate": 79.2,
+        "conv": 11,
+        "rev": 37550
+      },
+      {
+        "n": "RTG | Bannery",
+        "sess": 213,
+        "engRate": 38.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "OS | bannery (bez RTG 30)",
+        "sess": 127,
+        "engRate": 45.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(not set)",
+        "sess": 79,
+        "engRate": 39.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 68,
+        "engRate": 91.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "RTG | KR",
+        "sess": 12,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(referral)",
+        "sess": 11,
+        "engRate": 36.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "03/24 Děti - Konverze",
+        "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      }
+    ]
   }
- ]
 }
