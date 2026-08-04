@@ -66,39 +66,39 @@
     }
   ],
   "ga": {
-    "date": "2026-08-02",
+    "date": "2026-08-04",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 53908,
-      "engRate": 39.5,
-      "conv": 519,
-      "rev": 1654815
+      "sess": 55700,
+      "engRate": 40.0,
+      "conv": 537,
+      "rev": 1709605
     },
     "campaign": {
-      "sess": 2963,
-      "engRate": 65.0,
+      "sess": 2996,
+      "engRate": 65.1,
       "conv": 71,
       "rev": 250675
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 1917,
-        "engRate": 68.9,
+        "sess": 1928,
+        "engRate": 68.6,
         "conv": 58,
         "rev": 205325
       },
       {
         "n": "VS | Moto",
-        "sess": 261,
-        "engRate": 69.7,
+        "sess": 268,
+        "engRate": 69.8,
         "conv": 2,
         "rev": 7800
       },
       {
         "n": "VS | Brand",
-        "sess": 231,
-        "engRate": 79.2,
+        "sess": 243,
+        "engRate": 79.4,
         "conv": 11,
         "rev": 37550
       },
@@ -118,15 +118,15 @@
       },
       {
         "n": "(not set)",
-        "sess": 79,
-        "engRate": 39.2,
+        "sess": 80,
+        "engRate": 38.8,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 68,
-        "engRate": 91.2,
+        "sess": 74,
+        "engRate": 91.9,
         "conv": 0,
         "rev": 0
       },
@@ -147,6 +147,20 @@
       {
         "n": "03/24 Děti - Konverze",
         "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(direct)",
+        "sess": 1,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0

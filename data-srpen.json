@@ -69,17 +69,17 @@
     }
   ],
   "ga": {
-    "date": "2026-08-02",
+    "date": "2026-08-04",
     "window": "od startu srpnové kampaně (27. 7.)",
     "site": {
-      "sess": 53908,
-      "engRate": 39.5,
-      "conv": 519,
-      "rev": 1654815
+      "sess": 55700,
+      "engRate": 40.0,
+      "conv": 537,
+      "rev": 1709605
     },
     "campaign": {
-      "sess": 2083,
-      "engRate": 53.1,
+      "sess": 2653,
+      "engRate": 55.6,
       "conv": 0,
       "rev": 0
     },
@@ -89,44 +89,44 @@
     },
     "cre": [
       {
-        "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 273,
-        "engRate": 57.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 378,
-        "engRate": 55.8,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 824,
-        "engRate": 52.8,
-        "conv": 0,
-        "rev": 0
-      },
-      {
         "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 244,
-        "engRate": 51.6,
+        "sess": 311,
+        "engRate": 58.5,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 88,
-        "engRate": 50.0,
+        "sess": 105,
+        "engRate": 57.1,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Začněte spolu jezdit už od 10ti let",
+        "sess": 365,
+        "engRate": 56.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+        "sess": 463,
+        "engRate": 56.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+        "sess": 1056,
+        "engRate": 55.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 279,
-        "engRate": 47.7,
+        "sess": 351,
+        "engRate": 50.1,
         "conv": 0,
         "rev": 0
       }

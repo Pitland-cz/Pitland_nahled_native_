@@ -903,17 +903,17 @@
     }
   ],
   "ga": {
-    "date": "2026-08-02",
+    "date": "2026-08-04",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 53908,
-      "engRate": 39.5,
-      "conv": 519,
-      "rev": 1654815
+      "sess": 55700,
+      "engRate": 40.0,
+      "conv": 537,
+      "rev": 1709605
     },
     "campaign": {
-      "sess": 3118,
-      "engRate": 52.9,
+      "sess": 3684,
+      "engRate": 54.8,
       "conv": 1,
       "rev": 1950
     },
@@ -923,37 +923,44 @@
     },
     "cre": [
       {
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 466,
+        "engRate": 57.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 562,
-        "engRate": 57.5,
+        "sess": 648,
+        "engRate": 57.6,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 425,
-        "engRate": 56.2,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 399,
-        "engRate": 53.4,
+        "sess": 516,
+        "engRate": 55.8,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 1018,
-        "engRate": 52.3,
+        "sess": 1251,
+        "engRate": 54.8,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 425,
-        "engRate": 49.6,
+        "sess": 497,
+        "engRate": 51.1,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+        "sess": 202,
+        "engRate": 45.0,
         "conv": 0,
         "rev": 0
       },
@@ -961,13 +968,6 @@
         "n": "První jízda na motorce už od deseti let",
         "sess": 116,
         "engRate": 44.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 185,
-        "engRate": 40.5,
         "conv": 0,
         "rev": 0
       }
