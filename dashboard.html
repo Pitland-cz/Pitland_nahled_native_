@@ -180,6 +180,8 @@ a{color:var(--blue)}
 </table>
 <p class="note" id="sk-insight"></p>
 
+<div id="sk-vsdetail"></div>
+
 <h2 id="sk-gaH">Web po prokliku — co lidé dělají na webu (GA4)</h2>
 <div class="cards" id="sk-gacards"></div>
 <table id="sk-gatable">
@@ -417,6 +419,52 @@ document.getElementById('sk-insight').innerHTML = (watch.length
 : '')
 + 'Objednávky = typ „Purchase" (posílají hodnotu). Leady = odeslané formuláře (bez hodnoty). PNO počítáme jen z hodnoty objednávek.';
 renderSkGA();
+renderVsDetail();
+}
+function renderVsDetail(){
+const host=document.getElementById('sk-vsdetail');
+if(!host)return;
+const vd=SK.vsDetail;
+if(!vd||!vd.campaigns||!Object.keys(vd.campaigns).length){host.innerHTML='';return;}
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let h='<style>'
++'#sk-vsdetail details.vsc{border:1px solid #e5e7eb;border-radius:10px;margin:10px 0;padding:6px 12px;background:#fff}'
++'#sk-vsdetail details.vsc>summary{cursor:pointer;font-size:15px;padding:6px 2px;list-style:none}'
++'#sk-vsdetail details.vsc>summary::-webkit-details-marker{display:none}'
++'#sk-vsdetail details.vsc>summary::before{content:"▸ ";color:#6b7280}'
++'#sk-vsdetail details.vsc[open]>summary::before{content:"▾ "}'
++'#sk-vsdetail table.vstab{width:100%;border-collapse:collapse;margin:4px 0 10px}'
++'#sk-vsdetail table.vstab th,#sk-vsdetail table.vstab td{padding:5px 8px;border-bottom:1px solid #f1f3f5;font-size:13px;text-align:left}'
++'#sk-vsdetail table.vstab th.num,#sk-vsdetail table.vstab td.num{text-align:right}'
++'#sk-vsdetail tr.vsconv>td{background:#f0fdf4}'
++'#sk-vsdetail details.vskw>summary{cursor:pointer;list-style:none}'
++'#sk-vsdetail details.vskw>summary::-webkit-details-marker{display:none}'
++'#sk-vsdetail details.vskw>summary::before{content:"＋ ";color:#9ca3af;font-size:11px}'
++'#sk-vsdetail details.vskw[open]>summary::before{content:"－ "}'
++'#sk-vsdetail table.vstab2{width:100%;border-collapse:collapse;margin:4px 0 6px;background:#fafafa;border-left:2px solid #d1d5db}'
++'#sk-vsdetail table.vstab2 th,#sk-vsdetail table.vstab2 td{padding:3px 8px;border-bottom:1px solid #eee;font-size:12px;color:#374151;text-align:left}'
++'#sk-vsdetail table.vstab2 th.num,#sk-vsdetail table.vstab2 td.num{text-align:right}'
++'#sk-vsdetail .kbadge{display:inline-block;min-width:16px;text-align:center;font-size:11px;color:#6b7280}'
++'</style>';
+h+='<h2>VS kampaně — co funguje (sestavy → klíčová slova)</h2>';
+h+='<p class="note">Data k '+vd.updated+'. Rozklikni kampaň, pak sestavu → uvidíš klíčová slova. Řazeno dle prokliků; zeleně to, co má konverzi.</p>';
+for(const cname of Object.keys(vd.campaigns)){
+const sest=vd.campaigns[cname].sestavy||[];
+const tc=sest.reduce((a,s)=>a+s.clk,0),tco=sest.reduce((a,s)=>a+(s.conv||0),0),tv=sest.reduce((a,s)=>a+(s.convVal||0),0),tcost=sest.reduce((a,s)=>a+s.cost,0);
+h+='<details class="vsc" open><summary><b>'+esc(cname)+'</b> · '+tc+' prokl · '+fmt(Math.round(tcost))+' Kč · '+tco+' obj.'+(tv>0?' ('+fmt(tv)+' Kč)':'')+' · '+sest.length+' sestav</summary>';
+h+='<table class="vstab"><thead><tr><th>Sestava</th><th class="num">Prokl.</th><th class="num">Zobr.</th><th class="num">CTR</th><th class="num">Cena</th><th class="num">Obj.</th><th class="num">Hodnota</th><th class="num">Kval.</th></tr></thead><tbody>';
+for(const s of sest){
+const ctr=s.imp>0?(s.clk/s.imp*100).toFixed(1)+' %':'—';
+const nameCell=(s.kw&&s.kw.length)
+?('<details class="vskw"><summary>'+esc(s.n)+' <span class="kbadge">('+s.kw.length+' kw)</span></summary><table class="vstab2"><thead><tr><th>Klíčové slovo</th><th class="num">Prokl.</th><th class="num">Zobr.</th><th class="num">CTR</th><th class="num">Cena</th><th class="num">Obj.</th><th class="num">Hodn.</th><th class="num">Kv.</th></tr></thead><tbody>'
++s.kw.map(k=>{const kc=k.imp>0?(k.clk/k.imp*100).toFixed(1)+' %':'—';return '<tr class="'+(k.conv>0?'vsconv':'')+'"><td>'+esc(k.n)+'</td><td class="num">'+k.clk+'</td><td class="num">'+fmt(k.imp)+'</td><td class="num">'+kc+'</td><td class="num">'+fmt(Math.round(k.cost))+' Kč</td><td class="num">'+(k.conv||'')+'</td><td class="num">'+(k.convVal>0?fmt(k.convVal)+' Kč':'—')+'</td><td class="num">'+k.kval+'</td></tr>';}).join('')
++'</tbody></table></details>')
+:esc(s.n);
+h+='<tr class="'+(s.conv>0?'vsconv':'')+'"><td>'+nameCell+'</td><td class="num">'+s.clk+'</td><td class="num">'+fmt(s.imp)+'</td><td class="num">'+ctr+'</td><td class="num">'+fmt(Math.round(s.cost))+' Kč</td><td class="num">'+(s.conv||'')+'</td><td class="num">'+(s.convVal>0?fmt(s.convVal)+' Kč':'—')+'</td><td class="num">'+s.kval+'</td></tr>';
+}
+h+='</tbody></table></details>';
+}
+host.innerHTML=h;
 }
 function renderSkGA(){
 const g=SK.ga;
