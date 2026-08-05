@@ -1,135 +1,135 @@
 {
-  "updated": "29. 7. 2026, 00:14",
-  "campaign": {
-    "id": "8120876426",
-    "name": "Happy Garage — srpen 2026",
-    "start": "2026-07-27",
-    "end": "2026-08-30",
-    "garant": 470588,
-    "bench": 0.337
-  },
-  "daily": [
-    {
-      "d": "2026-07-28",
-      "imp": 49060,
-      "clk": 365,
-      "unik": 19962,
-      "freq": 2.383
-    }
-  ],
-  "interests": [
-    {
-      "n": "Automoto - Motocykly",
-      "reklama": "Seznam.cz - homepage - Nativní inzerát",
-      "imp": 49060,
-      "clk": 365
-    }
-  ],
-  "snaps": [
-    {
-      "d": "2026-07-29",
-      "cre": [
-        {
-          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-          "typ": "letošní",
-          "imp": 6924,
-          "clk": 63
-        },
-        {
-          "n": "Váš junior sní o motorkách? Řešení je v Praze",
-          "typ": "letošní",
-          "imp": 7019,
-          "clk": 52
-        },
-        {
-          "n": "Začněte spolu jezdit už od 10ti let",
-          "typ": "loni",
-          "imp": 7084,
-          "clk": 58
-        },
-        {
-          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-          "typ": "loni",
-          "imp": 7097,
-          "clk": 17
-        },
-        {
-          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-          "typ": "loni",
-          "imp": 14018,
-          "clk": 134
-        },
-        {
-          "n": "Bezpečný start pro nejmenší motorkáře",
-          "typ": "loni",
-          "imp": 6918,
-          "clk": 41
-        }
-      ]
-    }
-  ],
-  "ga": {
-    "date": "2026-08-04",
-    "window": "od startu srpnové kampaně (27. 7.)",
-    "site": {
-      "sess": 55700,
-      "engRate": 40.0,
-      "conv": 537,
-      "rev": 1709605
-    },
-    "campaign": {
-      "sess": 2653,
-      "engRate": 55.6,
-      "conv": 0,
-      "rev": 0
-    },
-    "notset": {
-      "sess": 0,
-      "engRate": 0
-    },
-    "cre": [
-      {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 311,
-        "engRate": 58.5,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
-        "sess": 105,
-        "engRate": 57.1,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 365,
-        "engRate": 56.4,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 463,
-        "engRate": 56.2,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 1056,
-        "engRate": 55.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 351,
-        "engRate": 50.1,
-        "conv": 0,
-        "rev": 0
-      }
-    ]
+ "updated": "29. 7. 2026, 00:14",
+ "campaign": {
+  "id": "8120876426",
+  "name": "Happy Garage — srpen 2026",
+  "start": "2026-07-27",
+  "end": "2026-08-30",
+  "garant": 470588,
+  "bench": 0.337
+ },
+ "daily": [
+  {
+   "d": "2026-07-28",
+   "imp": 49060,
+   "clk": 365,
+   "unik": 19962,
+   "freq": 2.383
   }
+ ],
+ "interests": [
+  {
+   "n": "Automoto - Motocykly",
+   "reklama": "Seznam.cz - homepage - Nativní inzerát",
+   "imp": 49060,
+   "clk": 365
+  }
+ ],
+ "snaps": [
+  {
+   "d": "2026-07-29",
+   "cre": [
+    {
+     "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+     "typ": "letošní",
+     "imp": 6924,
+     "clk": 63
+    },
+    {
+     "n": "Váš junior sní o motorkách? Řešení je v Praze",
+     "typ": "letošní",
+     "imp": 7019,
+     "clk": 52
+    },
+    {
+     "n": "Začněte spolu jezdit už od 10ti let",
+     "typ": "loni",
+     "imp": 7084,
+     "clk": 58
+    },
+    {
+     "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+     "typ": "loni",
+     "imp": 7097,
+     "clk": 17
+    },
+    {
+     "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+     "typ": "loni",
+     "imp": 14018,
+     "clk": 134
+    },
+    {
+     "n": "Bezpečný start pro nejmenší motorkáře",
+     "typ": "loni",
+     "imp": 6918,
+     "clk": 41
+    }
+   ]
+  }
+ ],
+ "ga": {
+  "date": "2026-08-05",
+  "window": "od startu srpnové kampaně (27. 7.)",
+  "site": {
+   "sess": 57013,
+   "engRate": 40.4,
+   "conv": 553,
+   "rev": 1771420
+  },
+  "campaign": {
+   "sess": 2949,
+   "engRate": 59.6,
+   "conv": 0,
+   "rev": 0
+  },
+  "notset": {
+   "sess": 0,
+   "engRate": 0
+  },
+  "cre": [
+   {
+    "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+    "sess": 510,
+    "engRate": 61.2,
+    "conv": 0,
+    "rev": 0
+   },
+   {
+    "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+    "sess": 1195,
+    "engRate": 59.6,
+    "conv": 0,
+    "rev": 0
+   },
+   {
+    "n": "Bezpečný start pro nejmenší motorkáře",
+    "sess": 363,
+    "engRate": 59.2,
+    "conv": 0,
+    "rev": 0
+   },
+   {
+    "n": "Začněte spolu jezdit už od 10ti let",
+    "sess": 415,
+    "engRate": 58.6,
+    "conv": 0,
+    "rev": 0
+   },
+   {
+    "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+    "sess": 106,
+    "engRate": 57.5,
+    "conv": 0,
+    "rev": 0
+   },
+   {
+    "n": "Váš junior sní o motorkách? Řešení je v Praze",
+    "sess": 401,
+    "engRate": 53.6,
+    "conv": 0,
+    "rev": 0
+   }
+  ]
+ }
 }

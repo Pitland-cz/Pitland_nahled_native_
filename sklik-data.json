@@ -9,9 +9,9 @@
     "imp": 18802,
     "clk": 641,
     "cost": 1948.39,
-    "orders": 21,
-    "orderVal": 56780,
-    "leads": 0
+    "orders": 14,
+    "orderVal": 51200,
+    "leads": 2
   },
   "campaigns": [
     {
@@ -20,8 +20,8 @@
       "imp": 2944,
       "clk": 286,
       "cost": 846.98,
-      "orders": 4,
-      "orderVal": 13650,
+      "orders": 2,
+      "orderVal": 7800,
       "leads": 0
     },
     {
@@ -30,9 +30,9 @@
       "imp": 236,
       "clk": 171,
       "cost": 202.73,
-      "orders": 14,
-      "orderVal": 40430,
-      "leads": 0
+      "orders": 12,
+      "orderVal": 43400,
+      "leads": 2
     },
     {
       "n": "RTG | Bannery",
@@ -40,8 +40,8 @@
       "imp": 10243,
       "clk": 97,
       "cost": 412.69,
-      "orders": 3,
-      "orderVal": 2700,
+      "orders": 0,
+      "orderVal": 0,
       "leads": 0
     },
     {
@@ -64,5 +64,107 @@
       "orderVal": 0,
       "leads": 0
     }
-  ]
+  ],
+  "ga": {
+    "date": "2026-08-05",
+    "window": "od startu kampaně (11. 6.)",
+    "site": {
+      "sess": 57013,
+      "engRate": 40.4,
+      "conv": 553,
+      "rev": 1771420
+    },
+    "campaign": {
+      "sess": 3072,
+      "engRate": 65.5,
+      "conv": 73,
+      "rev": 258955
+    },
+    "cre": [
+      {
+        "n": "(organic)",
+        "sess": 1986,
+        "engRate": 68.8,
+        "conv": 59,
+        "rev": 207755
+      },
+      {
+        "n": "VS | Moto",
+        "sess": 276,
+        "engRate": 71.4,
+        "conv": 2,
+        "rev": 7800
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 250,
+        "engRate": 79.6,
+        "conv": 12,
+        "rev": 43400
+      },
+      {
+        "n": "RTG | Bannery",
+        "sess": 213,
+        "engRate": 38.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "OS | bannery (bez RTG 30)",
+        "sess": 127,
+        "engRate": 45.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(not set)",
+        "sess": 85,
+        "engRate": 37.6,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 76,
+        "engRate": 92.1,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "RTG | KR",
+        "sess": 12,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(referral)",
+        "sess": 11,
+        "engRate": 36.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "",
+        "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "03/24 Děti - Konverze",
+        "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(direct)",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      }
+    ]
+  }
 }
