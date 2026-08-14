@@ -1,1 +1,1038 @@
-{"updated": "14. 8. 2026, 06:40", "account": {"name": "Pitland (jnoteplice@gmail.com)", "credit": 3018, "period": "16. 6. – 14. 8. 2026"}, "summary": {"imp": 20065, "clk": 750, "cost": 2320.29, "orders": 25, "orderVal": 67180, "leads": 0}, "campaigns": [{"n": "VS | Moto", "typ": "nebrand", "imp": 3417, "clk": 341, "cost": 1034.11, "orders": 5, "orderVal": 16350, "leads": 0}, {"n": "VS | Brand", "typ": "brand", "imp": 281, "clk": 202, "cost": 236.43, "orders": 17, "orderVal": 48130, "leads": 0}, {"n": "RTG | Bannery", "typ": "retargeting", "imp": 10243, "clk": 97, "cost": 412.69, "orders": 3, "orderVal": 2700, "leads": 0}, {"n": "VS | Motorky/jizdy", "typ": "nebrand", "imp": 583, "clk": 93, "cost": 587.25, "orders": 0, "orderVal": 0, "leads": 0}, {"n": "RTG | KR", "typ": "retargeting", "imp": 5541, "clk": 17, "cost": 49.81, "orders": 0, "orderVal": 0, "leads": 0}], "vsDetail": {"updated": "14. 8. 2026, 06:40", "campaigns": {"VS | Moto": {"sestavy": [{"n": "kam s dětmi v praze", "clk": 167, "imp": 1300, "cost": 640, "conv": 0, "convVal": 0, "kval": 5, "kw": [{"n": "kam s dětmi v praze", "clk": 99, "imp": 959, "cost": 358, "conv": 0, "convVal": 0, "kval": 5}, {"n": "\"kam s dětmi v praze\"", "clk": 45, "imp": 204, "cost": 172, "conv": 0, "convVal": 0, "kval": 6}, {"n": "[kam s dětmi v praze]", "clk": 23, "imp": 137, "cost": 110, "conv": 0, "convVal": 0, "kval": 7}]}, {"n": "kam v praze s dětmi", "clk": 49, "imp": 399, "cost": 130, "conv": 0, "convVal": 0, "kval": 6, "kw": [{"n": "[kam v praze s dětmi]", "clk": 18, "imp": 83, "cost": 57, "conv": 0, "convVal": 0, "kval": 7}, {"n": "kam v praze s dětmi", "clk": 17, "imp": 231, "cost": 42, "conv": 0, "convVal": 0, "kval": 6}, {"n": "\"kam v praze s dětmi\"", "clk": 14, "imp": 85, "cost": 31, "conv": 0, "convVal": 0, "kval": 6}]}, {"n": "kam v praze o víkendu", "clk": 47, "imp": 400, "cost": 59, "conv": 0, "convVal": 0, "kval": 5, "kw": [{"n": "[kam v praze o víkendu]", "clk": 25, "imp": 112, "cost": 29, "conv": 0, "convVal": 0, "kval": 5}, {"n": "kam v praze o víkendu", "clk": 20, "imp": 253, "cost": 27, "conv": 0, "convVal": 0, "kval": 5}, {"n": "\"kam v praze o víkendu\"", "clk": 2, "imp": 35, "cost": 3, "conv": 0, "convVal": 0, "kval": 6}]}, {"n": "motokáry zličín", "clk": 16, "imp": 54, "cost": 30, "conv": 3, "convVal": 11700, "kval": 8, "kw": [{"n": "motokáry zličín", "clk": 15, "imp": 23, "cost": 28, "conv": 3, "convVal": 11700, "kval": 9}, {"n": "\"motokáry zličín\"", "clk": 1, "imp": 14, "cost": 2, "conv": 0, "convVal": 0, "kval": 8}]}, {"n": "kam o víkendu v praze", "clk": 11, "imp": 234, "cost": 13, "conv": 0, "convVal": 0, "kval": 5, "kw": [{"n": "kam o víkendu v praze", "clk": 9, "imp": 204, "cost": 11, "conv": 0, "convVal": 0, "kval": 5}, {"n": "[kam o víkendu v praze]", "clk": 2, "imp": 21, "cost": 2, "conv": 0, "convVal": 0, "kval": 4}]}, {"n": "motokáry praha", "clk": 10, "imp": 186, "cost": 31, "conv": 0, "convVal": 0, "kval": 8, "kw": [{"n": "motokáry praha", "clk": 6, "imp": 72, "cost": 18, "conv": 0, "convVal": 0, "kval": 9}, {"n": "\"motokáry praha\"", "clk": 3, "imp": 82, "cost": 10, "conv": 0, "convVal": 0, "kval": 8}, {"n": "[motokáry praha]", "clk": 1, "imp": 32, "cost": 3, "conv": 0, "convVal": 0, "kval": 7}]}, {"n": "kurz jízdy na motorce", "clk": 7, "imp": 38, "cost": 13, "conv": 1, "convVal": 1950, "kval": 9, "kw": [{"n": "kurz jízdy na motorce", "clk": 5, "imp": 30, "cost": 10, "conv": 1, "convVal": 1950, "kval": 8}, {"n": "[kurz jízdy na motorce]", "clk": 1, "imp": 4, "cost": 1, "conv": 0, "convVal": 0, "kval": 10}, {"n": "\"kurz jízdy na motorce\"", "clk": 1, "imp": 4, "cost": 2, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "motoškola praha", "clk": 6, "imp": 42, "cost": 17, "conv": 0, "convVal": 0, "kval": 9, "kw": [{"n": "motoškola praha", "clk": 5, "imp": 18, "cost": 13, "conv": 0, "convVal": 0, "kval": 8}, {"n": "\"motoškola praha\"", "clk": 1, "imp": 11, "cost": 4, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "zážitková jízda na motorce", "clk": 6, "imp": 63, "cost": 31, "conv": 0, "convVal": 0, "kval": 7, "kw": [{"n": "zážitková jízda na motorce", "clk": 4, "imp": 49, "cost": 12, "conv": 0, "convVal": 0, "kval": 7}, {"n": "\"zážitková jízda na motorce\"", "clk": 2, "imp": 6, "cost": 19, "conv": 0, "convVal": 0, "kval": 8}]}, {"n": "kurz bezpečné jízdy na motorce", "clk": 4, "imp": 15, "cost": 9, "conv": 0, "convVal": 0, "kval": 9, "kw": [{"n": "kurz bezpečné jízdy na motorce", "clk": 4, "imp": 8, "cost": 9, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "moto škola", "clk": 4, "imp": 68, "cost": 6, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[moto škola]", "clk": 2, "imp": 14, "cost": 3, "conv": 0, "convVal": 0, "kval": 10}, {"n": "\"moto škola\"", "clk": 2, "imp": 51, "cost": 3, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "řidičák na motorku", "clk": 3, "imp": 215, "cost": 8, "conv": 0, "convVal": 0, "kval": 7, "kw": [{"n": "[řidičák na motorku]", "clk": 2, "imp": 67, "cost": 5, "conv": 0, "convVal": 0, "kval": 5}, {"n": "řidičák na motorku", "clk": 1, "imp": 29, "cost": 3, "conv": 0, "convVal": 0, "kval": 6}]}, {"n": "motokurz", "clk": 3, "imp": 132, "cost": 33, "conv": 0, "convVal": 0, "kval": 5, "kw": [{"n": "motokurz", "clk": 3, "imp": 121, "cost": 33, "conv": 0, "convVal": 0, "kval": 5}]}, {"n": "kurzy na motorce", "clk": 3, "imp": 22, "cost": 7, "conv": 0, "convVal": 0, "kval": 9, "kw": [{"n": "kurzy na motorce", "clk": 3, "imp": 18, "cost": 7, "conv": 0, "convVal": 0, "kval": 9}]}, {"n": "motoškola", "clk": 3, "imp": 88, "cost": 5, "conv": 0, "convVal": 0, "kval": 9, "kw": [{"n": "\"motoškola\"", "clk": 3, "imp": 71, "cost": 5, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "škola jízdy na motorce", "clk": 1, "imp": 8, "cost": 1, "conv": 1, "convVal": 2700, "kval": 10, "kw": [{"n": "\"škola jízdy na motorce\"", "clk": 1, "imp": 4, "cost": 1, "conv": 1, "convVal": 2700, "kval": 10}]}, {"n": "bezpečná jízda", "clk": 1, "imp": 53, "cost": 1, "conv": 0, "convVal": 0, "kval": 7, "kw": [{"n": "\"bezpečná jízda\"", "clk": 1, "imp": 50, "cost": 1, "conv": 0, "convVal": 0, "kval": 7}]}]}, "VS | Brand": {"sestavy": [{"n": "Pitland", "clk": 144, "imp": 199, "cost": 158, "conv": 10, "convVal": 27500, "kval": 10, "kw": [{"n": "[pitland]", "clk": 140, "imp": 186, "cost": 152, "conv": 10, "convVal": 27500, "kval": 10}, {"n": "\"pitland\"", "clk": 4, "imp": 13, "cost": 6, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Pitland praha", "clk": 57, "imp": 80, "cost": 77, "conv": 7, "convVal": 20630, "kval": 10, "kw": [{"n": "[pitland praha]", "clk": 57, "imp": 80, "cost": 77, "conv": 7, "convVal": 20630, "kval": 10}]}, {"n": "Pitland zličín", "clk": 1, "imp": 2, "cost": 2, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[pitland zličín]", "clk": 1, "imp": 2, "cost": 2, "conv": 0, "convVal": 0, "kval": 10}]}]}, "VS | Motorky/jizdy": {"sestavy": [{"n": "Motokáry praha", "clk": 51, "imp": 406, "cost": 424, "conv": 0, "convVal": 0, "kval": 7, "kw": [{"n": "\"motokáry praha\"", "clk": 34, "imp": 250, "cost": 257, "conv": 0, "convVal": 0, "kval": 7}, {"n": "[motokáry praha]", "clk": 17, "imp": 156, "cost": 167, "conv": 0, "convVal": 0, "kval": 6}]}, {"n": "Motokáry praha zličín", "clk": 14, "imp": 57, "cost": 90, "conv": 0, "convVal": 0, "kval": 5, "kw": [{"n": "\"motokáry praha zličín\"", "clk": 13, "imp": 31, "cost": 86, "conv": 0, "convVal": 0, "kval": 6}, {"n": "[motokáry praha zličín]", "clk": 1, "imp": 26, "cost": 4, "conv": 0, "convVal": 0, "kval": 3}]}, {"n": "Škola jízdy na motorce", "clk": 10, "imp": 27, "cost": 22, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[škola jízdy na motorce]", "clk": 6, "imp": 16, "cost": 12, "conv": 0, "convVal": 0, "kval": 10}, {"n": "\"škola jízdy na motorce\"", "clk": 4, "imp": 11, "cost": 10, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Kurz jizdy na motorce", "clk": 4, "imp": 26, "cost": 10, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "\"kurz jizdy na motorce\"", "clk": 4, "imp": 25, "cost": 10, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Kurz jízdy na motorce", "clk": 3, "imp": 9, "cost": 4, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[kurz jízdy na motorce]", "clk": 3, "imp": 6, "cost": 4, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Elektro motorky praha", "clk": 2, "imp": 4, "cost": 5, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[elektro motorky praha]", "clk": 1, "imp": 3, "cost": 4, "conv": 0, "convVal": 0, "kval": 9}, {"n": "\"elektro motorky praha\"", "clk": 1, "imp": 1, "cost": 2, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Kurz bezpečné jízdy na motorce", "clk": 2, "imp": 24, "cost": 17, "conv": 0, "convVal": 0, "kval": 8, "kw": [{"n": "[kurz bezpečné jízdy na motorce]", "clk": 1, "imp": 21, "cost": 8, "conv": 0, "convVal": 0, "kval": 8}, {"n": "\"kurz bezpečné jízdy na motorce\"", "clk": 1, "imp": 3, "cost": 10, "conv": 0, "convVal": 0, "kval": 9}]}, {"n": "Kurz na motorce", "clk": 2, "imp": 13, "cost": 6, "conv": 0, "convVal": 0, "kval": 9, "kw": [{"n": "\"kurz na motorce\"", "clk": 2, "imp": 13, "cost": 6, "conv": 0, "convVal": 0, "kval": 9}]}, {"n": "Jízda na elektrické motorce praha", "clk": 1, "imp": 2, "cost": 1, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[jízda na elektrické motorce praha]", "clk": 1, "imp": 1, "cost": 1, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Elektrické motorky praha", "clk": 1, "imp": 1, "cost": 4, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "\"elektrické motorky praha\"", "clk": 1, "imp": 1, "cost": 4, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Motorky v hale praha", "clk": 1, "imp": 1, "cost": 1, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "\"motorky v hale praha\"", "clk": 1, "imp": 1, "cost": 1, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Motorky v hale", "clk": 1, "imp": 3, "cost": 1, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "\"motorky v hale\"", "clk": 1, "imp": 3, "cost": 1, "conv": 0, "convVal": 0, "kval": 10}]}, {"n": "Kurzy na motorku", "clk": 1, "imp": 10, "cost": 2, "conv": 0, "convVal": 0, "kval": 10, "kw": [{"n": "[kurzy na motorku]", "clk": 1, "imp": 3, "cost": 2, "conv": 0, "convVal": 0, "kval": 10}]}]}}}}
+{
+  "updated": "14. 8. 2026, 06:40",
+  "account": {
+    "name": "Pitland (jnoteplice@gmail.com)",
+    "credit": 3018,
+    "period": "16. 6. – 14. 8. 2026"
+  },
+  "summary": {
+    "imp": 20065,
+    "clk": 750,
+    "cost": 2320.29,
+    "orders": 18,
+    "orderVal": 62080,
+    "leads": 2
+  },
+  "campaigns": [
+    {
+      "n": "VS | Moto",
+      "typ": "nebrand",
+      "imp": 3417,
+      "clk": 341,
+      "cost": 1034.11,
+      "orders": 3,
+      "orderVal": 10500,
+      "leads": 0
+    },
+    {
+      "n": "VS | Brand",
+      "typ": "brand",
+      "imp": 281,
+      "clk": 202,
+      "cost": 236.43,
+      "orders": 15,
+      "orderVal": 51580,
+      "leads": 2
+    },
+    {
+      "n": "RTG | Bannery",
+      "typ": "retargeting",
+      "imp": 10243,
+      "clk": 97,
+      "cost": 412.69,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    },
+    {
+      "n": "VS | Motorky/jizdy",
+      "typ": "nebrand",
+      "imp": 583,
+      "clk": 93,
+      "cost": 587.25,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    },
+    {
+      "n": "RTG | KR",
+      "typ": "retargeting",
+      "imp": 5541,
+      "clk": 17,
+      "cost": 49.81,
+      "orders": 0,
+      "orderVal": 0,
+      "leads": 0
+    }
+  ],
+  "vsDetail": {
+    "updated": "14. 8. 2026, 06:40",
+    "campaigns": {
+      "VS | Moto": {
+        "sestavy": [
+          {
+            "n": "kam s dětmi v praze",
+            "clk": 167,
+            "imp": 1300,
+            "cost": 640,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 5,
+            "kw": [
+              {
+                "n": "kam s dětmi v praze",
+                "clk": 99,
+                "imp": 959,
+                "cost": 358,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              },
+              {
+                "n": "\"kam s dětmi v praze\"",
+                "clk": 45,
+                "imp": 204,
+                "cost": 172,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              },
+              {
+                "n": "[kam s dětmi v praze]",
+                "clk": 23,
+                "imp": 137,
+                "cost": 110,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              }
+            ]
+          },
+          {
+            "n": "kam v praze s dětmi",
+            "clk": 49,
+            "imp": 399,
+            "cost": 130,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 6,
+            "kw": [
+              {
+                "n": "[kam v praze s dětmi]",
+                "clk": 18,
+                "imp": 83,
+                "cost": 57,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              },
+              {
+                "n": "kam v praze s dětmi",
+                "clk": 17,
+                "imp": 231,
+                "cost": 42,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              },
+              {
+                "n": "\"kam v praze s dětmi\"",
+                "clk": 14,
+                "imp": 85,
+                "cost": 31,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              }
+            ]
+          },
+          {
+            "n": "kam v praze o víkendu",
+            "clk": 47,
+            "imp": 400,
+            "cost": 59,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 5,
+            "kw": [
+              {
+                "n": "[kam v praze o víkendu]",
+                "clk": 25,
+                "imp": 112,
+                "cost": 29,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              },
+              {
+                "n": "kam v praze o víkendu",
+                "clk": 20,
+                "imp": 253,
+                "cost": 27,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              },
+              {
+                "n": "\"kam v praze o víkendu\"",
+                "clk": 2,
+                "imp": 35,
+                "cost": 3,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              }
+            ]
+          },
+          {
+            "n": "motokáry zličín",
+            "clk": 16,
+            "imp": 54,
+            "cost": 30,
+            "conv": 3,
+            "convVal": 11700,
+            "kval": 8,
+            "kw": [
+              {
+                "n": "motokáry zličín",
+                "clk": 15,
+                "imp": 23,
+                "cost": 28,
+                "conv": 3,
+                "convVal": 11700,
+                "kval": 9
+              },
+              {
+                "n": "\"motokáry zličín\"",
+                "clk": 1,
+                "imp": 14,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 8
+              }
+            ]
+          },
+          {
+            "n": "kam o víkendu v praze",
+            "clk": 11,
+            "imp": 234,
+            "cost": 13,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 5,
+            "kw": [
+              {
+                "n": "kam o víkendu v praze",
+                "clk": 9,
+                "imp": 204,
+                "cost": 11,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              },
+              {
+                "n": "[kam o víkendu v praze]",
+                "clk": 2,
+                "imp": 21,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 4
+              }
+            ]
+          },
+          {
+            "n": "motokáry praha",
+            "clk": 10,
+            "imp": 186,
+            "cost": 31,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 8,
+            "kw": [
+              {
+                "n": "motokáry praha",
+                "clk": 6,
+                "imp": 72,
+                "cost": 18,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 9
+              },
+              {
+                "n": "\"motokáry praha\"",
+                "clk": 3,
+                "imp": 82,
+                "cost": 10,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 8
+              },
+              {
+                "n": "[motokáry praha]",
+                "clk": 1,
+                "imp": 32,
+                "cost": 3,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              }
+            ]
+          },
+          {
+            "n": "kurz jízdy na motorce",
+            "clk": 7,
+            "imp": 38,
+            "cost": 13,
+            "conv": 1,
+            "convVal": 1950,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "kurz jízdy na motorce",
+                "clk": 5,
+                "imp": 30,
+                "cost": 10,
+                "conv": 1,
+                "convVal": 1950,
+                "kval": 8
+              },
+              {
+                "n": "[kurz jízdy na motorce]",
+                "clk": 1,
+                "imp": 4,
+                "cost": 1,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              },
+              {
+                "n": "\"kurz jízdy na motorce\"",
+                "clk": 1,
+                "imp": 4,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "motoškola praha",
+            "clk": 6,
+            "imp": 42,
+            "cost": 17,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "motoškola praha",
+                "clk": 5,
+                "imp": 18,
+                "cost": 13,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 8
+              },
+              {
+                "n": "\"motoškola praha\"",
+                "clk": 1,
+                "imp": 11,
+                "cost": 4,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "zážitková jízda na motorce",
+            "clk": 6,
+            "imp": 63,
+            "cost": 31,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 7,
+            "kw": [
+              {
+                "n": "zážitková jízda na motorce",
+                "clk": 4,
+                "imp": 49,
+                "cost": 12,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              },
+              {
+                "n": "\"zážitková jízda na motorce\"",
+                "clk": 2,
+                "imp": 6,
+                "cost": 19,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 8
+              }
+            ]
+          },
+          {
+            "n": "kurz bezpečné jízdy na motorce",
+            "clk": 4,
+            "imp": 15,
+            "cost": 9,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "kurz bezpečné jízdy na motorce",
+                "clk": 4,
+                "imp": 8,
+                "cost": 9,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "moto škola",
+            "clk": 4,
+            "imp": 68,
+            "cost": 6,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[moto škola]",
+                "clk": 2,
+                "imp": 14,
+                "cost": 3,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              },
+              {
+                "n": "\"moto škola\"",
+                "clk": 2,
+                "imp": 51,
+                "cost": 3,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "řidičák na motorku",
+            "clk": 3,
+            "imp": 215,
+            "cost": 8,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 7,
+            "kw": [
+              {
+                "n": "[řidičák na motorku]",
+                "clk": 2,
+                "imp": 67,
+                "cost": 5,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              },
+              {
+                "n": "řidičák na motorku",
+                "clk": 1,
+                "imp": 29,
+                "cost": 3,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              }
+            ]
+          },
+          {
+            "n": "motokurz",
+            "clk": 3,
+            "imp": 132,
+            "cost": 33,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 5,
+            "kw": [
+              {
+                "n": "motokurz",
+                "clk": 3,
+                "imp": 121,
+                "cost": 33,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 5
+              }
+            ]
+          },
+          {
+            "n": "kurzy na motorce",
+            "clk": 3,
+            "imp": 22,
+            "cost": 7,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "kurzy na motorce",
+                "clk": 3,
+                "imp": 18,
+                "cost": 7,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 9
+              }
+            ]
+          },
+          {
+            "n": "motoškola",
+            "clk": 3,
+            "imp": 88,
+            "cost": 5,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "\"motoškola\"",
+                "clk": 3,
+                "imp": 71,
+                "cost": 5,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "škola jízdy na motorce",
+            "clk": 1,
+            "imp": 8,
+            "cost": 1,
+            "conv": 1,
+            "convVal": 2700,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "\"škola jízdy na motorce\"",
+                "clk": 1,
+                "imp": 4,
+                "cost": 1,
+                "conv": 1,
+                "convVal": 2700,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "bezpečná jízda",
+            "clk": 1,
+            "imp": 53,
+            "cost": 1,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 7,
+            "kw": [
+              {
+                "n": "\"bezpečná jízda\"",
+                "clk": 1,
+                "imp": 50,
+                "cost": 1,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              }
+            ]
+          }
+        ]
+      },
+      "VS | Brand": {
+        "sestavy": [
+          {
+            "n": "Pitland",
+            "clk": 144,
+            "imp": 199,
+            "cost": 158,
+            "conv": 10,
+            "convVal": 27500,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[pitland]",
+                "clk": 140,
+                "imp": 186,
+                "cost": 152,
+                "conv": 10,
+                "convVal": 27500,
+                "kval": 10
+              },
+              {
+                "n": "\"pitland\"",
+                "clk": 4,
+                "imp": 13,
+                "cost": 6,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Pitland praha",
+            "clk": 57,
+            "imp": 80,
+            "cost": 77,
+            "conv": 7,
+            "convVal": 20630,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[pitland praha]",
+                "clk": 57,
+                "imp": 80,
+                "cost": 77,
+                "conv": 7,
+                "convVal": 20630,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Pitland zličín",
+            "clk": 1,
+            "imp": 2,
+            "cost": 2,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[pitland zličín]",
+                "clk": 1,
+                "imp": 2,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          }
+        ]
+      },
+      "VS | Motorky/jizdy": {
+        "sestavy": [
+          {
+            "n": "Motokáry praha",
+            "clk": 51,
+            "imp": 406,
+            "cost": 424,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 7,
+            "kw": [
+              {
+                "n": "\"motokáry praha\"",
+                "clk": 34,
+                "imp": 250,
+                "cost": 257,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 7
+              },
+              {
+                "n": "[motokáry praha]",
+                "clk": 17,
+                "imp": 156,
+                "cost": 167,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              }
+            ]
+          },
+          {
+            "n": "Motokáry praha zličín",
+            "clk": 14,
+            "imp": 57,
+            "cost": 90,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 5,
+            "kw": [
+              {
+                "n": "\"motokáry praha zličín\"",
+                "clk": 13,
+                "imp": 31,
+                "cost": 86,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 6
+              },
+              {
+                "n": "[motokáry praha zličín]",
+                "clk": 1,
+                "imp": 26,
+                "cost": 4,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 3
+              }
+            ]
+          },
+          {
+            "n": "Škola jízdy na motorce",
+            "clk": 10,
+            "imp": 27,
+            "cost": 22,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[škola jízdy na motorce]",
+                "clk": 6,
+                "imp": 16,
+                "cost": 12,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              },
+              {
+                "n": "\"škola jízdy na motorce\"",
+                "clk": 4,
+                "imp": 11,
+                "cost": 10,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Kurz jizdy na motorce",
+            "clk": 4,
+            "imp": 26,
+            "cost": 10,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "\"kurz jizdy na motorce\"",
+                "clk": 4,
+                "imp": 25,
+                "cost": 10,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Kurz jízdy na motorce",
+            "clk": 3,
+            "imp": 9,
+            "cost": 4,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[kurz jízdy na motorce]",
+                "clk": 3,
+                "imp": 6,
+                "cost": 4,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Elektro motorky praha",
+            "clk": 2,
+            "imp": 4,
+            "cost": 5,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[elektro motorky praha]",
+                "clk": 1,
+                "imp": 3,
+                "cost": 4,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 9
+              },
+              {
+                "n": "\"elektro motorky praha\"",
+                "clk": 1,
+                "imp": 1,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Kurz bezpečné jízdy na motorce",
+            "clk": 2,
+            "imp": 24,
+            "cost": 17,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 8,
+            "kw": [
+              {
+                "n": "[kurz bezpečné jízdy na motorce]",
+                "clk": 1,
+                "imp": 21,
+                "cost": 8,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 8
+              },
+              {
+                "n": "\"kurz bezpečné jízdy na motorce\"",
+                "clk": 1,
+                "imp": 3,
+                "cost": 10,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 9
+              }
+            ]
+          },
+          {
+            "n": "Kurz na motorce",
+            "clk": 2,
+            "imp": 13,
+            "cost": 6,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 9,
+            "kw": [
+              {
+                "n": "\"kurz na motorce\"",
+                "clk": 2,
+                "imp": 13,
+                "cost": 6,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 9
+              }
+            ]
+          },
+          {
+            "n": "Jízda na elektrické motorce praha",
+            "clk": 1,
+            "imp": 2,
+            "cost": 1,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[jízda na elektrické motorce praha]",
+                "clk": 1,
+                "imp": 1,
+                "cost": 1,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Elektrické motorky praha",
+            "clk": 1,
+            "imp": 1,
+            "cost": 4,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "\"elektrické motorky praha\"",
+                "clk": 1,
+                "imp": 1,
+                "cost": 4,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Motorky v hale praha",
+            "clk": 1,
+            "imp": 1,
+            "cost": 1,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "\"motorky v hale praha\"",
+                "clk": 1,
+                "imp": 1,
+                "cost": 1,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Motorky v hale",
+            "clk": 1,
+            "imp": 3,
+            "cost": 1,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "\"motorky v hale\"",
+                "clk": 1,
+                "imp": 3,
+                "cost": 1,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          },
+          {
+            "n": "Kurzy na motorku",
+            "clk": 1,
+            "imp": 10,
+            "cost": 2,
+            "conv": 0,
+            "convVal": 0,
+            "kval": 10,
+            "kw": [
+              {
+                "n": "[kurzy na motorku]",
+                "clk": 1,
+                "imp": 3,
+                "cost": 2,
+                "conv": 0,
+                "convVal": 0,
+                "kval": 10
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "ga": {
+    "date": "2026-08-14",
+    "window": "od startu kampaně (11. 6.)",
+    "site": {
+      "sess": 62481,
+      "engRate": 41.2,
+      "conv": 638,
+      "rev": 2012346
+    },
+    "campaign": {
+      "sess": 3495,
+      "engRate": 67.1,
+      "conv": 84,
+      "rev": 291795
+    },
+    "cre": [
+      {
+        "n": "(organic)",
+        "sess": 2326,
+        "engRate": 69.0,
+        "conv": 65,
+        "rev": 227015
+      },
+      {
+        "n": "VS | Moto",
+        "sess": 325,
+        "engRate": 70.2,
+        "conv": 3,
+        "rev": 10500
+      },
+      {
+        "n": "VS | Brand",
+        "sess": 289,
+        "engRate": 80.6,
+        "conv": 15,
+        "rev": 51580
+      },
+      {
+        "n": "RTG | Bannery",
+        "sess": 213,
+        "engRate": 38.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "OS | bannery (bez RTG 30)",
+        "sess": 127,
+        "engRate": 45.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(not set)",
+        "sess": 106,
+        "engRate": 41.5,
+        "conv": 1,
+        "rev": 2700
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 93,
+        "engRate": 91.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "RTG | KR",
+        "sess": 13,
+        "engRate": 46.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "(referral)",
+        "sess": 11,
+        "engRate": 36.4,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "03/24 Děti - Konverze",
+        "sess": 2,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      }
+    ]
+  }
+}
