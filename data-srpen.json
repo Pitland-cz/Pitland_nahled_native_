@@ -1,5 +1,5 @@
 {
-  "updated": "14. 8. 2026, 14:14",
+  "updated": "22. 8. 2026, 22:23",
   "campaign": {
     "id": "8120876426",
     "name": "Happy Garage — srpen 2026",
@@ -130,18 +130,74 @@
     },
     {
       "d": "2026-08-14",
-      "imp": 29708,
-      "clk": 80,
-      "unik": 17219,
-      "freq": 1.671
+      "imp": 72433,
+      "clk": 202,
+      "unik": 33623,
+      "freq": 2.076
+    },
+    {
+      "d": "2026-08-15",
+      "imp": 83503,
+      "clk": 295,
+      "unik": 34595,
+      "freq": 2.282
+    },
+    {
+      "d": "2026-08-16",
+      "imp": 83541,
+      "clk": 291,
+      "unik": 34834,
+      "freq": 2.296
+    },
+    {
+      "d": "2026-08-17",
+      "imp": 72345,
+      "clk": 216,
+      "unik": 33687,
+      "freq": 2.057
+    },
+    {
+      "d": "2026-08-18",
+      "imp": 72401,
+      "clk": 265,
+      "unik": 31481,
+      "freq": 2.23
+    },
+    {
+      "d": "2026-08-19",
+      "imp": 72430,
+      "clk": 233,
+      "unik": 30733,
+      "freq": 2.281
+    },
+    {
+      "d": "2026-08-20",
+      "imp": 72132,
+      "clk": 202,
+      "unik": 28778,
+      "freq": 2.433
+    },
+    {
+      "d": "2026-08-21",
+      "imp": 72694,
+      "clk": 231,
+      "unik": 28128,
+      "freq": 2.497
+    },
+    {
+      "d": "2026-08-22",
+      "imp": 69342,
+      "clk": 210,
+      "unik": 24250,
+      "freq": 2.781
     }
   ],
   "interests": [
     {
       "n": "Automoto - Motocykly",
       "reklama": "Seznam.cz - homepage - Nativní inzerát",
-      "imp": 1351403,
-      "clk": 5344
+      "imp": 1992516,
+      "clk": 7409
     }
   ],
   "snaps": [
@@ -267,20 +323,61 @@
           "clk": 713
         }
       ]
+    },
+    {
+      "d": "2026-08-22",
+      "cre": [
+        {
+          "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
+          "typ": "loni",
+          "imp": 638104,
+          "clk": 2978
+        },
+        {
+          "n": "Váš junior sní o motorkách? Řešení je v Praze",
+          "typ": "letošní",
+          "imp": 319707,
+          "clk": 1084
+        },
+        {
+          "n": "Začněte spolu jezdit už od 10ti let",
+          "typ": "loni",
+          "imp": 319337,
+          "clk": 1002
+        },
+        {
+          "n": "Bezpečný start pro nejmenší motorkáře",
+          "typ": "loni",
+          "imp": 319121,
+          "clk": 1007
+        },
+        {
+          "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+          "typ": "letošní",
+          "imp": 318962,
+          "clk": 1195
+        },
+        {
+          "n": "Chce být jako ty? Ukaž mu bezpečnou cestu",
+          "typ": "loni",
+          "imp": 77285,
+          "clk": 143
+        }
+      ]
     }
   ],
   "ga": {
-    "date": "2026-08-14",
+    "date": "2026-08-22",
     "window": "od startu srpnové kampaně (27. 7.)",
     "site": {
-      "sess": 62691,
-      "engRate": 41.1,
-      "conv": 640,
-      "rev": 2016996
+      "sess": 68435,
+      "engRate": 42.2,
+      "conv": 729,
+      "rev": 2263391
     },
     "campaign": {
-      "sess": 4724,
-      "engRate": 58.7,
+      "sess": 6722,
+      "engRate": 58.5,
       "conv": 1,
       "rev": 3900
     },
@@ -290,23 +387,30 @@
     },
     "cre": [
       {
-        "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 606,
-        "engRate": 60.2,
+        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
+        "sess": 1097,
+        "engRate": 60.4,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 794,
-        "engRate": 59.8,
+        "n": "Bezpečný start pro nejmenší motorkáře",
+        "sess": 885,
+        "engRate": 59.9,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 1953,
-        "engRate": 58.3,
+        "sess": 2730,
+        "engRate": 59.2,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "Začněte spolu jezdit už od 10ti let",
+        "sess": 898,
+        "engRate": 58.4,
         "conv": 0,
         "rev": 0
       },
@@ -318,16 +422,9 @@
         "rev": 0
       },
       {
-        "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 641,
-        "engRate": 56.6,
-        "conv": 0,
-        "rev": 0
-      },
-      {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 670,
-        "engRate": 56.3,
+        "sess": 997,
+        "engRate": 55.5,
         "conv": 1,
         "rev": 3900
       }
