@@ -959,39 +959,39 @@
     }
   },
   "ga": {
-    "date": "2026-08-27",
+    "date": "2026-08-28",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 72917,
-      "engRate": 41.8,
-      "conv": 774,
-      "rev": 2404560
+      "sess": 73768,
+      "engRate": 41.7,
+      "conv": 784,
+      "rev": 2427931
     },
     "campaign": {
-      "sess": 4451,
-      "engRate": 68.0,
-      "conv": 123,
-      "rev": 402550
+      "sess": 4552,
+      "engRate": 67.9,
+      "conv": 126,
+      "rev": 411850
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 3071,
-        "engRate": 70.0,
-        "conv": 100,
-        "rev": 327720
+        "sess": 3139,
+        "engRate": 70.1,
+        "conv": 103,
+        "rev": 337020
       },
       {
         "n": "VS | Moto",
-        "sess": 421,
-        "engRate": 71.3,
+        "sess": 426,
+        "engRate": 70.9,
         "conv": 5,
         "rev": 15150
       },
       {
         "n": "VS | Brand",
-        "sess": 345,
-        "engRate": 78.3,
+        "sess": 349,
+        "engRate": 78.8,
         "conv": 17,
         "rev": 56980
       },
@@ -1004,8 +1004,8 @@
       },
       {
         "n": "(not set)",
-        "sess": 140,
-        "engRate": 45.7,
+        "sess": 142,
+        "engRate": 45.8,
         "conv": 1,
         "rev": 2700
       },
@@ -1018,8 +1018,15 @@
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 103,
-        "engRate": 89.3,
+        "sess": 106,
+        "engRate": 87.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
+        "sess": 28,
+        "engRate": 17.9,
         "conv": 0,
         "rev": 0
       },
@@ -1038,14 +1045,14 @@
         "rev": 0
       },
       {
-        "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
-        "sess": 12,
-        "engRate": 0.0,
+        "n": "26-08+[AI]+Track+Pack+|+3+winners+|+purchase+|+500/den",
+        "sess": 5,
+        "engRate": 40.0,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "26-08+[AI]+Track+Pack+|+3+winners+|+purchase+|+500/den",
+        "n": "",
         "sess": 4,
         "engRate": 0.0,
         "conv": 0,
@@ -1055,13 +1062,6 @@
         "n": "03/24 Děti - Konverze",
         "sess": 3,
         "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "",
-        "sess": 1,
-        "engRate": 100.0,
         "conv": 0,
         "rev": 0
       },

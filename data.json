@@ -1138,19 +1138,19 @@
     }
   ],
   "ga": {
-    "date": "2026-08-27",
+    "date": "2026-08-28",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 72917,
-      "engRate": 41.8,
-      "conv": 774,
-      "rev": 2404560
+      "sess": 73768,
+      "engRate": 41.7,
+      "conv": 784,
+      "rev": 2427931
     },
     "campaign": {
-      "sess": 8607,
-      "engRate": 57.5,
-      "conv": 2,
-      "rev": 5850
+      "sess": 8923,
+      "engRate": 57.2,
+      "conv": 3,
+      "rev": 6750
     },
     "notset": {
       "sess": 0,
@@ -1159,36 +1159,36 @@
     "cre": [
       {
         "n": "Jezdíte na motorce? Vezměte juniora s sebou",
-        "sess": 1429,
-        "engRate": 60.0,
+        "sess": 1465,
+        "engRate": 60.3,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 3129,
+        "sess": 3186,
         "engRate": 59.7,
-        "conv": 0,
-        "rev": 0
+        "conv": 1,
+        "rev": 900
       },
       {
         "n": "Bezpečný start pro nejmenší motorkáře",
-        "sess": 1185,
-        "engRate": 59.4,
+        "sess": 1219,
+        "engRate": 59.6,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Začněte spolu jezdit už od 10ti let",
-        "sess": 1164,
-        "engRate": 57.6,
+        "sess": 1189,
+        "engRate": 57.9,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 1399,
-        "engRate": 51.6,
+        "sess": 1488,
+        "engRate": 52.3,
         "conv": 1,
         "rev": 3900
       },
