@@ -9,8 +9,8 @@
     "imp": 21512,
     "clk": 857,
     "cost": 2650.96,
-    "orders": 22,
-    "orderVal": 72130,
+    "orders": 34,
+    "orderVal": 105430,
     "leads": 2
   },
   "campaigns": [
@@ -20,8 +20,8 @@
       "imp": 3970,
       "clk": 409,
       "cost": 1277.71,
-      "orders": 5,
-      "orderVal": 15150,
+      "orders": 6,
+      "orderVal": 17100,
       "leads": 0
     },
     {
@@ -30,8 +30,8 @@
       "imp": 325,
       "clk": 233,
       "cost": 267.43,
-      "orders": 17,
-      "orderVal": 56980,
+      "orders": 28,
+      "orderVal": 88330,
       "leads": 2
     },
     {
@@ -959,41 +959,97 @@
     }
   },
   "ga": {
-    "date": "2026-08-28",
+    "date": "2026-10-17",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 73768,
-      "engRate": 41.7,
-      "conv": 784,
-      "rev": 2427931
+      "sess": 106312,
+      "engRate": 44.3,
+      "conv": 1346,
+      "rev": 4220964
     },
     "campaign": {
-      "sess": 4552,
-      "engRate": 67.9,
-      "conv": 126,
-      "rev": 411850
+      "sess": 14158,
+      "engRate": 54.8,
+      "conv": 260,
+      "rev": 801935
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 3139,
-        "engRate": 70.1,
-        "conv": 103,
-        "rev": 337020
+        "sess": 4455,
+        "engRate": 70.9,
+        "conv": 155,
+        "rev": 490135
+      },
+      {
+        "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
+        "sess": 2082,
+        "engRate": 36.0,
+        "conv": 3,
+        "rev": 11890
+      },
+      {
+        "n": "23965955950",
+        "sess": 1698,
+        "engRate": 73.3,
+        "conv": 56,
+        "rev": 162260
+      },
+      {
+        "n": "JNO_Priprava_autoskola | purchase | 500/den",
+        "sess": 1283,
+        "engRate": 30.3,
+        "conv": 1,
+        "rev": 3450
+      },
+      {
+        "n": "24271696518",
+        "sess": 892,
+        "engRate": 26.6,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "24273944536",
+        "sess": 830,
+        "engRate": 50.4,
+        "conv": 4,
+        "rev": 13650
       },
       {
         "n": "VS | Moto",
-        "sess": 426,
-        "engRate": 70.9,
-        "conv": 5,
-        "rev": 15150
+        "sess": 533,
+        "engRate": 72.6,
+        "conv": 6,
+        "rev": 17100
       },
       {
         "n": "VS | Brand",
-        "sess": 349,
-        "engRate": 78.8,
-        "conv": 17,
-        "rev": 56980
+        "sess": 526,
+        "engRate": 79.5,
+        "conv": 28,
+        "rev": 88330
+      },
+      {
+        "n": "24268329116",
+        "sess": 439,
+        "engRate": 47.6,
+        "conv": 1,
+        "rev": 1950
+      },
+      {
+        "n": "(not set)",
+        "sess": 253,
+        "engRate": 47.4,
+        "conv": 5,
+        "rev": 11220
+      },
+      {
+        "n": "24268329110",
+        "sess": 216,
+        "engRate": 25.5,
+        "conv": 1,
+        "rev": 1950
       },
       {
         "n": "RTG | Bannery",
@@ -1003,11 +1059,18 @@
         "rev": 0
       },
       {
-        "n": "(not set)",
-        "sess": 142,
-        "engRate": 45.8,
-        "conv": 1,
-        "rev": 2700
+        "n": "24273944542",
+        "sess": 190,
+        "engRate": 53.7,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "VS | Motorky/jízdy",
+        "sess": 153,
+        "engRate": 88.9,
+        "conv": 0,
+        "rev": 0
       },
       {
         "n": "OS | bannery (bez RTG 30)",
@@ -1017,30 +1080,51 @@
         "rev": 0
       },
       {
-        "n": "VS | Motorky/jízdy",
-        "sess": 106,
-        "engRate": 87.7,
+        "n": "24273948361",
+        "sess": 91,
+        "engRate": 46.2,
         "conv": 0,
         "rev": 0
       },
       {
-        "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
-        "sess": 28,
-        "engRate": 17.9,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "RTG | KR",
-        "sess": 14,
-        "engRate": 50.0,
+        "n": "nabor-sam-09-2026",
+        "sess": 55,
+        "engRate": 18.2,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "(referral)",
-        "sess": 13,
-        "engRate": 30.8,
+        "sess": 34,
+        "engRate": 23.5,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "JNO_Priprava_autoskola+|+purchase+|+500/den",
+        "sess": 20,
+        "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "RTG | KR",
+        "sess": 17,
+        "engRate": 58.8,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "03/25: TRACK PACK",
+        "sess": 9,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "{{campaign.name}}",
+        "sess": 7,
+        "engRate": 71.4,
         "conv": 0,
         "rev": 0
       },
@@ -1052,22 +1136,8 @@
         "rev": 0
       },
       {
-        "n": "",
-        "sess": 4,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
         "n": "03/24 Děti - Konverze",
-        "sess": 3,
-        "engRate": 0.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "(direct)",
-        "sess": 1,
+        "sess": 4,
         "engRate": 0.0,
         "conv": 0,
         "rev": 0
@@ -1080,7 +1150,49 @@
         "rev": 0
       },
       {
+        "n": "06/23 Bezpečnost - Konverze – ATC",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "24262935771",
+        "sess": 1,
+        "engRate": 100.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "26-08",
+        "sess": 1,
+        "engRate": 100.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
         "n": "add_to_cart_video_edukacni_pz_lookalike_apex",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "mesta_CR_kupon_D_vanoce",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "prvni_zkusenost_video_lookalike",
+        "sess": 1,
+        "engRate": 100.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "prvni_zkusenost_video_obecne_lookalike",
         "sess": 1,
         "engRate": 0.0,
         "conv": 0,
