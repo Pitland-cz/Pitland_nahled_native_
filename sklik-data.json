@@ -1033,95 +1033,95 @@
     }
   },
   "ga": {
-    "date": "2026-10-19",
+    "date": "2026-10-21",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 107742,
-      "engRate": 44.6,
-      "conv": 1371,
-      "rev": 4278584
+      "sess": 109532,
+      "engRate": 44.4,
+      "conv": 1402,
+      "rev": 4341059
     },
     "campaign": {
-      "sess": 14723,
-      "engRate": 55.1,
-      "conv": 272,
-      "rev": 825230
+      "sess": 15035,
+      "engRate": 54.9,
+      "conv": 282,
+      "rev": 843590
     },
     "cre": [
       {
         "n": "(organic)",
-        "sess": 4455,
-        "engRate": 70.9,
-        "conv": 155,
-        "rev": 490135
+        "sess": 4468,
+        "engRate": 70.7,
+        "conv": 156,
+        "rev": 490945
       },
       {
         "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
-        "sess": 2179,
+        "sess": 2270,
         "engRate": 36.2,
         "conv": 3,
         "rev": 11890
       },
       {
         "n": "23965955950",
-        "sess": 1863,
-        "engRate": 73.3,
-        "conv": 67,
-        "rev": 182855
+        "sess": 1990,
+        "engRate": 73.2,
+        "conv": 76,
+        "rev": 200405
       },
       {
         "n": "JNO_Priprava_autoskola | purchase | 500/den",
-        "sess": 1395,
-        "engRate": 31.1,
+        "sess": 1485,
+        "engRate": 31.0,
         "conv": 1,
         "rev": 3450
       },
       {
         "n": "24271696518",
-        "sess": 939,
+        "sess": 940,
         "engRate": 27.7,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "24273944536",
-        "sess": 862,
-        "engRate": 50.5,
+        "sess": 863,
+        "engRate": 50.4,
         "conv": 4,
         "rev": 13650
       },
       {
         "n": "VS | Brand",
-        "sess": 537,
-        "engRate": 79.5,
+        "sess": 542,
+        "engRate": 79.7,
         "conv": 29,
         "rev": 91030
       },
       {
         "n": "VS | Moto",
-        "sess": 537,
-        "engRate": 72.4,
+        "sess": 539,
+        "engRate": 72.5,
         "conv": 6,
         "rev": 17100
       },
       {
         "n": "24268329116",
-        "sess": 461,
-        "engRate": 49.5,
+        "sess": 462,
+        "engRate": 49.4,
         "conv": 1,
         "rev": 1950
       },
       {
         "n": "(not set)",
-        "sess": 255,
-        "engRate": 47.5,
+        "sess": 256,
+        "engRate": 47.3,
         "conv": 5,
         "rev": 11220
       },
       {
         "n": "24268329110",
-        "sess": 216,
-        "engRate": 25.5,
+        "sess": 217,
+        "engRate": 25.3,
         "conv": 1,
         "rev": 1950
       },
@@ -1134,8 +1134,8 @@
       },
       {
         "n": "24273944542",
-        "sess": 195,
-        "engRate": 53.3,
+        "sess": 196,
+        "engRate": 53.1,
         "conv": 0,
         "rev": 0
       },
@@ -1178,6 +1178,13 @@
         "n": "JNO_Priprava_autoskola+|+purchase+|+500/den",
         "sess": 20,
         "engRate": 50.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "24267440538",
+        "sess": 17,
+        "engRate": 58.8,
         "conv": 0,
         "rev": 0
       },
@@ -1252,6 +1259,13 @@
         "rev": 0
       },
       {
+        "n": "dg_remarketing_vanoce",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
         "n": "mesta_CR_kupon_D_vanoce",
         "sess": 1,
         "engRate": 0.0,
@@ -1267,6 +1281,13 @@
       },
       {
         "n": "prvni_zkusenost_video_obecne_lookalike",
+        "sess": 1,
+        "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "roadshow_rtg",
         "sess": 1,
         "engRate": 0.0,
         "conv": 0,
