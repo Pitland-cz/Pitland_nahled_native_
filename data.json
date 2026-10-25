@@ -1185,13 +1185,13 @@
     }
   ],
   "ga": {
-    "date": "2026-10-21",
+    "date": "2026-10-25",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 109532,
-      "engRate": 44.4,
-      "conv": 1402,
-      "rev": 4341059
+      "sess": 113054,
+      "engRate": 44.6,
+      "conv": 1452,
+      "rev": 4495564
     },
     "campaign": {
       "sess": 9527,
@@ -1234,7 +1234,7 @@
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 1709,
+        "sess": 1710,
         "engRate": 54.0,
         "conv": 1,
         "rev": 3900

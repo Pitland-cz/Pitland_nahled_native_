@@ -9,8 +9,8 @@
     "imp": 28084,
     "clk": 1223,
     "cost": 3744.44,
-    "orders": 35,
-    "orderVal": 108130,
+    "orders": 37,
+    "orderVal": 114280,
     "leads": 2
   },
   "campaigns": [
@@ -30,8 +30,8 @@
       "imp": 544,
       "clk": 393,
       "cost": 446.69,
-      "orders": 29,
-      "orderVal": 91030,
+      "orders": 31,
+      "orderVal": 97180,
       "leads": 2
     },
     {
@@ -1033,19 +1033,19 @@
     }
   },
   "ga": {
-    "date": "2026-10-21",
+    "date": "2026-10-25",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 109532,
-      "engRate": 44.4,
-      "conv": 1402,
-      "rev": 4341059
+      "sess": 113054,
+      "engRate": 44.6,
+      "conv": 1452,
+      "rev": 4495564
     },
     "campaign": {
-      "sess": 15035,
-      "engRate": 54.9,
-      "conv": 282,
-      "rev": 843590
+      "sess": 15785,
+      "engRate": 55.0,
+      "conv": 297,
+      "rev": 901750
     },
     "cre": [
       {
@@ -1057,21 +1057,21 @@
       },
       {
         "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
-        "sess": 2270,
-        "engRate": 36.2,
+        "sess": 2371,
+        "engRate": 36.1,
         "conv": 3,
         "rev": 11890
       },
       {
         "n": "23965955950",
-        "sess": 1990,
-        "engRate": 73.2,
-        "conv": 76,
-        "rev": 200405
+        "sess": 2341,
+        "engRate": 73.6,
+        "conv": 89,
+        "rev": 252415
       },
       {
         "n": "JNO_Priprava_autoskola | purchase | 500/den",
-        "sess": 1485,
+        "sess": 1673,
         "engRate": 31.0,
         "conv": 1,
         "rev": 3450
@@ -1085,29 +1085,29 @@
       },
       {
         "n": "24273944536",
-        "sess": 863,
-        "engRate": 50.4,
+        "sess": 864,
+        "engRate": 50.5,
         "conv": 4,
         "rev": 13650
       },
       {
         "n": "VS | Brand",
-        "sess": 542,
-        "engRate": 79.7,
-        "conv": 29,
-        "rev": 91030
+        "sess": 565,
+        "engRate": 80.0,
+        "conv": 31,
+        "rev": 97180
       },
       {
         "n": "VS | Moto",
-        "sess": 539,
-        "engRate": 72.5,
+        "sess": 559,
+        "engRate": 72.3,
         "conv": 6,
         "rev": 17100
       },
       {
         "n": "24268329116",
-        "sess": 462,
-        "engRate": 49.4,
+        "sess": 465,
+        "engRate": 49.2,
         "conv": 1,
         "rev": 1950
       },
@@ -1141,8 +1141,15 @@
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 157,
-        "engRate": 88.5,
+        "sess": 164,
+        "engRate": 89.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "24267440538",
+        "sess": 146,
+        "engRate": 44.5,
         "conv": 0,
         "rev": 0
       },
@@ -1178,13 +1185,6 @@
         "n": "JNO_Priprava_autoskola+|+purchase+|+500/den",
         "sess": 20,
         "engRate": 50.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "24267440538",
-        "sess": 17,
-        "engRate": 58.8,
         "conv": 0,
         "rev": 0
       },
