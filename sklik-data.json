@@ -1033,19 +1033,19 @@
     }
   },
   "ga": {
-    "date": "2026-11-01",
+    "date": "2026-11-08",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 118498,
-      "engRate": 44.8,
-      "conv": 1555,
-      "rev": 4805589
+      "sess": 124783,
+      "engRate": 44.6,
+      "conv": 1650,
+      "rev": 5053789
     },
     "campaign": {
-      "sess": 16879,
-      "engRate": 55.2,
-      "conv": 323,
-      "rev": 958795
+      "sess": 17885,
+      "engRate": 55.1,
+      "conv": 347,
+      "rev": 1020168
     },
     "cre": [
       {
@@ -1057,73 +1057,73 @@
       },
       {
         "n": "23965955950",
-        "sess": 2877,
-        "engRate": 74.0,
-        "conv": 111,
-        "rev": 299560
+        "sess": 3405,
+        "engRate": 73.5,
+        "conv": 133,
+        "rev": 357325
       },
       {
         "n": "26-08 [AI] Track Pack | 3 winners | purchase | 500/den",
-        "sess": 2463,
-        "engRate": 36.3,
+        "sess": 2577,
+        "engRate": 36.2,
         "conv": 3,
         "rev": 11890
       },
       {
         "n": "JNO_Priprava_autoskola | purchase | 500/den",
-        "sess": 1936,
-        "engRate": 30.7,
+        "sess": 2201,
+        "engRate": 30.4,
         "conv": 1,
         "rev": 3450
       },
       {
         "n": "24271696518",
-        "sess": 943,
-        "engRate": 27.6,
+        "sess": 945,
+        "engRate": 27.5,
         "conv": 0,
         "rev": 0
       },
       {
         "n": "24273944536",
-        "sess": 864,
+        "sess": 870,
         "engRate": 50.5,
         "conv": 4,
         "rev": 13650
       },
       {
-        "n": "VS | Moto",
-        "sess": 595,
-        "engRate": 71.9,
-        "conv": 6,
-        "rev": 17100
-      },
-      {
         "n": "VS | Brand",
-        "sess": 591,
-        "engRate": 80.4,
+        "sess": 625,
+        "engRate": 80.3,
         "conv": 32,
         "rev": 99880
       },
       {
+        "n": "VS | Moto",
+        "sess": 611,
+        "engRate": 72.0,
+        "conv": 6,
+        "rev": 17100
+      },
+      {
         "n": "24268329116",
-        "sess": 467,
-        "engRate": 49.3,
+        "sess": 468,
+        "engRate": 49.1,
         "conv": 1,
         "rev": 1950
       },
       {
-        "n": "(not set)",
-        "sess": 257,
-        "engRate": 47.1,
-        "conv": 5,
-        "rev": 11220
+        "n": "24267440538",
+        "sess": 364,
+        "engRate": 47.3,
+        "conv": 2,
+        "rev": 3608
       },
       {
-        "n": "24267440538",
-        "sess": 243,
-        "engRate": 47.7,
-        "conv": 0,
-        "rev": 0
+        "n": "(not set)",
+        "sess": 258,
+        "engRate": 46.9,
+        "conv": 5,
+        "rev": 11220
       },
       {
         "n": "24268329110",
@@ -1148,8 +1148,8 @@
       },
       {
         "n": "VS | Motorky/jízdy",
-        "sess": 181,
-        "engRate": 88.4,
+        "sess": 194,
+        "engRate": 87.1,
         "conv": 0,
         "rev": 0
       },
@@ -1190,8 +1190,8 @@
       },
       {
         "n": "RTG | KR",
-        "sess": 17,
-        "engRate": 58.8,
+        "sess": 18,
+        "engRate": 55.6,
         "conv": 0,
         "rev": 0
       },
@@ -1220,6 +1220,13 @@
         "n": "03/24 Děti - Konverze",
         "sess": 4,
         "engRate": 0.0,
+        "conv": 0,
+        "rev": 0
+      },
+      {
+        "n": "prvni_zkusenost_video_obecne_lookalike",
+        "sess": 2,
+        "engRate": 50.0,
         "conv": 0,
         "rev": 0
       },
@@ -1276,13 +1283,6 @@
         "n": "prvni_zkusenost_video_lookalike",
         "sess": 1,
         "engRate": 100.0,
-        "conv": 0,
-        "rev": 0
-      },
-      {
-        "n": "prvni_zkusenost_video_obecne_lookalike",
-        "sess": 1,
-        "engRate": 0.0,
         "conv": 0,
         "rev": 0
       },

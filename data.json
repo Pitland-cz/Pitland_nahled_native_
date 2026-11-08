@@ -1185,16 +1185,16 @@
     }
   ],
   "ga": {
-    "date": "2026-11-01",
+    "date": "2026-11-08",
     "window": "od startu kampaně (11. 6.)",
     "site": {
-      "sess": 118498,
-      "engRate": 44.8,
-      "conv": 1555,
-      "rev": 4805589
+      "sess": 124783,
+      "engRate": 44.6,
+      "conv": 1650,
+      "rev": 5053789
     },
     "campaign": {
-      "sess": 9527,
+      "sess": 9535,
       "engRate": 57.9,
       "conv": 6,
       "rev": 11598
@@ -1227,15 +1227,15 @@
       },
       {
         "n": "Chce na motorku? Ať se to naučí v bezpečí haly.",
-        "sess": 3355,
-        "engRate": 59.4,
+        "sess": 3352,
+        "engRate": 59.5,
         "conv": 3,
         "rev": 3798
       },
       {
         "n": "Váš junior sní o motorkách? Řešení je v Praze",
-        "sess": 1710,
-        "engRate": 54.0,
+        "sess": 1712,
+        "engRate": 53.9,
         "conv": 1,
         "rev": 3900
       },
